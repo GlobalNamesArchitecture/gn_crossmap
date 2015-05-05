@@ -1,0 +1,8 @@
+AllCops:
+  Exclude:
+    - db/**/*
+    - bundle_bin/**/*
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/DotPosition:
+  EnforcedStyle: trailing
