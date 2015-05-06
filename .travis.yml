@@ -4,5 +4,8 @@ rvm:
   - 2.1
   - 2.2
 script:
+  - bundle install
   - bundle exec rake
-
+branches:
+  only:
+      - master
