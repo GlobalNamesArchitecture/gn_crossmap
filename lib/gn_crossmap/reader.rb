@@ -6,4 +6,7 @@ module GnCrossmap
       @csv_path = csv_path
     end
   end
+
+  def read
+  end
 end
