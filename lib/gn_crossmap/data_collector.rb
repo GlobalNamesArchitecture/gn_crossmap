@@ -1,4 +1,5 @@
 module GnCrossmap
+  # Organizes data from CSV reader
   class DataCollector
     attr_reader :data
 
@@ -17,11 +18,12 @@ module GnCrossmap
     private
 
     def collect_fields
-      @fields = @row.map { |f| f.downcase }
+      @fields = @row.map(&:downcase)
     end
 
     def collect_data
       record = fields.zip(row).to_h
+      record
     end
   end
 end
