@@ -1,0 +1,300 @@
+TaxonId;kingdom;subkingdom;phylum;subphylum;superclass;class;subclass;cohort;superorder;order;suborder;infraorder;superfamily;family;subfamily;tribe;subtribe;genus;subgenus;section;species;subspecies;variety;form;ScientificNameAuthorship
+1;Animalia;;;;;;;;;;;;;;;;;;;;;;;;
+2;Animalia;;Acanthocephala;;;;;;;;;;;;;;;;;;;;;;
+14;Animalia;;Annelida;;;;;;;;;;;;;;;;;;;;;;
+39;Animalia;;Arthropoda;;;;;;;;;;;;;;;;;;;;;;
+176;Animalia;;Brachiopoda;;;;;;;;;;;;;;;;;;;;;;
+183;Animalia;;Cephalorhyncha;;;;;;;;;;;;;;;;;;;;;;
+193;Animalia;;Chaetognatha;;;;;;;;;;;;;;;;;;;;;;
+196;Animalia;;Chordata;;;;;;;;;;;;;;;;;;;;;;
+338;Animalia;;Cnidaria;;;;;;;;;;;;;;;;;;;;;;
+371;Animalia;;Ctenophora;;;;;;;;;;;;;;;;;;;;;;
+381;Animalia;;Cycliophora;;;;;;;;;;;;;;;;;;;;;;
+384;Animalia;;Echinodermata;;;;;;;;;;;;;;;;;;;;;;
+421;Animalia;;Echiura;;;;;;;;;;;;;;;;;;;;;;
+424;Animalia;;Ectoprocta;;;;;;;;;;;;;;;;;;;;;;
+431;Animalia;;Entoprocta;;;;;;;;;;;;;;;;;;;;;;
+436;Animalia;;Gastrotricha;;;;;;;;;;;;;;;;;;;;;;
+440;Animalia;;Gnathostomulida;;;;;;;;;;;;;;;;;;;;;;
+444;Animalia;;Hemichordata;;;;;;;;;;;;;;;;;;;;;;
+449;Animalia;;Mesozoa;;;;;;;;;;;;;;;;;;;;;;
+455;Animalia;;Mollusca;;;;;;;;;;;;;;;;;;;;;;
+511;Animalia;;Myxozoa;;;;;;;;;;;;;;;;;;;;;;Grassé, 1970
+517;Animalia;;Nematoda;;;;;;;;;;;;;;;;;;;;;;
+541;Animalia;;Nemertea;;;;;;;;;;;;;;;;;;;;;;
+549;Animalia;;Onychophora;;;;;;;;;;;;;;;;;;;;;;
+552;Animalia;;Phoronida;;;;;;;;;;;;;;;;;;;;;;
+555;Animalia;;Placozoa;;;;;;;;;;;;;;;;;;;;;;
+558;Animalia;;Platyhelminthes;;;;;;;;;;;;;;;;;;;;;;
+587;Animalia;;Porifera;;;;;;;;;;;;;;;;;;;;;;
+620;Animalia;;Rotifera;;;;;;;;;;;;;;;;;;;;;;
+628;Animalia;;Sipuncula;;;;;;;;;;;;;;;;;;;;;;
+631;Animalia;;Tardigrada;;;;;;;;;;;;;;;;;;;;;;Spallanzani, 1777
+1447;Animalia;;Choanozoa;;;;;;;;;;;;;;;;;;;;;;
+126323;Animalia;;Bryozoa;;;;;;;;;;;;;;;;;;;;;;
+128966;Animalia;;Choanoflagellata;;;;;;;;;;;;;;;;;;;;;;
+136021;Animalia;;Pogonophora;;;;;;;;;;;;;;;;;;;;;;
+136022;Animalia;;Pogonophora;;;Frenulata;;;;;;;;;;;;;;;;;;;Webb, 1969
+136023;Animalia;;Pogonophora;;;Monilifera;;;;;;;;;;;;;;;;;;;Ivanov, 1991
+136024;Animalia;;Pogonophora;;;Vestimentifera;;;;;;;;;;;;;;;;;;;Webb, 1969
+1448;Animalia;;Choanozoa;;;Mesomycetozoea;;;;;;;;;;;;;;;;;;;
+1452;Animalia;;Choanozoa;;;Not_assigned_6336;;;;;;;;;;;;;;;;;;;
+147216;Animalia;;Choanozoa;;;Choanoflagellatea;;;;;;;;;;;;;;;;;;;
+147219;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;;;;;;;;;;;;
+118262;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;;;;;;;;
+118267;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;;;;;;;;
+147236;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;;;;;;;;
+147447;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Acanthocorbis;;;;;;;S.Hara & E.Takah.
+147448;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Acanthoeca;;;;;;;W.N.Ellis
+147449;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Amoenoscapa;;;;;;;
+147450;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Cosmoeca;;;;;;;
+147451;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Crinolina;;;;;;;H.A.Thomsen
+147452;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Crucispina;;;;;;;
+147453;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Diaphanoeca;;;;;;;W.N.Ellis
+147454;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Diplotheca;;;;;;;
+147455;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Monocosta;;;;;;;
+147456;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Nannoeca;;;;;;;
+147457;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Parvicorbicula;;;;;;;Deflandre
+147458;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Platypleura;;;;;;;
+147459;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Pleurasiga;;;;;;;J.Schiller
+147460;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Polyfibula;;;;;;;
+147461;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Polyoeca;;;;;;;
+147462;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Saepicula;;;;;;;
+147463;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Saroeca;;;;;;;
+147464;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Savillea;;;;;;;
+147465;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Stephanoeca;;;;;;;W.N.Ellis
+147934;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Stephanoeca;;;complexa;;;;(Norris) Throndsen, 1974
+147935;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Stephanoeca;;;diplocostata;;;;Ellis, 1930
+147936;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Stephanoeca;;;elegans;;;;(Norris) Throndsen, 1974
+147937;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Stephanoeca;;;kentii;;;;Ellis, 1930
+149958;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Stephanoeca;;;apheles;;;;Thomsen, Buck & Chavez, 1991
+149959;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Stephanoeca;;;cupula;;;;(Leadbeater) Thomsen, 1988
+149960;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Stephanoeca;;;norrisii;;;;Thomsen, 1973
+149961;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Stephanoeca;;;urnula;;;;Thomsen, 1973
+149956;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Savillea;;;micropora;;;;(Norris) Leadbeater, 1975
+149957;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Savillea;;;parva;;;;(Ellis) Loeblich III, 1967
+149955;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Saroeca;;;attenuata;;;;Thomsen, 1979
+149954;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Saepicula;;;pulchra;;;;Leadbeater, 1980
+149953;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Polyoeca;;;dichotoma;;;;(Kent, 1881)
+147933;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Polyfibula;;;sphyrelata;;;;(Thomsen) Manton in Manton & Bremer, 1981
+147930;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Pleurasiga;;;echinocostata;;;;Espeland in Espeland & Throndsen, 1986
+147931;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Pleurasiga;;;minima;;;;Throndsen, 1970
+147932;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Pleurasiga;;;reynoldsii;;;;Throndsen, 1970
+147929;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Platypleura;;;infundibuliformis;;;;(Leadbeater) Thomsen in Thomsen & Boonruang, 1983
+147927;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Parvicorbicula;;;quadricostata;;;;Throndsen, 1970
+147928;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Parvicorbicula;;;socialis;;;;(Meunier) Deflandre, 1960
+149951;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Parvicorbicula;;;circularis;;;;Thomsen, 1976
+149952;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Parvicorbicula;;;superpositus;;;;Booth, 1990
+149950;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Nannoeca;;;minuta;;;;(Leadbeater) Thomsen, 1988
+149949;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Monocosta;;;fennica;;;;Thomsen, 1979
+149948;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Diplotheca;;;costata;;;;Valkanov, 1970
+147925;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Diaphanoeca;;;grandis;;;;Ellis, 1930
+147926;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Diaphanoeca;;;sphaerica;;;;Thomsen, 1982
+149946;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Diaphanoeca;;;pedicellata;;;;Leadbeater, 1972
+149947;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Diaphanoeca;;;undulata;;;;Thomsen, 1982
+147924;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Crucispina;;;cruciformis;;;;Espeland in Espeland & Throndsen, 1986
+147923;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Crinolina;;;isefiordensis;;;;Thomsen, 1976
+149945;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Crinolina;;;aperta;;;;(Leadbeater) Thomsen
+149943;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Cosmoeca;;;norvegica;;;;Thomsen in Thomsen & Boonruang, 1984
+149944;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Cosmoeca;;;ventricosa;;;;Thomsen in Thomsen & Boonruang, 1984
+149942;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Amoenoscapa;;;caudata;;;;
+149940;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Acanthoeca;;;brevipoda;;;;Ellis, 1930
+149941;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Acanthoeca;;;spectabilis;;;;Ellis, 1930
+147920;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Acanthocorbis;;;asymmetrica;;;;(Thomsen) Hara & Takahashi, 1984
+147921;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Acanthocorbis;;;campanula;;;;(Espeland) Thomsen in Thomsen, Buck & Chavez, 1991
+147922;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Acanthocorbis;;;unguiculata;;;;(Thomsen) Hara & Takahashi, 1984
+149938;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Acanthocorbis;;;apoda;;;;(Leadbeater) Hara & Takahashi, 1984
+149939;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Acanthoecaceae;;;;Acanthocorbis;;;haurakiana;;;;Thomsen in Thomsen, Buck & Chavez, 1991
+118268;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Stelexomonas;;;;;;;
+118270;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Salpingoeca;;;;;;;H.J. Clark
+118273;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Aulomonas;;;;;;;Lackey
+147603;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Bicosta;;;;;;;B.Leadb.
+147604;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Calliacantha;;;;;;;B.Leadb.
+147605;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Pachysoeca;;;;;;;
+150385;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Pachysoeca;;;ruttneri;;;;(Bourr.) Fott
+150386;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Pachysoeca;;;urnula;;;;(Skuja) ?
+147948;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Calliacantha;;;natans;;;;(Grøntved) Leadbeater, 1978
+150382;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Calliacantha;;;longicaudata;;;;(Leadbeater) Leadbeater, 1978
+150383;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Calliacantha;;;multispina;;;;Manton & Oates
+150384;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Calliacantha;;;simplex;;;;Manton & Oates, 1979
+147946;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Bicosta;;;minor;;;;(Reynolds) Leadbeater, 1978
+147947;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Bicosta;;;spinifera;;;;(Throndsen) Leadbeater, 1978
+150381;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Bicosta;;;antennigera;;;;Moestrup, 1979
+118274;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Aulomonas;;;purdyi;;;;Lackey
+118271;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Salpingoeca;;;frequentissima;;;;(Zacharias) Lemmermann
+149806;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Salpingoeca;;;aggregata;;;;Valkanov
+149807;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Salpingoeca;;;amphoridium;;;;James-Clark
+149808;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Salpingoeca;;;collaris;;;;Stokes
+149809;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Salpingoeca;;;gracilis;;;;Clark
+149810;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Salpingoeca;;;inquillata;;;;Kent
+149811;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Salpingoeca;;;marina;;;;James-Clark
+149812;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Salpingoeca;;;minuta;;;;Kent
+118269;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Salpingoecaceae;;;;Stelexomonas;;;dichotoma;;;;Lackey
+118263;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Codosiga;;;;;;;H.J.Clark
+118265;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Desmarella;;;;;;;Kent
+147601;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Monosiga;;;;;;;Kent
+147602;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Proterospongia;;;;;;;
+151163;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Sphaeroeca;;;;;;;Lauterborn
+151257;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Sphaeroeca;;;volvox;;;;Lauterborn
+147945;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Proterospongia;;;dybsoeënsis;;;;Grøntved
+147944;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Monosiga;;;mikropelagica;;;;Throndsen
+150379;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Monosiga;;;baltica;;;;Willén
+150380;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Monosiga;;;ovata;;;;Kent, 1880
+151239;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Monosiga;;;micropelagica;;;;Throndsen
+151240;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Monosiga;;;marina;;;;Grøntved
+118266;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Desmarella;;;moniliformis;;;;Kent
+118264;Animalia;;Choanozoa;;;Choanoflagellatea;;;;Craspedida;;;;Codonosigaceae;;;;Codosiga;;;botrytis;;;;(Ehrenberg) Kent
+1453;Animalia;;Choanozoa;;;Not_assigned_6336;;;;Not_assigned_6337;;;;;;;;;;;;;;;
+1449;Animalia;;Choanozoa;;;Mesomycetozoea;;;;Amoebidiales;;;;;;;;;;;;;;;
+1450;Animalia;;Choanozoa;;;Mesomycetozoea;;;;Eccrinales;;;;;;;;;;;;;;;
+1451;Animalia;;Choanozoa;;;Mesomycetozoea;;;;Not_assigned_6339;;;;;;;;;;;;;;;
+632;Animalia;;Tardigrada;;;Eutardigrada;;;;;;;;;;;;;;;;;;;Richters, 1926
+635;Animalia;;Tardigrada;;;Heterotardigrada;;;;;;;;;;;;;;;;;;;Marcus, 1927
+638;Animalia;;Tardigrada;;;Mesotardigrada;;;;;;;;;;;;;;;;;;;
+639;Animalia;;Tardigrada;;;Mesotardigrada;;;;Thermozodia;;;;;;;;;;;;;;;
+636;Animalia;;Tardigrada;;;Heterotardigrada;;;;Arthrotardigrada;;;;;;;;;;;;;;;Marcus, 1927
+637;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;;;;;;;;;;;;Richters, 1926
+51909;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscoididae;;;;;;;;;;;Kristensen & Hallas, 1980
+137920;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;;;;;;;;
+142628;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Bryodelphax;;;;;;;Thulin, 1928
+142631;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Diploechiniscus;;;;;;;Vicente, Fontoura, Cesari, Rebecchi, Serrano & Bertolani, 2013
+142633;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;;;;;Schultze, 1840
+142634;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Emydium;;;;;;;Doyère, 1840
+142638;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Hypechiniscus;;;;;;;Thulin, 1928
+142649;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Proechiniscus;;;;;;;Kristensen, 1987
+142650;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Pseudechiniscus;;;;;;;Thulin, 1911
+142655;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Testechiniscus;;;;;;;Kristensen, 1987
+142815;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Testechiniscus;;;spitsbergensis;;;;(Scourfield, 1897)
+142705;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Pseudechiniscus;;;facettalis;;;;Petersen, 1951
+142714;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Pseudechiniscus;;;hanneae;;;;Petersen, 1951
+142813;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Pseudechiniscus;;;suillus;;;;(Ehrenberg, 1853)
+142814;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Pseudechiniscus;;;victor;;;;(Ehrenberg, 1853)
+142871;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Pseudechiniscus;;;islandicus;;;;(Richters, 1904)
+142812;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Proechiniscus;;;hanneae;;;;(Peterson, 1951)
+142708;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Hypechiniscus;;;gladiator;;;;(Murray, 1905)
+142888;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Hypechiniscus;;;gladiator;gladiator;;;(Murray, 1905)
+142710;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Emydium;;;granulatum;;;;Doyère, 1840
+142785;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Emydium;;;spinulosus;;;;Doyère, 1840
+142795;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Emydium;;;testudo;;;;Doyère, 1840
+142669;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;arctomys;;;;Ehrenberg, 1853
+142682;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;blumi;;;;Richters, 1903
+142683;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;capillatus;;;;Ramazzotti, 1956
+142686;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;columinis;;;;Murray, 1911
+142707;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;gladiator;;;;Murray, 1905
+142724;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;islandicus;;;;Richters, 1904
+142733;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;merokensis;;;;Richters, 1903
+142735;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;militaris;;;;Murray, 1911
+142746;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;oihonnae;;;;Richters, 1903
+142757;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;phocae;;;;Bois-Reymond Marcus, E. du, 1944.
+142765;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;quadrispinosus;;;;Richters, 1902
+142767;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;reticulatus;;;;Murray, 1905
+142779;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;sigismundi;;;;Schultze, 1865
+142780;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;sinensis;;;;Pilato, 1974
+142784;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;spiculifer;;;;Schaudinn, 1901
+142786;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;spitsbergensis;;;;Scourfield, 1897
+142792;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;suillus;;;;Ehrenberg, 1853
+142797;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;trisetosus;;;;Cuénot, 1932
+142800;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;victor;;;;Ehrenberg, 1853
+142806;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;wendti;;;;Richters, 1903
+142811;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;granulatus;;;;(Doyère, 1840)
+142869;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;spinulosus;;;;(Doyère, 1840)
+142870;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;testudo;;;;(Doyère, 1840)
+142883;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;quadrispinosus;quadrispinosus;;;Richters, 1902
+142879;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;merokensis;merokensis;;;Richters, 1903
+142884;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;merokensis;suecicus;;;Thulin, 1911
+142872;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Echiniscus;;;blumi;blumi;;;Richters, 1903
+142810;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Diploechiniscus;;;oihonnae;;;;(Richters, 1903)
+142754;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Bryodelphax;;;parvulus;;;;Thulin, 1928
+142755;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Bryodelphax;;;parvuspolaris;;;;'Kaczmarek, Zawierucha, Smykla, & Michalczyk, 2012
+142852;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscidae;;;;Bryodelphax;;;sinensis;;;;(Pilato, 1974)
+51910;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscoididae;;;;Echiniscoides;;;;;;;Plate, 1888
+51911;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscoididae;;;;Echiniscoides;;;sigismundi;;;;(Schultze, 1865)
+142875;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscoididae;;;;Echiniscoides;;;sigismundi;groenlandicus;;;Kristensen & Hallas, 1980
+142887;Animalia;;Tardigrada;;;Heterotardigrada;;;;Echiniscoidea;;;;Echiniscoididae;;;;Echiniscoides;;;sigismundi;sigismundi;;;(Schultze, 1865)
+51906;Animalia;;Tardigrada;;;Heterotardigrada;;;;Arthrotardigrada;;;;Batillipedidae;;;;;;;;;;;Ramazzotti, 1962
+51907;Animalia;;Tardigrada;;;Heterotardigrada;;;;Arthrotardigrada;;;;Batillipedidae;;;;Batillipes;;;;;;;Richters, 1909
+51908;Animalia;;Tardigrada;;;Heterotardigrada;;;;Arthrotardigrada;;;;Batillipedidae;;;;Batillipes;;;mirus;;;;Richters, 1909
+633;Animalia;;Tardigrada;;;Eutardigrada;;;;Apochela;;;;;;;;;;;;;;;Schuster, Nelson, Grigarick & Christenberry, 1980
+634;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;;;;;;;;;;;;;Schuster, Nelson, Grigarick & Christenberry, 1980
+137922;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Eohypsibioidea;;;;;;;;;;;;
+137923;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Hypsibioidea;;;;;;;;;;;;
+137924;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Isohypsibioidea;;;;;;;;;;;;
+137925;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;;;;;;;;;;;;
+142613;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;;;;;;;;Thulin, 1928
+142614;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;;;;;;;;Guidetti, Gandolfi, Rossi & Bertolani, 2005
+142630;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;Dactylobiotus;;;;;;;Schuster, R. O., Nelson D.R., Grigarick A.A., Christenberry D., 1980.
+142646;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;Murrayon;;;;;;;Bertolani & Pilato, 1988
+142848;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;Murrayon;;;dianeae;;;;(Kristensen, 1982)
+142849;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;Murrayon;;;hastatus;;;;(Murray, 1907)
+142850;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;Murrayon;;;hibernicus;;;;(Murray, 1911)
+142851;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;Murrayon;;;pullari;;;;(Murray, 1907)
+142743;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;Dactylobiotus;;;octavi;;;;Guidetti, Altiero & Hansen, 2006
+142845;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;Dactylobiotus;;;ambiguus;;;;(Murray, 1907)
+142846;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;Dactylobiotus;;;ampullaceus;;;;(Thulin, 1911)
+142847;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;Dactylobiotus;;;dispar;;;;(Murray, 1907)
+142855;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Murrayidae;;;;Dactylobiotus;;;macronyx;;;;(Dujardin, 1851)
+142622;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Adorybiotus;;;;;;;Maucci & Ramazzotti, 1981
+142640;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;;;;;C.A.S. Schultze, 1834
+142644;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Minibiotus;;;;;;;Schuster, R. O., Nelson D.R., Grigarick A.A., Christenberry D., 1980.
+142647;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Paramacrobiotus;;;;;;;Guidetti, Schill, Bertolani, Dandekar & Wolf, 2009
+142653;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Richtersius;;;;;;;Pilato & Binda, 1989
+142654;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Tenuibiotus;;;;;;;Pilato & Lisi, 2011
+142854;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Tenuibiotus;;;willardi;;;;(Pilato, 1977)
+142868;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Tenuibiotus;;;voronkovi;;;;(Tumanov, 2007)
+142844;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Richtersius;;;coronifer;;;;(Richters, 1903)
+142842;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Paramacrobiotus;;;areolatus;;;;(Murray, 1907)
+142843;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Paramacrobiotus;;;richtersi;;;;(Murray, 1911)
+142716;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Minibiotus;;;harrylewisi;;;;Meyer & Hinton, 2009
+142841;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Minibiotus;;;intermedius;;;;(Plate, 1888)
+142867;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Minibiotus;;;crassidens;;;;(Murray, 1907)
+142660;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;ambiguus;;;;Murray, 1907
+142661;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;ampullaceus;;;;Thulin, 1911
+142665;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;annulatus;;;;Murray, 1905
+142667;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;antarcticus;;;;Richters, 1904
+142668;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;arcticus;;;;Murray, 1907
+142672;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;ariekammensis;;;;Weglarska, 1965
+142674;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;asperus;;;;Murray, 1906
+142676;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;augusti;;;;Murray, 1907
+142688;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;convergens;;;;Urbanowicz, 1925
+142690;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;coronifer;;;;Richters, 1903
+142693;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;crassidens;;;;Murray, J., 1907. Some South African Tardigrada. J. R. Micr. Soc. London, 5: 515 - 524
+142694;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;crenulatus;;;;Richters, 1904
+142697;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;dianeae;;;;Kristensen, 1982
+142698;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;dispar;;;;Murray, 1907
+142699;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;dujardin;;;;Doyère, 1840
+142701;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;echinogenitus;;;;Richters, 1903
+142709;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;grandis;;;;Richters, 1911
+142711;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;granulatus;;;;Richters, 1903
+142715;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;harmsworthi;;;;Murray, 1907
+142717;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;hastatus;;;;Murray, 1907
+142718;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;hibernicus;;;;Murray, 1911
+142719;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;hibiscus;;;;de Barros, 1942
+142721;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;hufelandi;;;;C.A.S. Schultze, 1834
+142723;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;intermedius;;;;Plate, 1888
+142725;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;islandicus;;;;'Richters, 1904
+142728;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;macrocalix;;;;Bertolani & Rebecchi, 1993
+142730;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;macronyx;;;;Dujardin, 1851
+142736;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;montanus;;;;Murray, 1910
+142739;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;norvegicus;;;;Mihelcic, 1971/1972
+142741;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;oberhaeuser;;;;Doyère, 1840
+142742;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;occidentalis;;;;Murray, 1910
+142747;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;orcadensis;;;;Murray, 1907
+142749;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;ornatus;;;;Richters, 1900
+142753;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;papillifer;;;;Murray, 1905
+142756;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;persimilis;;;;Binda & Pilato, 1972
+142764;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;pullari;;;;Murray, 1907
+142769;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;richtersi;;;;Murray, 1911
+142773;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;sattleri;;;;Richters, 1902
+142776;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;schaudinni;;;;Richters, 1909
+142783;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;spectabilis;;;;Thulin, 1928
+142791;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;stenostomus;;;;Richters, 1908
+142799;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;tuberculatus;;;;Plate, 1888
+142803;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;voronkovi;;;;Tumanov, 2007
+142807;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;willardi;;;;Pilato, 1977
+142809;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;zetlandicus;;;;Murray, 1907
+142881;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;occidentalis;occidentalis;;;Murray, 1910
+142878;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;islandicus;islandicus;;;Richters, 1904
+142877;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;hufelandi;hufelandi;;;C.A.S. Schultze, 1834
+142876;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;harmsworthi;harmsworthi;;;Murray, 1907
+142880;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;harmsworthi;obscurus;;;Dastych, 1985
+142886;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;echinogenitus;areolatus;;;Murray, 1907
