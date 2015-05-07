@@ -15,7 +15,13 @@ supplies an id of a data source from global names resolver/index. User gets
 back a new comma-separated file where scientific names from her list match data
 from the given data source.
 
-## Installation
+Compatibility
+-------------
+
+This gem is compatible with Ruby >= 2.1.0
+
+Installation
+------------
 
 Add this line to your application's Gemfile:
 
@@ -31,10 +37,12 @@ Or install it yourself as:
 
     $ gem install gn_crossmap
 
-## Usage
+Usage
+-----
 
 
-## Development
+Development
+-----------
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run
 `bin/console` for an interactive prompt that will allow you to experiment.
@@ -45,7 +53,8 @@ release a new version, update the version number in `version.rb`, and then run
 commits and tags, and push the `.gem` file to
 [rubygems.org][rubygems]
 
-## Contributing
+Contributing
+------------
 
 1. Fork it ( https://github.com/[my-github-username]/gn_crossmap/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
