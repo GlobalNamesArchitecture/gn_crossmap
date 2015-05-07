@@ -11,7 +11,6 @@ module GnCrossmap
 
     def initialize
       @data = []
-      @count = 0
       @fields = nil
     end
 

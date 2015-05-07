@@ -4,7 +4,6 @@ module GnCrossmap
   class Reader
     def initialize(csv_path)
       @csv_file = csv_path
-      @input = nil
     end
 
     def read
@@ -18,7 +17,7 @@ module GnCrossmap
       CSV.open(@csv_file, col_sep: ";").each do |row|
         dc.process_row(row)
       end
-      @input = dc.data
+      dc.data
     end
   end
 end
