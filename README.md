@@ -78,8 +78,8 @@ See [LICENSE][license] for details.
 [gem_link]: http://badge.fury.io/rb/gn_crossmap
 [ci_badge]: https://secure.travis-ci.org/GlobalNamesArchitecture/gn_crossmap.png
 [ci_link]: http://travis-ci.org/GlobalNamesArchitecture/gn_crossmap
-[cov_badge]: https://coveralls.io/repos/GlobalNamesArchitecture/gn_crossmap/badge.png
-[cov_link]: https://coveralls.io/r/GlobalNamesArchitecture/gn_crossmap
+[cov_badge]: https://coveralls.io/repos/GlobalNamesArchitecture/gn_crossmap/badge.png?branch=master
+[cov_link]: https://coveralls.io/r/GlobalNamesArchitecture/gn_crossmap?branch=master
 [code_badge]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap.png
 [code_link]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap
 [dep_badge]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap.png
