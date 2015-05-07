@@ -8,13 +8,6 @@
 This gem crossmaps a list of scientific names to names from a data source in GN
 Index
 
-User supplies a comma-separated file which breaks contains in one row a
-hierarchy path of known ranks, scientific name which can be split into its
-semantic elements and include authorship and taxon concept reference. User also
-supplies an id of a data source from global names resolver/index. User gets
-back a new comma-separated file where scientific names from her list match data
-from the given data source.
-
 Compatibility
 -------------
 
