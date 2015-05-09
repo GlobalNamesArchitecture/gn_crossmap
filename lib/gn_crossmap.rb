@@ -17,6 +17,7 @@ module GnCrossmap
       data = Reader.new(input).read
       writer = Writer.new(output)
       Resolver.new(writer, data_source_id).resolve(data)
+      output
     end
 
     def logger
