@@ -10,7 +10,7 @@ module GnCrossmap
       6 => "Genus part match"
     }
 
-    attr_reader :input
+    attr_reader :input, :writer
 
     def initialize(writer)
       @writer = writer

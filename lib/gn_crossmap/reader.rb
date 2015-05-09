@@ -7,6 +7,7 @@ module GnCrossmap
     end
 
     def read
+      GnCrossmap.log("Read input file '#{File.basename(@csv_file)}'")
       parse_input
     end
 
