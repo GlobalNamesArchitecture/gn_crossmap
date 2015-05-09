@@ -15,7 +15,8 @@ module GnCrossmap
 
     def parse_input
       dc = DataCollector.new
-      CSV.open(@csv_file, col_sep: ";").each do |row|
+      col_sep = GnCrossmap.which_col_sep(@csv_file)
+      CSV.open(@csv_file, col_sep: col_sep).each do |row|
         dc.process_row(row)
       end
       dc.data

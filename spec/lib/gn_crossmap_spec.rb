@@ -16,4 +16,11 @@ describe GnCrossmap do
       expect(subject.run(input, output, data_source_id)).to eq output
     end
   end
+
+  describe ".which_col_sep" do
+    let(:input) { FILES[:all_fields] }
+    it "returns separator of csv file" do
+      expect(subject.which_col_sep(input)).to eq ";"
+    end
+  end
 end

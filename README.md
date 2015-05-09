@@ -8,8 +8,7 @@
 This gem crossmaps a checklist of scientific names to names from a data source
 in [GN Resolver][resolver].
 
-Checklist has to be in a CSV format and use semicolon as a separator, '"' as a
-field quote.
+Checklist has to be in a CSV format.
 
 Compatibility
 -------------
@@ -36,17 +35,60 @@ Or install it yourself as:
 Usage
 -----
 
-You will be able to compare your checklist with any other data source uploaded
-to GN Resolver.
+### Input file format
 
-Currently choice of csv formats supported by the gem is limited to
-semicolon-separated files with the following Darwin Core Terms:
+- Comma Separated File with names of fields in first row.
+- Columns can be separated by tab, comma or semicolon
+- At least some columns should have recognizable fields
 
+    taxonID kingdom phylum class order family genus species
+    subspecies variety form scientificNameAuthorship scientificName
+    taxonRank
 
-    taxonID kingdom subkingdom phylum subphylum superclass class subclass
-    cohort superorder order suborder infraorder superfamily family subfamily
-    tribe subtribe genus subgenus section species subspecies variety form
-    scientificNameAuthorship
+#### Simple Example
+
+    taxonID;scientificName
+    1;Macrobiotus echinogenitus subsp. areolatus Murray, 1907
+    ...
+
+#### Rank Example
+
+    taxonID;scientificName;taxonRank
+    1;Macrobiotus echinogenitus f. areolatus Murray, 1907;form
+    ...
+
+#### Family and Authorship Example
+
+    taxonID;family;scientificName;scientificNameAuthorship
+    1;Macrobiotidae;Macrobiotus echinogenitus subsp. areolatus;Murray, 1907
+    ...
+
+#### Fine-grained Example
+
+    TaxonId;kingdom;subkingdom;phylum;subphylum;superclass;class;subclass;cohort;superorder;order;suborder;infraorder;superfamily;family;subfamily;tribe;subtribe;genus;subgenus;section;species;subspecies;variety;form;ScientificNameAuthorship
+    1;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;harmsworthi;obscurus;;;Dastych, 1985
+
+### Usage from command line
+
+    # to see help
+    $ crossmap --help
+
+    # to compare with default source (Catalogue of Life)
+    $ crossmap -i my_list.csv -o my_list_col.csv
+
+    # to compare with other source (Index Fungorum in this example)
+    $ crossmap -i my_list.csv -o my_list_if.csv -d 5
+
+### Usage as Ruby Library
+
+```ruby
+require "gn_crossmap"
+
+# If you want to change logger -- default Logging is to standard output
+GnCrossmap.logger = MyCustomLogger.new
+
+GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5)
+```
 
 Development
 -----------
@@ -92,3 +134,4 @@ See [LICENSE][license] for details.
 [dimus]: https://github.com/dimus
 [mbl]: http://mbl.edu
 [license]: https://github.com/GlobalNamesArchitecture/gn_crossmap/blob/master/LICENSE
+[terms]: http://rs.tdwg.org/dwc/terms

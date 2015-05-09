@@ -8,7 +8,7 @@ require "gn_crossmap/data_collector"
 require "gn_crossmap/resolver"
 require "gn_crossmap/result_processor"
 
-# Namespace module for crossmapping checklists with GN sources
+# Namespace module for crossmapping checklists wth GN sources
 module GnCrossmap
   class << self
     attr_writer :logger
@@ -18,6 +18,11 @@ module GnCrossmap
       writer = Writer.new(output)
       Resolver.new(writer, data_source_id).resolve(data)
       output
+    end
+
+    def which_col_sep(path)
+      line = open(path, &:readline)
+      [";", ",", "\t"].map { |s| [line.count(s), s] }.sort.last.last
     end
 
     def logger
