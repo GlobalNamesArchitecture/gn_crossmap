@@ -2,6 +2,8 @@ AllCops:
   Exclude:
     - db/**/*
     - bundle_bin/**/*
+  Include:
+    - exe/crossmap
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 Style/DotPosition:

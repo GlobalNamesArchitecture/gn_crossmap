@@ -8,4 +8,8 @@ require "gn_crossmap/result_processor"
 
 # Namespace module for crossmapping checklists with GN sources
 module GnCrossmap
+  def self.run(input, output, data_source_id)
+    data = Reader.new(input).read
+    Resolver.new(ouput, data_source_id).resolve(data)
+  end
 end

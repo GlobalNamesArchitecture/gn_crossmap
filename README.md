@@ -5,13 +5,16 @@
 [![CodeClimate][code_badge]][code_link]
 [![Dependency Status][dep_badge]][dep_link]
 
-This gem crossmaps a list of scientific names to names from a data source in GN
-Index
+This gem crossmaps a checklist of scientific names to names from a data source
+in [GN Resolver][resolver].
+
+Checklist has to be in a CSV format and use semicolon as a separator, '"' as a
+field quote.
 
 Compatibility
 -------------
 
-This gem is compatible with Ruby >= 2.1.0
+This gem is compatible with Ruby versions higher or equal to 2.1.0
 
 Installation
 ------------
@@ -33,6 +36,17 @@ Or install it yourself as:
 Usage
 -----
 
+You will be able to compare your checklist with any other data source uploaded
+to GN Resolver.
+
+Currently choice of csv formats supported by the gem is limited to
+semicolon-separated files with the following Darwin Core Terms:
+
+
+    taxonID kingdom subkingdom phylum subphylum superclass class subclass
+    cohort superorder order suborder infraorder superfamily family subfamily
+    tribe subtribe genus subgenus section species subspecies variety form
+    scientificNameAuthorship
 
 Development
 -----------
@@ -63,10 +77,6 @@ Author -- [Dmitry Mozzherin][dimus]
 Copyright (c) 2015 [Marine Biological Laboratory][mbl].
 See [LICENSE][license] for details.
 
-[rubygems]: https://rubygems.org
-[dimus]: https://github.com/dimus
-[mbl]: http://mbl.edu
-[license]:
 [gem_badge]: https://badge.fury.io/rb/gn_crossmap.png
 [gem_link]: http://badge.fury.io/rb/gn_crossmap
 [ci_badge]: https://secure.travis-ci.org/GlobalNamesArchitecture/gn_crossmap.png
@@ -77,3 +87,8 @@ See [LICENSE][license] for details.
 [code_link]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap
 [dep_badge]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap.png
 [dep_link]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap
+[resolver]: http://resolver.globalnames.org
+[rubygems]: https://rubygems.org
+[dimus]: https://github.com/dimus
+[mbl]: http://mbl.edu
+[license]: https://github.com/GlobalNamesArchitecture/gn_crossmap/blob/master/LICENSE
