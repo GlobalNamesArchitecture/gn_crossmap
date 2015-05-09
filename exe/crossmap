@@ -1,44 +1,23 @@
 #!/usr/bin/env ruby
-require "optparse"
+require "trollop"
 require "gn_crossmap"
 
 puts "This program requires Ruby >= v. 2.1.0" if RUBY_VERSION < "2.1.0"
 
 CATALOGUE_OF_LIFE = 1
 OUTPUT = "output.csv"
-OPTIONS = {
-  data_source_id: CATALOGUE_OF_LIFE,
-  output: OUTPUT
-}
+opts = Trollop.options do
+  banner "Compares a list of scientific names to scientific names from a " \
+    "data source from Global Names Resolver\n\n " \
+    "Usage:\n  crossmap [options]\n\noptions:"
 
-options = {}
+  opt(:input, "Path to intput file", type: :string)
+  opt(:output, "Path to output file", default: OUTPUT)
+  opt(:data_source_id, "Data source id from GN Resolver",
+      default: CATALOGUE_OF_LIFE)
+end
 
-OptionParser.new do |opts|
-  script_name = File.basename($PROGRAM_NAME)
-  opts.banner = "Usage: #{script_name} [options]"
+Trollop.die :input, "must be set" if opts[:input].nil?
+Trollop.die :input, "file must exist" unless File.exist?(opts[:input])
 
-  opts.on("-d", "--data_source_id", String,
-          "Data Source Id according to GN Resolver",
-          "Default: #{CATALOGUE_OF_LIFE}") { |d| options[:id] = d }
-
-  opts.on("-i", "--input", String, "Path to input CSV file") do |inp|
-    options[:input] = inp
-  end
-
-  opts.on("-o", "--output", String,
-          "Path to output CSV file",
-          "Default: #{OUTPUT}") { |out| options[:output] = out }
-
-  opts.separator ""
-
-  opts.on("-h", "--help", "Show this help message.") do
-    puts opts
-    exit
-  end
-
-end.parse!
-require "byebug"; byebug
-OPTIONS[:input] = File.expand_path(options[:input])
-OPTIONS[:output] = File.expand_path(options[:output]) if options[:output]
-OPTIONS[:data_source_id] = options[:id] if options[:id]
-GnCrossmap.run(OPTIONS[:input], OPTIONS[:output], OPTIONS[:data_source_id])
+GnCrossmap.run(opts[:input], opts[:output], opts[:data_source_id])
