@@ -1,6 +1,7 @@
 require "csv"
 require "rest_client"
 require "logger"
+require "biodiversity"
 require "gn_crossmap/version"
 require "gn_crossmap/reader"
 require "gn_crossmap/writer"
