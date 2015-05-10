@@ -1,0 +1,302 @@
+taconID,scientificName
+1,Animalia
+2,Acanthocephala
+14,Annelida
+39,Arthropoda
+176,Brachiopoda
+183,Cephalorhyncha
+193,Chaetognatha
+196,Chordata
+338,Cnidaria
+371,Ctenophora
+381,Cycliophora
+384,Echinodermata
+421,Echiura
+424,Ectoprocta
+431,Entoprocta
+436,Gastrotricha
+440,Gnathostomulida
+444,Hemichordata
+449,Mesozoa
+455,Mollusca
+511,Myxozoa
+517,Nematoda
+541,Nemertea
+549,Onychophora
+552,Phoronida
+555,Placozoa
+558,Platyhelminthes
+587,Porifera
+620,Rotifera
+628,Sipuncula
+631,Tardigrada
+1447,Choanozoa
+126323,Bryozoa
+128966,Choanoflagellata
+136021,Pogonophora
+136022,Frenulata
+136023,Monilifera
+136024,Vestimentifera
+1448,Mesomycetozoea
+1452,Not_assigned_6336
+147216,Choanoflagellatea
+147219,Craspedida
+118262,Codonosigaceae
+118267,Salpingoecaceae
+147236,Acanthoecaceae
+147447,Acanthocorbis
+147448,Acanthoeca
+147449,Amoenoscapa
+147450,Cosmoeca
+147451,Crinolina
+147452,Crucispina
+147453,Diaphanoeca
+147454,Diplotheca
+147455,Monocosta
+147456,Nannoeca
+147457,Parvicorbicula
+147458,Platypleura
+147459,Pleurasiga
+147460,Polyfibula
+147461,Polyoeca
+147462,Saepicula
+147463,Saroeca
+147464,Savillea
+147465,Stephanoeca
+147934,"Stephanoeca complexa (Norris) Throndsen, 1974"
+147935,"Stephanoeca diplocostata Ellis, 1930"
+147936,"Stephanoeca elegans (Norris) Throndsen, 1974"
+147937,"Stephanoeca kentii Ellis, 1930"
+149958,"Stephanoeca apheles Thomsen, Buck & Chavez, 1991"
+149959,"Stephanoeca cupula (Leadbeater) Thomsen, 1988"
+149960,"Stephanoeca norrisii Thomsen, 1973"
+149961,"Stephanoeca urnula Thomsen, 1973"
+149956,"Savillea micropora (Norris) Leadbeater, 1975"
+149957,"Savillea parva (Ellis) Loeblich III, 1967"
+149955,"Saroeca attenuata Thomsen, 1979"
+149954,"Saepicula pulchra Leadbeater, 1980"
+149953,"Polyoeca dichotoma (Kent, 1881)"
+147933,"Polyfibula sphyrelata (Thomsen) Manton in Manton & Bremer, 1981"
+147930,"Pleurasiga echinocostata Espeland in Espeland & Throndsen, 1986"
+147931,"Pleurasiga minima Throndsen, 1970"
+147932,"Pleurasiga reynoldsii Throndsen, 1970"
+147929,"Platypleura infundibuliformis (Leadbeater) Thomsen in Thomsen & Boonruang, 1983"
+147927,"Parvicorbicula quadricostata Throndsen, 1970"
+147928,"Parvicorbicula socialis (Meunier) Deflandre, 1960"
+149951,"Parvicorbicula circularis Thomsen, 1976"
+149952,"Parvicorbicula superpositus Booth, 1990"
+149950,"Nannoeca minuta (Leadbeater) Thomsen, 1988"
+149949,"Monocosta fennica Thomsen, 1979"
+149948,"Diplotheca costata Valkanov, 1970"
+147925,"Diaphanoeca grandis Ellis, 1930"
+147926,"Diaphanoeca sphaerica Thomsen, 1982"
+149946,"Diaphanoeca pedicellata Leadbeater, 1972"
+149947,"Diaphanoeca undulata Thomsen, 1982"
+147924,"Crucispina cruciformis Espeland in Espeland & Throndsen, 1986"
+147923,"Crinolina isefiordensis Thomsen, 1976"
+149945,Crinolina aperta (Leadbeater) Thomsen
+149943,"Cosmoeca norvegica Thomsen in Thomsen & Boonruang, 1984"
+149944,"Cosmoeca ventricosa Thomsen in Thomsen & Boonruang, 1984"
+149942,Amoenoscapa caudata
+149940,"Acanthoeca brevipoda Ellis, 1930"
+149941,"Acanthoeca spectabilis Ellis, 1930"
+147920,"Acanthocorbis asymmetrica (Thomsen) Hara & Takahashi, 1984"
+147921,"Acanthocorbis campanula (Espeland) Thomsen in Thomsen, Buck & Chavez, 1991"
+147922,"Acanthocorbis unguiculata (Thomsen) Hara & Takahashi, 1984"
+149938,"Acanthocorbis apoda (Leadbeater) Hara & Takahashi, 1984"
+149939,"Acanthocorbis haurakiana Thomsen in Thomsen, Buck & Chavez, 1991"
+118268,Stelexomonas
+118270,Salpingoeca
+118273,Aulomonas
+147603,Bicosta
+147604,Calliacantha
+147605,Pachysoeca
+150385,Pachysoeca ruttneri (Bourr.) Fott
+150386,Pachysoeca urnula (Skuja) ?
+147948,"Calliacantha natans (Grøntved) Leadbeater, 1978"
+150382,"Calliacantha longicaudata (Leadbeater) Leadbeater, 1978"
+150383,Calliacantha multispina Manton & Oates
+150384,"Calliacantha simplex Manton & Oates, 1979"
+147946,"Bicosta minor (Reynolds) Leadbeater, 1978"
+147947,"Bicosta spinifera (Throndsen) Leadbeater, 1978"
+150381,"Bicosta antennigera Moestrup, 1979"
+118274,Aulomonas purdyi Lackey
+118271,Salpingoeca frequentissima (Zacharias) Lemmermann
+149806,Salpingoeca aggregata Valkanov
+149807,Salpingoeca amphoridium James-Clark
+149808,Salpingoeca collaris Stokes
+149809,Salpingoeca gracilis Clark
+149810,Salpingoeca inquillata Kent
+149811,Salpingoeca marina James-Clark
+149812,Salpingoeca minuta Kent
+118269,Stelexomonas dichotoma Lackey
+118263,Codosiga
+118265,Desmarella
+147601,Monosiga
+147602,Proterospongia
+151163,Sphaeroeca
+151257,Sphaeroeca volvox Lauterborn
+147945,Proterospongia dybsoeënsis Grøntved
+147944,Monosiga mikropelagica Throndsen
+150379,Monosiga baltica Willén
+150380,"Monosiga ovata Kent, 1880"
+151239,Monosiga micropelagica Throndsen
+151240,Monosiga marina Grøntved
+118266,Desmarella moniliformis Kent
+118264,Codosiga botrytis (Ehrenberg) Kent
+1453,Not_assigned_6337
+1449,Amoebidiales
+1450,Eccrinales
+1451,Not_assigned_6339
+632,Eutardigrada
+635,Heterotardigrada
+638,Mesotardigrada
+639,Thermozodia
+636,Arthrotardigrada
+637,Echiniscoidea
+51909,Echiniscoididae
+137920,Echiniscidae
+142628,Bryodelphax
+142631,Diploechiniscus
+142633,Echiniscus
+142634,Emydium
+142638,Hypechiniscus
+142649,Proechiniscus
+142650,Pseudechiniscus
+142655,Testechiniscus
+142815,"Testechiniscus spitsbergensis (Scourfield, 1897)"
+142705,"Pseudechiniscus facettalis Petersen, 1951"
+142714,"Pseudechiniscus hanneae Petersen, 1951"
+142813,"Pseudechiniscus suillus (Ehrenberg, 1853)"
+142814,"Pseudechiniscus victor (Ehrenberg, 1853)"
+142871,"Pseudechiniscus islandicus (Richters, 1904)"
+142812,"Proechiniscus hanneae (Peterson, 1951)"
+142708,"Hypechiniscus gladiator (Murray, 1905)"
+142888,"Hypechiniscus gladiator subsp. gladiator (Murray, 1905)"
+142710,"Emydium granulatum Doyère, 1840"
+142785,"Emydium spinulosus Doyère, 1840"
+142795,"Emydium testudo Doyère, 1840"
+142669,"Echiniscus arctomys Ehrenberg, 1853"
+142682,"Echiniscus blumi Richters, 1903"
+142683,"Echiniscus capillatus Ramazzotti, 1956"
+142686,"Echiniscus columinis Murray, 1911"
+142707,"Echiniscus gladiator Murray, 1905"
+142724,"Echiniscus islandicus Richters, 1904"
+142733,"Echiniscus merokensis Richters, 1903"
+142735,"Echiniscus militaris Murray, 1911"
+142746,"Echiniscus oihonnae Richters, 1903"
+142757,"Echiniscus phocae Bois-Reymond Marcus, E. du, 1944."
+142765,"Echiniscus quadrispinosus Richters, 1902"
+142767,"Echiniscus reticulatus Murray, 1905"
+142779,"Echiniscus sigismundi Schultze, 1865"
+142780,"Echiniscus sinensis Pilato, 1974"
+142784,"Echiniscus spiculifer Schaudinn, 1901"
+142786,"Echiniscus spitsbergensis Scourfield, 1897"
+142792,"Echiniscus suillus Ehrenberg, 1853"
+142797,"Echiniscus trisetosus Cuénot, 1932"
+142800,"Echiniscus victor Ehrenberg, 1853"
+142806,"Echiniscus wendti Richters, 1903"
+142811,"Echiniscus granulatus (Doyère, 1840)"
+142869,"Echiniscus spinulosus (Doyère, 1840)"
+142870,"Echiniscus testudo (Doyère, 1840)"
+142883,"Echiniscus quadrispinosus subsp. quadrispinosus Richters, 1902"
+142879,"Echiniscus merokensis subsp. merokensis Richters, 1903"
+142884,"Echiniscus merokensis subsp. suecicus Thulin, 1911"
+142872,"Echiniscus blumi subsp. blumi Richters, 1903"
+142810,"Diploechiniscus oihonnae (Richters, 1903)"
+142754,"Bryodelphax parvulus Thulin, 1928"
+142755,"Bryodelphax parvuspolaris 'Kaczmarek, Zawierucha, Smykla, & Michalczyk, 2012"
+142852,"Bryodelphax sinensis (Pilato, 1974)"
+51910,Echiniscoides
+51911,"Echiniscoides sigismundi (Schultze, 1865)"
+142875,"Echiniscoides sigismundi subsp. groenlandicus Kristensen & Hallas, 1980"
+142887,"Echiniscoides sigismundi subsp. sigismundi (Schultze, 1865)"
+51906,Batillipedidae
+51907,Batillipes
+51908,"Batillipes mirus Richters, 1909"
+633,Apochela
+634,Parachela
+137922,Eohypsibioidea
+137923,Hypsibioidea
+137924,Isohypsibioidea
+137925,Macrobiotoidea
+142613,Macrobiotidae
+142614,Murrayidae
+142630,Dactylobiotus
+142646,Murrayon
+142848,"Murrayon dianeae (Kristensen, 1982)"
+142849,"Murrayon hastatus (Murray, 1907)"
+142850,"Murrayon hibernicus (Murray, 1911)"
+142851,"Murrayon pullari (Murray, 1907)"
+142743,"Dactylobiotus octavi Guidetti, Altiero & Hansen, 2006"
+142845,"Dactylobiotus ambiguus (Murray, 1907)"
+142846,"Dactylobiotus ampullaceus (Thulin, 1911)"
+142847,"Dactylobiotus dispar (Murray, 1907)"
+142855,"Dactylobiotus macronyx (Dujardin, 1851)"
+142622,Adorybiotus
+142640,Macrobiotus
+142644,Minibiotus
+142647,Paramacrobiotus
+142653,Richtersius
+142654,Tenuibiotus
+142854,"Tenuibiotus willardi (Pilato, 1977)"
+142868,"Tenuibiotus voronkovi (Tumanov, 2007)"
+142844,"Richtersius coronifer (Richters, 1903)"
+142842,"Paramacrobiotus areolatus (Murray, 1907)"
+142843,"Paramacrobiotus richtersi (Murray, 1911)"
+142716,"Minibiotus harrylewisi Meyer & Hinton, 2009"
+142841,"Minibiotus intermedius (Plate, 1888)"
+142867,"Minibiotus crassidens (Murray, 1907)"
+142660,"Macrobiotus ambiguus Murray, 1907"
+142661,"Macrobiotus ampullaceus Thulin, 1911"
+142665,"Macrobiotus annulatus Murray, 1905"
+142667,"Macrobiotus antarcticus Richters, 1904"
+142668,"Macrobiotus arcticus Murray, 1907"
+142672,"Macrobiotus ariekammensis Weglarska, 1965"
+142674,"Macrobiotus asperus Murray, 1906"
+142676,"Macrobiotus augusti Murray, 1907"
+142688,"Macrobiotus convergens Urbanowicz, 1925"
+142690,"Macrobiotus coronifer Richters, 1903"
+142693,"Macrobiotus crassidens Murray, J., 1907. Some South African Tardigrada. J. R. Micr. Soc. London, 5: 515 - 524"
+142694,"Macrobiotus crenulatus Richters, 1904"
+142697,"Macrobiotus dianeae Kristensen, 1982"
+142698,"Macrobiotus dispar Murray, 1907"
+142699,"Macrobiotus dujardin Doyère, 1840"
+142701,"Macrobiotus echinogenitus Richters, 1903"
+142709,"Macrobiotus grandis Richters, 1911"
+142711,"Macrobiotus granulatus Richters, 1903"
+142715,"Macrobiotus harmsworthi Murray, 1907"
+142717,"Macrobiotus hastatus Murray, 1907"
+142718,"Macrobiotus hibernicus Murray, 1911"
+142719,"Macrobiotus hibiscus de Barros, 1942"
+142721,"Macrobiotus hufelandi C.A.S. Schultze, 1834"
+142723,"Macrobiotus intermedius Plate, 1888"
+142725,"Macrobiotus islandicus 'Richters, 1904"
+142728,"Macrobiotus macrocalix Bertolani & Rebecchi, 1993"
+142730,"Macrobiotus macronyx Dujardin, 1851"
+142736,"Macrobiotus montanus Murray, 1910"
+142739,"Macrobiotus norvegicus Mihelcic, 1971/1972"
+142741,"Macrobiotus oberhaeuser Doyère, 1840"
+142742,"Macrobiotus occidentalis Murray, 1910"
+142747,"Macrobiotus orcadensis Murray, 1907"
+142749,"Macrobiotus ornatus Richters, 1900"
+142753,"Macrobiotus papillifer Murray, 1905"
+142756,"Macrobiotus persimilis Binda & Pilato, 1972"
+142764,"Macrobiotus pullari Murray, 1907"
+142769,"Macrobiotus richtersi Murray, 1911"
+142773,"Macrobiotus sattleri Richters, 1902"
+142776,"Macrobiotus schaudinni Richters, 1909"
+142783,"Macrobiotus spectabilis Thulin, 1928"
+142791,"Macrobiotus stenostomus Richters, 1908"
+142799,"Macrobiotus tuberculatus Plate, 1888"
+142803,"Macrobiotus voronkovi Tumanov, 2007"
+142807,"Macrobiotus willardi Pilato, 1977"
+142809,"Macrobiotus zetlandicus Murray, 1907"
+142881,"Macrobiotus occidentalis subsp. occidentalis Murray, 1910"
+142878,"Macrobiotus islandicus subsp. islandicus Richters, 1904"
+142877,"Macrobiotus hufelandi subsp. hufelandi C.A.S. Schultze, 1834"
+142876,"Macrobiotus harmsworthi subsp. harmsworthi Murray, 1907"
+142880,"Macrobiotus harmsworthi subsp. obscurus Dastych, 1985"
+142886,"Macrobiotus echinogenitus subsp. areolatus Murray, 1907"
+142886,"Macrobiotus echinogenitus var. areolatus Murray, 1907"
+142886,"Macrobiotus echinogenitus f. areolatus Murray, 1907"
