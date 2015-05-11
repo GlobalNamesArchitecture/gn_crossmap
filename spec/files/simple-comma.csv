@@ -1,4 +1,4 @@
-taconID,scientificName
+taxonID,scientificName
 1,Animalia
 2,Acanthocephala
 14,Annelida
@@ -298,5 +298,5 @@ taconID,scientificName
 142876,"Macrobiotus harmsworthi subsp. harmsworthi Murray, 1907"
 142880,"Macrobiotus harmsworthi subsp. obscurus Dastych, 1985"
 142886,"Macrobiotus echinogenitus subsp. areolatus Murray, 1907"
-142886,"Macrobiotus echinogenitus var. areolatus Murray, 1907"
-142886,"Macrobiotus echinogenitus f. areolatus Murray, 1907"
+142887,"Macrobiotus echinogenitus var. areolatus Murray, 1907"
+142888,"Macrobiotus echinogenitus f. areolatus Murray, 1907"
