@@ -125,8 +125,9 @@ See [LICENSE][license] for details.
 [ci_link]: http://travis-ci.org/GlobalNamesArchitecture/gn_crossmap
 [cov_badge]: https://coveralls.io/repos/GlobalNamesArchitecture/gn_crossmap/badge.png?branch=master
 [cov_link]: https://coveralls.io/r/GlobalNamesArchitecture/gn_crossmap?branch=master
-[code_badge]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap.png
+[code_badge]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap/badges/gpa.svg
 [code_link]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap
+[![Code Climate]()]()
 [dep_badge]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap.png
 [dep_link]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap
 [resolver]: http://resolver.globalnames.org
