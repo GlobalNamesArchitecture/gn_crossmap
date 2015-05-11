@@ -7,8 +7,6 @@ module GnCrossmap
                subspecies variety form)
     SPECIES_RANKS = %i(genus species subspecies variety form)
 
-    attr_reader :data
-
     def initialize(fields)
       @fields = fields
     end
