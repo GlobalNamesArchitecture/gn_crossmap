@@ -38,7 +38,7 @@ Usage
 ### Input file format
 
 - Comma Separated File with names of fields in first row.
-- Columns can be separated by tab, comma or semicolon
+- Columns can be separated by **tab**, **comma** or **semicolon**
 - At least some columns should have recognizable fields
 
 `taxonID` `kingdom` `phylum` `class` `order` `family` `genus` `species`
