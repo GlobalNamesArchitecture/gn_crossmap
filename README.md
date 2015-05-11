@@ -92,6 +92,22 @@ TaxonId|kingdom|subkingdom|phylum|subphylum|superclass|class|subclass|cohort|sup
 
 More examples can be found in [spec/files][files] directory
 
+### Output file format
+
+[Output][output] includes following fields:
+
+Field                | Description
+---------------------|-----------------------------------------------------------
+taxonID              | original ID attached to a name in the checklist
+scientificName       | name from the checklist
+matchedScientificName| name matched from the GN Reolver data source
+matchedCanonicalForm | canonical form of the matched name
+rank                 | rank from the source (if it was given/inferred)
+matchedRank          | corresponding rank from the data source
+matchType            | what kind of match it is
+editDistance         | for fuzzy-matching -- how many characters differ between checklist and data source name
+score                | heuristic score from 0 to 1 where 1 is a good match, 0.5 match requires further human investigation
+
 ### Usage from command line
 
     # to see help
@@ -160,3 +176,4 @@ See [LICENSE][license] for details.
 [license]: https://github.com/GlobalNamesArchitecture/gn_crossmap/blob/master/LICENSE
 [terms]: http://rs.tdwg.org/dwc/terms
 [files]:  https://github.com/GlobalNamesArchitecture/gn_crossmap/tree/master/spec/files
+[output]: https://github.com/GlobalNamesArchitecture/gn_crossmap/tree/master/spec/files/output-example.csv
