@@ -1,6 +1,6 @@
 module GnCrossmap
-  # Organizes data from CSV reader
-  class DataCollector
+  # Assemble data from CSV reader by checking column fields
+  class ColumnCollector
     RANKS = %i(kingdom subkingdom phylum subphylum superclass class
                subclass cohort superorder order suborder infraorder superfamily
                family subfamily tribe subtribe genus subgenus section species
@@ -9,31 +9,17 @@ module GnCrossmap
 
     attr_reader :data
 
-    def initialize
-      @data = []
-      @fields = nil
+    def initialize(fields)
+      @fields = fields
     end
 
-    def process_row(row)
+    def record(row)
       @row = row
-      @fields.nil? ? collect_fields : collect_data
+      id, name, rank = id_name_rank
+      (id && name && rank) ? { id: id, name: name, rank: rank } : nil
     end
 
     private
-
-    def collect_fields
-      @fields = @row.map { |f| f.downcase.to_sym }
-    end
-
-    def collect_data
-      @row = @fields.zip(@row).to_h
-      add_record
-    end
-
-    def add_record
-      id, name, rank = id_name_rank
-      @data << { id: id, name: name, rank: rank } if id && name && rank
-    end
 
     def id_name_rank
       id = @row[:taxonid]

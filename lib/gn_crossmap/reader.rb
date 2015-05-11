@@ -4,6 +4,7 @@ module GnCrossmap
   class Reader
     def initialize(csv_path)
       @csv_file = csv_path
+      @col_sep = col_sep
     end
 
     def read
@@ -13,10 +14,14 @@ module GnCrossmap
 
     private
 
+    def col_sep
+      line = open(@csv_file, &:readline)
+      [";", ",", "\t"].map { |s| [line.count(s), s] }.sort.last.last
+    end
+
     def parse_input
-      dc = DataCollector.new
-      col_sep = GnCrossmap.which_col_sep(@csv_file)
-      CSV.open(@csv_file, col_sep: col_sep).each do |row|
+      dc = Collector.new
+      CSV.open(@csv_file, col_sep: @col_sep).each do |row|
         dc.process_row(row)
       end
       dc.data
