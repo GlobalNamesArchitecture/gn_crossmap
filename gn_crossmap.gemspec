@@ -11,14 +11,10 @@ Gem::Specification.new do |gem|
 
   gem.summary       = "Crossmaps a list of scientific names to names from " \
                        "a data source in GN Index"
-  gem.description   = "User supplies a comma-separated file which breaks " \
-                       "contains in one row a hierarchy path of known ranks, " \
-                       "scientific name which can be split into its semantic " \
-                       "elements and include authorship and taxon concept " \
-                       "reference. User also supplies an id of a data source "\
-                       "from global names resolver/index. User gets back a " \
-                       "new comma-separated file where scientific names from " \
-                       "her list match data from the given data source."
+  gem.description   = "Gem uses a checklist in a comma-separated format as " \
+                      "an input, and returns back a new comma-separated " \
+                      "list crossmapping the scientific names to one of the " \
+                      "data sources from http://resolver.globalnames.org"
   gem.homepage      = "https://github.com/GlobalNamesArchitecture/gn_crossmap"
 
   gem.files         = `git ls-files -z`.split("\x0").
