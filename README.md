@@ -51,17 +51,32 @@ Usage
     1;Macrobiotus echinogenitus subsp. areolatus Murray, 1907
     ...
 
+|taxonID | scientificName                                          |
+|--------|---------------------------------------------------------|
+|1       | Animalia                                                |
+|2       | Macrobiotus echinogenitus subsp. areolatus Murray, 1907 |
+
 #### Rank Example
 
     taxonID;scientificName;taxonRank
     1;Macrobiotus echinogenitus f. areolatus Murray, 1907;form
     ...
 
+|taxonID | scientificName                                          | taxonRank |
+|--------|---------------------------------------------------------|-----------|
+|1       | Animalia                                                | kingdom   |
+|2       | Macrobiotus echinogenitus subsp. areolatus Murray, 1907 | subspecies|
+
 #### Family and Authorship Example
 
     taxonID;family;scientificName;scientificNameAuthorship
     1;Macrobiotidae;Macrobiotus echinogenitus subsp. areolatus;Murray, 1907
     ...
+
+|taxonID | family        | scientificName            | scientificNameAuthorship|
+|--------|---------------|---------------------------|-------------------------|
+|1       |               | Animalia                  |                         |
+|2       | Macrobiotidae | Macrobiotus echinogenitus | Murray                  |
 
 #### Fine-grained Example
 
