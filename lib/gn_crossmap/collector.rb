@@ -1,12 +1,6 @@
 module GnCrossmap
   # Assemble data from CSV reader by checking column fields
   class Collector
-    RANKS = %i(kingdom subkingdom phylum subphylum superclass class
-               subclass cohort superorder order suborder infraorder superfamily
-               family subfamily tribe subtribe genus subgenus section species
-               subspecies variety form)
-    SPECIES_RANKS = %i(genus species subspecies variety form)
-
     attr_reader :data
 
     def initialize
