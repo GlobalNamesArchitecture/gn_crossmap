@@ -129,7 +129,7 @@ See [LICENSE][license] for details.
 [code_link]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap
 [dep_badge]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap.png
 [dep_link]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap
-[resolver]: http://resolver.globalnames.org
+[resolver]: http://resolver.globalnames.org/data_sources
 [rubygems]: https://rubygems.org
 [dimus]: https://github.com/dimus
 [mbl]: http://mbl.edu
