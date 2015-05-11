@@ -1,6 +1,10 @@
 gn_crossmap CHANGELOG
 =====================
 
+0.1.4
+-----
+- [Dmitry Mozzherin][dimus] - Bug fixes
+
 0.1.3
 -----
 - [Dmitry Mozzherin][dimus] - README and gemspec changes
