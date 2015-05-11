@@ -131,6 +131,18 @@ matchType            | what kind of match it is
 editDistance         | for fuzzy-matching -- how many characters differ between checklist and data source name
 score                | heuristic score from 0 to 1 where 1 is a good match, 0.5 match requires further human investigation
 
+#### Types of Matches
+
+The output fomat returns 7 possible types of matches:
+
+1. **Exact match** - The exact name was matched (but ignoring non-ascii characters)
+2. **Exact match by canonical form of a name** - The canonical form of the name (a version of a scientific name that contains complete versions of the latin words, but lacks insertions of subtaxa, annotations, or authority information) was matched
+3. **Fuzzy match by canonical form** - The canonical form gave a fuzzy (detecting lexical or spelling variations of a name using Tony Rees' algorithm TAXAMATCH) match
+4. **Partial exact match by species part of canonical form** - The canonical form returned a partial but exact match
+5. **Partial fuzzy match by species part of canonical form** - The canonical form returned a partial, fuzzy match
+6. **Exact match by genus part of a canonical form** - The genus part of the canonical form of the species name returned an exact match
+7. **[Blank]** - No match
+
 Development
 -----------
 
