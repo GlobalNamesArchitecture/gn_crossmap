@@ -1,6 +1,10 @@
 gn_crossmap CHANGELOG
 =====================
 
+0.1.2
+-----
+- [Dmitry Mozzherin][dimus] - clean up docs, and remove junk code
+
 0.1.1
 -----
 - [Dmitry Mozzherin][dimus] - first official release -- works for full names
