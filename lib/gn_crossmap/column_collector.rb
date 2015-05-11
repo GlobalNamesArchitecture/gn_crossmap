@@ -13,21 +13,18 @@ module GnCrossmap
       @fields = fields
     end
 
-    def record(row)
+    def id_name_rank(row)
       @row = row
-      id, name, rank = id_name_rank
-      (id && name && rank) ? { id: id, name: name, rank: rank } : nil
+      id = @row[:taxonid]
+      return nil if id.to_s.strip == ""
+      rank = find_rank
+      return nil unless rank
+      name = assemble_name(rank)
+      return nil unless name
+      { id: id, name: name, rank: rank.to_s }
     end
 
     private
-
-    def id_name_rank
-      id = @row[:taxonid]
-      return [nil, nil, nil] if id.to_s.strip == ""
-      rank = find_rank
-      return [nil, nil, nil] unless rank
-      [id, assemble_name(rank), rank.to_s]
-    end
 
     def find_rank
       name_rank = nil

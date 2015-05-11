@@ -7,7 +7,7 @@ require "gn_crossmap/reader"
 require "gn_crossmap/writer"
 require "gn_crossmap/collector"
 require "gn_crossmap/column_collector"
-require "gn_crossmap/parser_collector"
+require "gn_crossmap/sci_name_collector"
 require "gn_crossmap/resolver"
 require "gn_crossmap/result_processor"
 

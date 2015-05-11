@@ -29,13 +29,13 @@ module GnCrossmap
 
     def collect_data
       @row = @fields.zip(@row).to_h
-      record = @collector.record(@row)
-      @data << record if record
+      data = @collector.id_name_rank(@row)
+      @data << data if data
     end
 
     def collector_factory
       if @fields.include?(:scientificname)
-        ParserCollector.new(@fields)
+        SciNameCollector.new(@fields)
       else
         ColumnCollector.new(@fields)
       end
