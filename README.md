@@ -90,6 +90,8 @@ TaxonId|kingdom|subkingdom|phylum|subphylum|superclass|class|subclass|cohort|sup
 136022|Animalia||Pogonophora|||Frenulata|||||||||||||||||||Webb, 1969
 565443|Animalia||Tardigrada|||Eutardigrada||||Parachela|||Macrobiotoidea|Macrobiotidae||||Macrobiotus|||harmsworthi|obscurus|||Dastych, 1985
 
+More examples can be found in [spec/files][files] directory
+
 ### Usage from command line
 
     # to see help
@@ -157,3 +159,4 @@ See [LICENSE][license] for details.
 [mbl]: http://mbl.edu
 [license]: https://github.com/GlobalNamesArchitecture/gn_crossmap/blob/master/LICENSE
 [terms]: http://rs.tdwg.org/dwc/terms
+[files]:  https://github.com/GlobalNamesArchitecture/gn_crossmap/tree/master/spec/files
