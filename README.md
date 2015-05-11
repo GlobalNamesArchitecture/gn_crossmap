@@ -41,9 +41,9 @@ Usage
 - Columns can be separated by tab, comma or semicolon
 - At least some columns should have recognizable fields
 
-    taxonID kingdom phylum class order family genus species
-    subspecies variety form scientificNameAuthorship scientificName
-    taxonRank
+`taxonID` `kingdom` `phylum` `class` `order` `family` `genus` `species`
+`subspecies` `variety` `form scientificNameAuthorship` `scientificName`
+`taxonRank`
 
 #### Simple Example
 
