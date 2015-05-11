@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "gn_crossmap/version"
 
 Gem::Specification.new do |gem|
-  gem.required_ruby_version = "=> 2.1"
+  gem.required_ruby_version = ">= 2.1"
   gem.name          = "gn_crossmap"
   gem.version       = GnCrossmap::VERSION
   gem.license       = "MIT"
