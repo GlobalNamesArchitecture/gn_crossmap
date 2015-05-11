@@ -35,6 +35,29 @@ Or install it yourself as:
 Usage
 -----
 
+### Usage from command line
+
+    # to see help
+    $ crossmap --help
+
+    # to compare with default source (Catalogue of Life)
+    $ crossmap -i my_list.csv -o my_list_col.csv
+
+    # to compare with other source (Index Fungorum in this example)
+    $ crossmap -i my_list.csv -o my_list_if.csv -d 5
+
+### Usage as Ruby Library
+
+```ruby
+require "gn_crossmap"
+
+# If you want to change logger -- default Logging is to standard output
+GnCrossmap.logger = MyCustomLogger.new
+
+GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5)
+```
+
+
 ### Input file format
 
 - Comma Separated File with names of fields in first row.
@@ -107,28 +130,6 @@ matchedRank          | corresponding rank from the data source
 matchType            | what kind of match it is
 editDistance         | for fuzzy-matching -- how many characters differ between checklist and data source name
 score                | heuristic score from 0 to 1 where 1 is a good match, 0.5 match requires further human investigation
-
-### Usage from command line
-
-    # to see help
-    $ crossmap --help
-
-    # to compare with default source (Catalogue of Life)
-    $ crossmap -i my_list.csv -o my_list_col.csv
-
-    # to compare with other source (Index Fungorum in this example)
-    $ crossmap -i my_list.csv -o my_list_if.csv -d 5
-
-### Usage as Ruby Library
-
-```ruby
-require "gn_crossmap"
-
-# If you want to change logger -- default Logging is to standard output
-GnCrossmap.logger = MyCustomLogger.new
-
-GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5)
-```
 
 Development
 -----------
