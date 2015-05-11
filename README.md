@@ -121,7 +121,7 @@ See [LICENSE][license] for details.
 
 [gem_badge]: https://badge.fury.io/rb/gn_crossmap.svg
 [gem_link]: http://badge.fury.io/rb/gn_crossmap
-[ci_badge]: https://secure.travis-ci.org/GlobalNamesArchitecture/gn_crossmap.png
+[ci_badge]: https://secure.travis-ci.org/GlobalNamesArchitecture/gn_crossmap.svg
 [ci_link]: http://travis-ci.org/GlobalNamesArchitecture/gn_crossmap
 [cov_badge]: https://coveralls.io/repos/GlobalNamesArchitecture/gn_crossmap/badge.svg?branch=master
 [cov_link]: https://coveralls.io/r/GlobalNamesArchitecture/gn_crossmap?branch=master
