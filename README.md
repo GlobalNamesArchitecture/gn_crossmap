@@ -119,7 +119,7 @@ Author -- [Dmitry Mozzherin][dimus]
 Copyright (c) 2015 [Marine Biological Laboratory][mbl].
 See [LICENSE][license] for details.
 
-[gem_badge]: https://badge.fury.io/rb/gn_crossmap.png
+[gem_badge]: https://badge.fury.io/rb/gn_crossmap.svg
 [gem_link]: http://badge.fury.io/rb/gn_crossmap
 [ci_badge]: https://secure.travis-ci.org/GlobalNamesArchitecture/gn_crossmap.png
 [ci_link]: http://travis-ci.org/GlobalNamesArchitecture/gn_crossmap
