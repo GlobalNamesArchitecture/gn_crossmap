@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/GlobalNamesArchitecture/gn_crossmap.png?label=ready&title=Ready)](https://waffle.io/GlobalNamesArchitecture/gn_crossmap)
 # GnCrossmap
 [![Gem Version][gem_badge]][gem_link]
 [![Continuous Integration Status][ci_badge]][ci_link]
