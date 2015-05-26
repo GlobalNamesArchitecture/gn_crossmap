@@ -1,4 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/GlobalNamesArchitecture/gn_crossmap.png?label=ready&title=Ready)](https://waffle.io/GlobalNamesArchitecture/gn_crossmap)
 # GnCrossmap
 [![Gem Version][gem_badge]][gem_link]
 [![Continuous Integration Status][ci_badge]][ci_link]
@@ -10,6 +9,8 @@ This gem crossmaps a checklist of scientific names to names from a data source
 in [GN Resolver][resolver].
 
 Checklist has to be in a CSV format.
+
+[Issues on waffle.io][waffle]
 
 Compatibility
 -------------
@@ -191,3 +192,4 @@ See [LICENSE][license] for details.
 [terms]: http://rs.tdwg.org/dwc/terms
 [files]:  https://github.com/GlobalNamesArchitecture/gn_crossmap/tree/master/spec/files
 [output]: https://github.com/GlobalNamesArchitecture/gn_crossmap/tree/master/spec/files/output-example.csv
+[waffle]: https://waffle.io/GlobalNamesArchitecture/gn_crossmap
