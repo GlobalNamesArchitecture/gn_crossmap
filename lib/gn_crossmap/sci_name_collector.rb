@@ -43,6 +43,8 @@ module GnCrossmap
       else
         normalize_rank(@parsed_name[:details][0][:infraspecies][-1][:rank])
       end
+    rescue NoMethodError
+      nil
     end
 
     def normalize_rank(rank)
