@@ -17,8 +17,10 @@ module GnCrossmap
     private
 
     def init_fields_collector
-      @fields = @row.map { |f| f.strip.downcase.to_sym }
+      @fields = @row.map { |f| f.to_s.strip.downcase.to_sym }
       @collector = collector_factory
+      err = "taxonID must be present in the csv header"
+      fail GnCrossmapError, err unless @fields.include?(:taxonid)
     end
 
     def collect_data

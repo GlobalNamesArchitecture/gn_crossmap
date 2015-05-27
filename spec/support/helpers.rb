@@ -6,5 +6,6 @@ FILES = {
   sciname_auth: "#{files_path}/authorship-tab.csv",
   sciname_rank: "#{files_path}/taxon-rank-tab.csv",
   spaces_in_fields: "#{files_path}/spaces-in-fields.csv",
+  no_taxonid: "#{files_path}/no-taxonid.csv",
   output: "/tmp/output.csv"
 }

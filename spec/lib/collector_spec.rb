@@ -55,9 +55,9 @@ describe GnCrossmap::Collector do
              ssection sspec ssubspecies vvariety fform scientificnameauthorship)
         end
         it "does not generate row" do
-          subject.process_row(fields)
-          subject.process_row(row)
-          expect(subject.data).to be_empty
+          expect do
+            subject.process_row(fields)
+          end.to raise_error
         end
       end
     end
@@ -93,6 +93,32 @@ describe GnCrossmap::Collector do
           [{ id: "142886",
              name: "Macrobiotus echinogenitus var. areolatus Murray, 1907",
              rank: "variety" }])
+      end
+    end
+
+    context "fields: no taxonid" do
+      let(:fields) { %w(id ScientificName scientificNameAuthorship) }
+      let(:row) do
+        ["142886", "Macrobiotus echinogenitus var. areolatus", "Murray, 1907"]
+      end
+
+      it "raises error" do
+        expect do
+          subject.process_row(fields)
+        end.to raise_error
+      end
+    end
+
+    context "taxonid is the only known field" do
+      let(:fields) { %w(taxonid field1 field2) }
+      let(:row) do
+        ["142886", "Macrobiotus echinogenitus var. areolatus", "Murray, 1907"]
+      end
+
+      it "raises error" do
+        expect do
+          subject.process_row(fields)
+        end.to raise_error
       end
     end
   end

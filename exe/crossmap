@@ -20,4 +20,8 @@ end
 Trollop.die :input, "must be set" if opts[:input].nil?
 Trollop.die :input, "file must exist" unless File.exist?(opts[:input])
 
-GnCrossmap.run(opts[:input], opts[:output], opts[:data_source_id])
+begin
+  GnCrossmap.run(opts[:input], opts[:output], opts[:data_source_id])
+rescue GnCrossmapError => e
+  GnCrossmap.logger.error(e.message)
+end

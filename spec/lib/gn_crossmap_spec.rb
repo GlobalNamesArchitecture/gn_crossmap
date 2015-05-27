@@ -23,5 +23,12 @@ describe GnCrossmap do
         expect(File.readlines(output).size).to be > 100
       end
     end
+
+    context "no taxonid" do
+      let(:input) { FILES[:no_taxonid] }
+      it "raises an error" do
+        expect { subject.run(input, output, data_source_id) }.to raise_error
+      end
+    end
   end
 end

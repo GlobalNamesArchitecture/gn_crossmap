@@ -9,6 +9,9 @@ module GnCrossmap
 
     def initialize(fields)
       @fields = fields
+      err = "At least some of these fields must exist in " \
+        "the CSV header: '#{RANKS.join('\', \'')}'"
+      fail GnCrossmapError, err if (RANKS - @fields).size == RANKS.size
     end
 
     def id_name_rank(row)
