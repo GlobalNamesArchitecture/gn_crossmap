@@ -21,7 +21,8 @@ module GnCrossmap
 
     def parse_input
       dc = Collector.new
-      CSV.open(@csv_file, col_sep: @col_sep).each do |row|
+      CSV.open(@csv_file, col_sep: @col_sep).each_with_index do |row, i|
+        GnCrossmap.log("Ingesting #{i + 1}th csv row") if (i + 1) % 10_000 == 0
         dc.process_row(row)
       end
       dc.data
