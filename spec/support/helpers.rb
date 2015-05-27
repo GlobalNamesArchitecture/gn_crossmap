@@ -5,5 +5,6 @@ FILES = {
   sciname: "#{files_path}/simple-comma.csv",
   sciname_auth: "#{files_path}/authorship-tab.csv",
   sciname_rank: "#{files_path}/taxon-rank-tab.csv",
+  spaces_in_fields: "#{files_path}/spaces-in-fields.csv",
   output: "/tmp/output.csv"
 }

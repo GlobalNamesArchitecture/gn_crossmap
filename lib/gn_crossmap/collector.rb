@@ -17,7 +17,7 @@ module GnCrossmap
     private
 
     def init_fields_collector
-      @fields = @row.map { |f| f.downcase.to_sym }
+      @fields = @row.map { |f| f.strip.downcase.to_sym }
       @collector = collector_factory
     end
 
