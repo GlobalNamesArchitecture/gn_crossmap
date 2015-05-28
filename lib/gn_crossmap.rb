@@ -19,8 +19,9 @@ module GnCrossmap
     attr_writer :logger
 
     def run(input, output, data_source_id)
-      data = Reader.new(input).read
-      writer = Writer.new(output)
+      reader = Reader.new(input)
+      data = reader.read
+      writer = Writer.new(output, reader.original_fields)
       Resolver.new(writer, data_source_id).resolve(data)
       output
     end

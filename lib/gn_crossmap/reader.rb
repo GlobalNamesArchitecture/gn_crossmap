@@ -2,9 +2,12 @@ module GnCrossmap
   # Reads supplied csv file and creates ruby structure to compare
   # with a Global Names Resolver source
   class Reader
+    attr_reader :original_fields
+
     def initialize(csv_path)
       @csv_file = csv_path
       @col_sep = col_sep
+      @original_fields = nil
     end
 
     def read
@@ -22,7 +25,9 @@ module GnCrossmap
     def parse_input
       dc = Collector.new
       CSV.open(@csv_file, col_sep: @col_sep).each_with_index do |row, i|
-        GnCrossmap.log("Ingesting #{i + 1}th csv row") if (i + 1) % 10_000 == 0
+        @original_fields = row.dup if @original_fields.nil?
+        i += 1
+        GnCrossmap.log("Ingesting #{i}th csv row") if i % 10_000 == 0
         dc.process_row(row)
       end
       dc.data

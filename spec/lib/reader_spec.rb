@@ -12,8 +12,12 @@ describe GnCrossmap::Reader do
     it "returns data from csv file" do
       input = subject.read
       expect(input).to be_kind_of Array
-      expect(input.first).
-        to eq(id: "1", name: "Animalia", rank: "kingdom")
+      expect(input.first).to eq(
+        id: "1", name: "Animalia", rank: "kingdom",
+        original: ["1", "Animalia", nil, nil, nil, nil, nil, nil, nil, nil,
+                   nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil,
+                   nil, nil, nil, nil, nil]
+      )
     end
   end
 end

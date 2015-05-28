@@ -1,5 +1,11 @@
 describe GnCrossmap::Resolver do
-  let(:writer) { GnCrossmap::Writer.new(FILES[:output]) }
+  let(:original_fields) do
+    %w(TaxonId kingdom subkingdom phylum subphylum superclass class subclass
+       cohort superorder order suborder infraorder superfamily family
+       subfamily tribe subtribe genus subgenus section species subspecies
+       variety form ScientificNameAuthorship)
+  end
+  let(:writer) { GnCrossmap::Writer.new(FILES[:output], original_fields) }
   subject { GnCrossmap::Resolver.new(writer, 1) }
 
   describe ".new" do
@@ -16,6 +22,7 @@ describe GnCrossmap::Resolver do
     end
 
     context "Resolver sends 500 error" do
+      let(:data) { GnCrossmap::Reader.new(FILES[:all_fields_tiny]).read }
       it "resolves data by every name" do
         allow(RestClient).to receive(:post) { fail RestClient::Exception }
         allow(GnCrossmap).to receive(:log) {}

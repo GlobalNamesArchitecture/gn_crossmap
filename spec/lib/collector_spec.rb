@@ -28,7 +28,12 @@ describe GnCrossmap::Collector do
           subject.process_row(row)
           expect(subject.data).to eq(
             [{ id: "142803", name: "Macrobiotus voronkovi Tumanov, 2007",
-               rank: "species" }])
+               rank: "species",
+               original: ["142803", "Animalia", "", "Tardigrada", "", "",
+                          "Eutardigrada", "", "", "", "Parachela", "", "",
+                          "Macrobiotoidea", "Macrobiotidae", "", "", "",
+                          "Macrobiotus", "", "", "voronkovi", "", "", "",
+                          "Tumanov, 2007"] }])
         end
       end
 
@@ -76,7 +81,10 @@ describe GnCrossmap::Collector do
         expect(subject.data).to eq(
           [{ id: "142886",
              name: "Macrobiotus echinogenitus var. areolatus Murray, 1907",
-             rank: "variety" }])
+             rank: "variety",
+             original: ["142886",
+                        "Macrobiotus echinogenitus var. areolatus " \
+                        "Murray, 1907"] }])
       end
     end
 
@@ -92,7 +100,9 @@ describe GnCrossmap::Collector do
         expect(subject.data).to eq(
           [{ id: "142886",
              name: "Macrobiotus echinogenitus var. areolatus Murray, 1907",
-             rank: "variety" }])
+             rank: "variety", original: [
+               "142886", "Macrobiotus echinogenitus var. areolatus",
+               "Murray, 1907"] }])
       end
     end
 

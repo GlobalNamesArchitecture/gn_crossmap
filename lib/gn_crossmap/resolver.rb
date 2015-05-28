@@ -7,6 +7,7 @@ module GnCrossmap
       @processor = GnCrossmap::ResultProcessor.new(writer)
       @ds_id = data_source_id
       @count = 0
+      @current_data = {}
       @batch = 200
     end
 
@@ -32,7 +33,9 @@ module GnCrossmap
     end
 
     def collect_names(slice)
+      @current_data = {}
       slice.each_with_object("") do |row, str|
+        @current_data[row[:id]] = row[:original]
         @processor.input[row[:id]] = { rank: row[:rank] }
         str << "#{row[:id]}|#{row[:name]}\n"
       end
@@ -40,7 +43,7 @@ module GnCrossmap
 
     def remote_resolve(names)
       res = RestClient.post(URL, data: names, data_source_ids: @ds_id)
-      @processor.process(res)
+      @processor.process(res, @current_data)
     rescue RestClient::Exception
       single_remote_resolve(names)
     end
@@ -51,7 +54,7 @@ module GnCrossmap
           res = RestClient.post(URL, data: name, data_source_ids: @ds_id)
           @processor.process(res)
         rescue RestClient::Exception => e
-          GnCrossmap.log("Resolver broke on '#{name}': #{e}")
+          GnCrossmap.logger.error("Resolver broke on '#{name}': #{e.message}")
           next
         end
       end

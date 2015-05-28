@@ -17,7 +17,8 @@ module GnCrossmap
       @input = {}
     end
 
-    def process(result)
+    def process(result, original_data)
+      @original_data = original_data
       res = rubyfy(result)
       res[:data].each do |d|
         d[:results].nil? ? write_empty_result(d) : write_result(d)
@@ -31,20 +32,24 @@ module GnCrossmap
     end
 
     def write_empty_result(datum)
-      res = [datum[:supplied_id], datum[:supplied_name_string], nil, nil,
-             @input[datum[:supplied_id]][:rank], nil, nil, nil, nil]
+      res = @original_data[datum[:supplied_id]]
+      res += [datum[:supplied_name_string], nil, nil,
+              @input[datum[:supplied_id]][:rank], nil, nil, nil, nil]
       @writer.write(res)
     end
 
     def write_result(datum)
-      datum[:results].each do |r|
-        res = [datum[:supplied_id], datum[:supplied_name_string],
-               r[:name_string], r[:canonical_form],
-               @input[datum[:supplied_id]][:rank],
-               matched_rank(r), matched_type(r),
-               r[:edit_distance], r[:score]]
-        @writer.write(res)
+      datum[:results].each do |result|
+        @writer.write(compile_result(datum, result))
       end
+    end
+
+    def compile_result(datum, result)
+      @original_data[datum[:supplied_id]] +
+        [datum[:supplied_name_string], result[:name_string],
+         result[:canonical_form], @input[datum[:supplied_id]][:rank],
+         matched_rank(result), matched_type(result),
+         result[:edit_distance], result[:score]]
     end
 
     def matched_rank(record)

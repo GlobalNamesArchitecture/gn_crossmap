@@ -26,7 +26,9 @@ module GnCrossmap
     def collect_data
       @row = @fields.zip(@row).to_h
       data = @collector.id_name_rank(@row)
-      @data << data if data
+      return unless data
+      data[:original] = @row.values
+      @data << data
     end
 
     def collector_factory
