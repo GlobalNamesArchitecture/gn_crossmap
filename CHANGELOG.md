@@ -1,6 +1,11 @@
 gn_crossmap CHANGELOG
 =====================
 
+0.1.6
+-----
+
+* @dimus - #8 - catching "No Method Found" exception at inferring rank
+
 0.1.5
 -----
 
