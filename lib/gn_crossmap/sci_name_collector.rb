@@ -32,6 +32,8 @@ module GnCrossmap
     rescue RuntimeError
       @parser = ScientificNameParser.new
       nil
+    rescue NoMethodError
+      nil
     end
 
     def infer_rank(words_in_canonical_form)

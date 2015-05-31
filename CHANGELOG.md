@@ -8,13 +8,13 @@ gn_crossmap CHANGELOG
 
 * @dimus - #3 - If ingest has more than 10K rows -- user will see logging events
 
-* @dimus - #4 Bug - Error messages if headers are missing necessary fields
+* @dimus - #4 Bug - Add error messages if headers don't have necessary fields
 
-* @dimus - #2 - Header fields are now allowed trailing spaces
+* @dimus - #2 - Header fields are now allowed to have trailing spaces
 
 * @dimus - #7 Bug - Empty rank does not break crossmapping anymore
 
-* @dimus - #1 Bug - add missing rest-client gem
+* @dimus - #1 Bug - Add missing rest-client gem
 
 0.1.4
 -----
