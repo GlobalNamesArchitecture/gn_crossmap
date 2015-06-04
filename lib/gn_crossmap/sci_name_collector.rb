@@ -18,10 +18,10 @@ module GnCrossmap
     private
 
     def find_name
-      name = @row[:scientificname].strip
+      name = @row[:scientificname].to_s.strip
       authorship = @row[:scientificnameauthorship].to_s.strip
       name = "#{name} #{authorship}" if authorship != ""
-      name
+      name.strip == "" ? nil : name.strip
     end
 
     def parse_rank
