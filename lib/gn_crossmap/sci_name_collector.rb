@@ -29,10 +29,8 @@ module GnCrossmap
       return nil if !@parsed_name[:canonical] || @parsed_name[:hybrid]
       words_num = @parsed_name[:canonical].split(" ").size
       infer_rank(words_num)
-    rescue RuntimeError
+    rescue StandardError
       @parser = ScientificNameParser.new
-      nil
-    rescue NoMethodError
       nil
     end
 

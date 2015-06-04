@@ -2,6 +2,7 @@ module GnCrossmap
   # Processes data received from the GN Resolver
   class ResultProcessor
     MATCH_TYPES = {
+      0 => "No match",
       1 => "Exact match",
       2 => "Canonical form exact match",
       3 => "Canonical form fuzzy match",
@@ -33,8 +34,9 @@ module GnCrossmap
 
     def write_empty_result(datum)
       res = @original_data[datum[:supplied_id]]
-      res += [datum[:supplied_name_string], nil, nil,
-              @input[datum[:supplied_id]][:rank], nil, nil, nil, nil]
+      res += [MATCH_TYPES[0], datum[:supplied_name_string], nil,
+              nil, @input[datum[:supplied_id]][:rank], nil,
+              nil, nil, nil]
       @writer.write(res)
     end
 
@@ -45,11 +47,15 @@ module GnCrossmap
     end
 
     def compile_result(datum, result)
-      @original_data[datum[:supplied_id]] +
-        [datum[:supplied_name_string], result[:name_string],
-         result[:canonical_form], @input[datum[:supplied_id]][:rank],
-         matched_rank(result), matched_type(result),
-         result[:edit_distance], result[:score]]
+      @original_data[datum[:supplied_id]] + new_data(datum, result)
+    end
+
+    def new_data(datum, result)
+      [GnUUID.uuid(datum[:supplied_name_string]),
+       matched_type(result), datum[:supplied_name_string], result[:name_string],
+       result[:canonical_form], @input[datum[:supplied_id]][:rank],
+       matched_rank(result), result[:edit_distance], result[:score],
+       result[:taxon_id]]
     end
 
     def matched_rank(record)

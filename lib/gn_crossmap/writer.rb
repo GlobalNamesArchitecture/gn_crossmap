@@ -21,9 +21,9 @@ module GnCrossmap
     private
 
     def output_fields(original_fields)
-      original_fields + [:inputName, :matchedName, :matchedCanonicalForm,
-                         :inputRank, :matchedRank, :matchedType,
-                         :matchedEditDistance, :marchedScore]
+      original_fields + [:matchedType, :inputName, :matchedName,
+                         :matchedCanonicalForm, :inputRank, :matchedRank,
+                         :matchedEditDistance, :marchedScore, :matchTaxonID]
     end
   end
 end

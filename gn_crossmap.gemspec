@@ -35,4 +35,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "rspec", "~> 3.2"
   gem.add_development_dependency "rubocop", "~> 0.31"
   gem.add_development_dependency "coveralls", "~> 0.8"
+  gem.add_development_dependency "gn_uuid", "~> 0.5"
 end
