@@ -1,4 +1,4 @@
-taxonID, scientificName
+http://something/taxonID, http://somethingelse/scientificName
 1,Animalia
 2,Acanthocephala
 14,Annelida

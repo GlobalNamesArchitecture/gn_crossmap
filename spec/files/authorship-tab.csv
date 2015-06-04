@@ -1,4 +1,4 @@
-taxonID	scientificName	scientificNameAuthorship	taxonRank
+dwc:taxonID	dwc:scientificName	dwc:scientificNameAuthorship	dwc:taxonRank
 1	Animalia		kingdom
 2	Acanthocephala		phylum
 14	Annelida		phylum
