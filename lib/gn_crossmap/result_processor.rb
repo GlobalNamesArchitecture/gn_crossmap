@@ -51,11 +51,10 @@ module GnCrossmap
     end
 
     def new_data(datum, result)
-      [GnUUID.uuid(datum[:supplied_name_string]),
-       matched_type(result), datum[:supplied_name_string], result[:name_string],
-       result[:canonical_form], @input[datum[:supplied_id]][:rank],
-       matched_rank(result), result[:edit_distance], result[:score],
-       result[:taxon_id]]
+      [matched_type(result), datum[:supplied_name_string],
+       result[:name_string], result[:canonical_form],
+       @input[datum[:supplied_id]][:rank], matched_rank(result),
+       result[:edit_distance], result[:score], result[:taxon_id]]
     end
 
     def matched_rank(record)
