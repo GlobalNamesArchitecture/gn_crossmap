@@ -1,5 +1,21 @@
 gn_crossmap CHANGELOG
 =====================
+0.1.7
+-----
+
+* @dimus - #13 - make it possible wo ingest field names like dwc:scientificName
+                 or http://example.org/term/sommeTerm
+
+* @dimus - #12 - fix a bug which prevents so salvage most of the names from a
+                 failing batch (if a batch of names has one name that breaks
+                 resolution on GN-resolver end)
+
+* @dimus - #11 - add taxonID from resolved data to results
+
+* @dimus - #10 - in resulting csv moved "match_type" field to be the first one
+                 to make it easier to see what matched and what did not
+
+* @dimus - #9 - fixed another problem with rank inffering
 
 0.1.6
 -----
