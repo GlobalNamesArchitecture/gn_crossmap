@@ -52,7 +52,7 @@ module GnCrossmap
       names.split("\n").each do |name|
         begin
           res = RestClient.post(URL, data: name, data_source_ids: @ds_id)
-          @processor.process(res)
+          @processor.process(res, @current_data)
         rescue RestClient::Exception => e
           GnCrossmap.logger.error("Resolver broke on '#{name}': #{e.message}")
           next
