@@ -1,5 +1,10 @@
 gn_crossmap CHANGELOG
 =====================
+0.1.8
+-----
+
+* @dimus - #14 - show synonym status
+
 0.1.7
 -----
 
