@@ -11,7 +11,7 @@ opts = Trollop.options do
     "data source from Global Names Resolver\n\n " \
     "Usage:\n  crossmap [options]\n\noptions:"
 
-  opt(:input, "Path to intput file", type: :string)
+  opt(:input, "Path to input file", type: :string)
   opt(:output, "Path to output file", default: OUTPUT)
   opt(:data_source_id, "Data source id from GN Resolver",
       default: CATALOGUE_OF_LIFE)
