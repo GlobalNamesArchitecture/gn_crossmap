@@ -5,7 +5,7 @@ require "gn_crossmap"
 puts "This program requires Ruby >= v. 2.1.0" if RUBY_VERSION < "2.1.0"
 
 CATALOGUE_OF_LIFE = 1
-OUTPUT = "output.csv"
+OUTPUT = "output.csv".freeze
 opts = Trollop.options do
   banner "Compares a list of scientific names to scientific names from a " \
     "data source from Global Names Resolver\n\n " \

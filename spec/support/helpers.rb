@@ -9,4 +9,4 @@ FILES = {
   spaces_in_fields: "#{files_path}/spaces-in-fields.csv",
   no_taxonid: "#{files_path}/no-taxonid.csv",
   output: "/tmp/output.csv"
-}
+}.freeze

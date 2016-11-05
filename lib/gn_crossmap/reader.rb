@@ -27,7 +27,7 @@ module GnCrossmap
       CSV.open(@csv_file, col_sep: @col_sep).each_with_index do |row, i|
         @original_fields = row.dup if @original_fields.nil?
         i += 1
-        GnCrossmap.log("Ingesting #{i}th csv row") if i % 10_000 == 0
+        GnCrossmap.log("Ingesting #{i}th csv row") if (i % 10_000).zero?
         dc.process_row(row)
       end
       dc.data
