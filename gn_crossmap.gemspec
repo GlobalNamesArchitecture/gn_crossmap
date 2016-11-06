@@ -19,15 +19,16 @@ Gem::Specification.new do |gem|
                       "data sources from http://resolver.globalnames.org"
   gem.homepage      = "https://github.com/GlobalNamesArchitecture/gn_crossmap"
 
-  gem.files         = `git ls-files -z`.split("\x0").
-    reject { |f| f.match(%r{^(test|spec|features)/}) }
+  gem.files         = `git ls-files -z`.
+                      split("\x0").
+                      reject { |f| f.match(%r{^(test|spec|features)/}) }
   gem.bindir        = "exe"
   gem.executables   = gem.files.grep(%r{^exe/}) { |f| File.basename(f) }
   gem.require_paths = ["lib"]
 
   gem.add_dependency "trollop", "~> 2.1"
   gem.add_dependency "biodiversity", "~> 3.1"
-  gem.add_dependency "rest-client", "~> 1.8"
+  gem.add_dependency "rest-client", "~> 2.0"
   gem.add_dependency "logger-colors", "~> 1.0"
 
   gem.add_development_dependency "bundler", "~> 1.7"

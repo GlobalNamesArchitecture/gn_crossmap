@@ -1,9 +1,10 @@
 # GnCrossmap
-[![Gem Version][gem_badge]][gem_link]
-[![Continuous Integration Status][ci_badge]][ci_link]
-[![Coverage Status][cov_badge]][cov_link]
-[![CodeClimate][code_badge]][code_link]
-[![Dependency Status][dep_badge]][dep_link]
+
+[![Gem Version][gem-badge]][gem-link]
+[![Continuous Integration Status][ci-badge]][ci-link]
+[![Coverage Status][cov-badge]][cov-link]
+[![CodeClimate][code-badge]][code-link]
+[![Dependency Status][dep-badge]][dep-link]
 
 This gem crossmaps a checklist of scientific names to names from a data source
 in [GN Resolver][resolver].
@@ -12,13 +13,11 @@ Checklist has to be in a CSV format.
 
 [Issues on waffle.io][waffle]
 
-Compatibility
--------------
+## Compatibility
 
 This gem is compatible with Ruby versions higher or equal to 2.1.0
 
-Installation
-------------
+## Installation
 
 Add this line to your application's Gemfile:
 
@@ -28,25 +27,24 @@ gem 'gn_crossmap'
 
 And then execute:
 
-    $ bundle
+    bundle
 
 Or install it yourself as:
 
-    $ gem install gn_crossmap
+    gem install gn_crossmap
 
-Usage
------
+## Usage
 
 ### Usage from command line
 
     # to see help
-    $ crossmap --help
+    crossmap --help
 
     # to compare with default source (Catalogue of Life)
-    $ crossmap -i my_list.csv -o my_list_col.csv
+    crossmap -i my_list.csv -o my_list_col.csv
 
     # to compare with other source (Index Fungorum in this example)
-    $ crossmap -i my_list.csv -o my_list_if.csv -d 5
+    crossmap -i my_list.csv -o my_list_if.csv -d 5
 
 ### Usage as Ruby Library
 
@@ -58,7 +56,6 @@ GnCrossmap.logger = MyCustomLogger.new
 
 GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5)
 ```
-
 
 ### Input file format
 
@@ -108,7 +105,6 @@ GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5)
     TaxonId;kingdom;subkingdom;phylum;subphylum;superclass;class;subclass;cohort;superorder;order;suborder;infraorder;superfamily;family;subfamily;tribe;subtribe;genus;subgenus;section;species;subspecies;variety;form;ScientificNameAuthorship
     1;Animalia;;Tardigrada;;;Eutardigrada;;;;Parachela;;;Macrobiotoidea;Macrobiotidae;;;;Macrobiotus;;;harmsworthi;obscurus;;;Dastych, 1985
 
-
 TaxonId|kingdom|subkingdom|phylum|subphylum|superclass|class|subclass|cohort|superorder|order|suborder|infraorder|superfamily|family|subfamily|tribe|subtribe|genus|subgenus|section|species|subspecies|variety|form|ScientificNameAuthorship
 -------|-------|----------|------|---------|----------|-----|--------|------|----------|-----|--------|----------|-----------|------|---------|-----|--------|-----|--------|-------|-------|----------|-------|----|------------------------
 136021|Animalia||Pogonophora||||||||||||||||||||||
@@ -145,8 +141,7 @@ The output fomat returns 7 possible types of matches:
 6. **Exact match by genus part of a canonical form** - The genus part of the canonical form of the species name returned an exact match
 7. **[Blank]** - No match
 
-Development
------------
+## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run
 `bin/console` for an interactive prompt that will allow you to experiment.
@@ -157,33 +152,31 @@ release a new version, update the version number in `version.rb`, and then run
 commits and tags, and push the `.gem` file to
 [rubygems.org][rubygems]
 
-Contributing
-------------
+## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/gn_crossmap/fork )
+1. Fork it ( ``https://github.com/[my-github-username]/gn_crossmap/fork`` )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
 
-Copyright
----------
+## Copyright
 
 Author -- [Dmitry Mozzherin][dimus]
 
-Copyright (c) 2015 [Marine Biological Laboratory][mbl].
+Copyright (c) 2015-2016 [Marine Biological Laboratory][mbl].
 See [LICENSE][license] for details.
 
-[gem_badge]: https://badge.fury.io/rb/gn_crossmap.svg
-[gem_link]: http://badge.fury.io/rb/gn_crossmap
-[ci_badge]: https://secure.travis-ci.org/GlobalNamesArchitecture/gn_crossmap.svg
-[ci_link]: http://travis-ci.org/GlobalNamesArchitecture/gn_crossmap
-[cov_badge]: https://coveralls.io/repos/GlobalNamesArchitecture/gn_crossmap/badge.svg?branch=master
-[cov_link]: https://coveralls.io/r/GlobalNamesArchitecture/gn_crossmap?branch=master
-[code_badge]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap/badges/gpa.svg
-[code_link]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap
-[dep_badge]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap.png
-[dep_link]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap
+[gem-badge]: https://badge.fury.io/rb/gn_crossmap.svg
+[gem-link]: http://badge.fury.io/rb/gn_crossmap
+[ci-badge]: https://secure.travis-ci.org/GlobalNamesArchitecture/gn_crossmap.svg
+[ci-link]: http://travis-ci.org/GlobalNamesArchitecture/gn_crossmap
+[cov-badge]: https://coveralls.io/repos/GlobalNamesArchitecture/gn_crossmap/badge.svg?branch=master
+[cov-link]: https://coveralls.io/r/GlobalNamesArchitecture/gn_crossmap?branch=master
+[code-badge]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap/badges/gpa.svg
+[code-link]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap
+[dep-badge]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap.png
+[dep-link]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap
 [resolver]: http://resolver.globalnames.org/data_sources
 [rubygems]: https://rubygems.org
 [dimus]: https://github.com/dimus
