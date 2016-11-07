@@ -16,20 +16,24 @@ require "gn_crossmap/result_processor"
 
 # Namespace module for crossmapping checklists wth GN sources
 module GnCrossmap
+  INPUT_MODE = "r:utf-8".freeze
+  OUTPUT_MODE = "w:utf-8".freeze
+
   class << self
     attr_writer :logger
 
     def run(input, output, data_source_id)
       input_io, output_io = io(input, output)
-      reader = Reader.new(input_io)
+      reader = Reader.new(input_io, input_name(input))
       data = reader.read
-      writer = Writer.new(output_io, reader.original_fields)
+      writer = Writer.new(output_io, reader.original_fields,
+                          output_name(output))
       Resolver.new(writer, data_source_id).resolve(data)
       output
     end
 
     def logger
-      @logger ||= Logger.new(STDOUT)
+      @logger ||= Logger.new(STDERR)
     end
 
     def log(message)
@@ -39,20 +43,34 @@ module GnCrossmap
     private
 
     def io(input, output)
-      fd_i = IO.sysopen(input, "r:utf-8")
-      io_in = input.nil? || input == "-" ? stdin : IO.new(fd_i, "r:utf-8")
-      fd_o = IO.sysopen(output, "w:utf-8")
-      io_out = output.nil? || output == "-" ? STDOUT : IO.new(fd_o, "w:utf-8")
+      io_in = iogen(input, INPUT_MODE)
+      io_out = iogen(output, OUTPUT_MODE)
       [io_in, io_out]
     end
 
-    def stdin
-      return STDIN if File.file?(STDIN)
-      Tempfile.open("stdin") do |temp|
-        IO.copy_stream(STDIN, temp)
-        STDIN.reopen(temp)
-        temp.unlink
+    def iogen(arg, mode)
+      if arg.nil? || arg == "-"
+        mode == INPUT_MODE ? stdin : STDOUT
+      else
+        fd_i = IO.sysopen(arg, mode)
+        IO.new(fd_i, mode)
       end
+    end
+
+    def stdin
+      temp = Tempfile.open("stdin")
+      return STDIN if File.file?(STDIN)
+      IO.copy_stream(STDIN, temp)
+      fd_i = IO.sysopen(temp, INPUT_MODE)
+      IO.new(fd_i, INPUT_MODE)
+    end
+
+    def input_name(input)
+      input.nil? || input == "-" ? "STDIN" : input
+    end
+
+    def output_name(output)
+      output.nil? || output == "-" ? "STDOUT" : output
     end
   end
 end

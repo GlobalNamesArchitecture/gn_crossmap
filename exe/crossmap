@@ -10,8 +10,7 @@ opts = Trollop.options do
   banner "Compares a list of scientific names to scientific names from a " \
     "data source from Global Names Resolver\n\n " \
     "Usage:\n  crossmap [options]\n\noptions:" \
-    "'-i -' and '-o -' redirect to standard input " \
-    "and stardart output correspondingly"
+    "\n\n  ('-i -' reads from STDIN; '-o -' writes to STDOUT)\n\n"
 
   opt(:input, "Path to input file", type: :string)
   opt(:output, "Path to output file", default: OUTPUT)
