@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 0.2.2
+
+* @dimus - gem update
+
 ## 0.2.1
 
 * @dimus - fixes in failing tests
