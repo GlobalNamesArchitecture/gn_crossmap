@@ -23,7 +23,7 @@
 
 * @dimus - #11 - add taxonID from resolved data to results
 
-* @dimus - #10 - in resulting csv moved "match_type" field to be the first one
+* @dimus - #10 - in resulting csv moved ``match_type`` field to be the first one
                  to make it easier to see what matched and what did not
 
 * @dimus - #9 - fixed another problem with rank inffering
