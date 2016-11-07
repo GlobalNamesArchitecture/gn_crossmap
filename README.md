@@ -46,6 +46,9 @@ Or install it yourself as:
     # to compare with other source (Index Fungorum in this example)
     crossmap -i my_list.csv -o my_list_if.csv -d 5
 
+    # to use standard intput and/or output
+    cat my_list.csv | crossmap -i - -o - > output
+
 ### Usage as Ruby Library
 
 ```ruby
