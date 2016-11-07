@@ -1,6 +1,6 @@
 describe GnCrossmap::Reader do
   let(:csv_io) { io(FILES[:all_fields], "r:utf-8") }
-  subject { GnCrossmap::Reader.new(csv_io) }
+  subject { GnCrossmap::Reader.new(csv_io, FILES[:all_fields]) }
 
   describe ".new" do
     it "creates instance" do
