@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 0.2.1
+
+* @dimus - fixes in failing tests
+
 ## 0.2.0
 
 * @dimus - #17 - change in API - use of STDIN and STDOUT for input and output
