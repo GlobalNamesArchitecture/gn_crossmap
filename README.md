@@ -178,7 +178,7 @@ See [LICENSE][license] for details.
 [cov-link]: https://coveralls.io/r/GlobalNamesArchitecture/gn_crossmap?branch=master
 [code-badge]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap/badges/gpa.svg
 [code-link]: https://codeclimate.com/github/GlobalNamesArchitecture/gn_crossmap
-[dep-badge]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap.png
+[dep-badge]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap.svg
 [dep-link]: https://gemnasium.com/GlobalNamesArchitecture/gn_crossmap
 [resolver]: http://resolver.globalnames.org/data_sources
 [rubygems]: https://rubygems.org
