@@ -1,7 +1,7 @@
 module GnCrossmap
   # Sends data to GN Resolver and collects results
   class Resolver
-    URL = "http://resolver.globalnames.org/name_resolvers.json"
+    URL = "http://resolver.globalnames.org/name_resolvers.json".freeze
 
     def initialize(writer, data_source_id)
       @processor = GnCrossmap::ResultProcessor.new(writer)

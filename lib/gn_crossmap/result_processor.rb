@@ -9,7 +9,7 @@ module GnCrossmap
       4 => "Partial canonical form match",
       5 => "Partial canonical form fuzzy match",
       6 => "Genus part match"
-    }
+    }.freeze
 
     attr_reader :input, :writer
 

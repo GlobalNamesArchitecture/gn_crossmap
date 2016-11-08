@@ -12,7 +12,7 @@ module GnCrossmap
       name = find_name
       rank = @row[:taxonrank]
       rank = parse_rank if rank.nil?
-      (id && name) ? { id: id, name: name, rank: rank } : nil
+      id && name ? { id: id, name: name, rank: rank } : nil
     end
 
     private

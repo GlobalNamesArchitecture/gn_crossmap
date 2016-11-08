@@ -27,7 +27,8 @@ describe GnCrossmap do
     context "no taxonid" do
       let(:input) { FILES[:no_taxonid] }
       it "raises an error" do
-        expect { subject.run(input, output, data_source_id) }.to raise_error
+        expect { subject.run(input, output, data_source_id) }.
+          to raise_error GnCrossmapError
       end
     end
   end

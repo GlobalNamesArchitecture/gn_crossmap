@@ -5,11 +5,12 @@ require "gn_crossmap"
 puts "This program requires Ruby >= v. 2.1.0" if RUBY_VERSION < "2.1.0"
 
 CATALOGUE_OF_LIFE = 1
-OUTPUT = "output.csv"
+OUTPUT = "output.csv".freeze
 opts = Trollop.options do
   banner "Compares a list of scientific names to scientific names from a " \
     "data source from Global Names Resolver\n\n " \
-    "Usage:\n  crossmap [options]\n\noptions:"
+    "Usage:\n  crossmap [options]\n\noptions:" \
+    "\n\n  ('-i -' reads from STDIN; '-o -' writes to STDOUT)\n\n"
 
   opt(:input, "Path to input file", type: :string)
   opt(:output, "Path to output file", default: OUTPUT)
@@ -18,7 +19,9 @@ opts = Trollop.options do
 end
 
 Trollop.die :input, "must be set" if opts[:input].nil?
-Trollop.die :input, "file must exist" unless File.exist?(opts[:input])
+unless File.exist?(opts[:input]) || opts[:input] == "-"
+  Trollop.die :input, "file must exist"
+end
 
 begin
   GnCrossmap.run(opts[:input], opts[:output], opts[:data_source_id])

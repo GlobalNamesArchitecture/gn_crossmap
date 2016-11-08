@@ -9,3 +9,5 @@
 /tmp/
 output.csv
 .vim.custom
+t
+gn_crossmap-*.gem

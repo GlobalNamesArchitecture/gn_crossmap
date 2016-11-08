@@ -33,7 +33,8 @@ describe GnCrossmap::Collector do
                           "Eutardigrada", "", "", "", "Parachela", "", "",
                           "Macrobiotoidea", "Macrobiotidae", "", "", "",
                           "Macrobiotus", "", "", "voronkovi", "", "", "",
-                          "Tumanov, 2007"] }])
+                          "Tumanov, 2007"] }]
+          )
         end
       end
 
@@ -62,7 +63,7 @@ describe GnCrossmap::Collector do
         it "does not generate row" do
           expect do
             subject.process_row(fields)
-          end.to raise_error
+          end.to raise_error GnCrossmapError
         end
       end
     end
@@ -84,7 +85,8 @@ describe GnCrossmap::Collector do
              rank: "variety",
              original: ["142886",
                         "Macrobiotus echinogenitus var. areolatus " \
-                        "Murray, 1907"] }])
+                        "Murray, 1907"] }]
+        )
       end
     end
 
@@ -102,7 +104,9 @@ describe GnCrossmap::Collector do
              name: "Macrobiotus echinogenitus var. areolatus Murray, 1907",
              rank: "variety", original: [
                "142886", "Macrobiotus echinogenitus var. areolatus",
-               "Murray, 1907"] }])
+               "Murray, 1907"
+             ] }]
+        )
       end
     end
 
@@ -115,7 +119,7 @@ describe GnCrossmap::Collector do
       it "raises error" do
         expect do
           subject.process_row(fields)
-        end.to raise_error
+        end.to raise_error GnCrossmapError
       end
     end
 
@@ -128,7 +132,7 @@ describe GnCrossmap::Collector do
       it "raises error" do
         expect do
           subject.process_row(fields)
-        end.to raise_error
+        end.to raise_error GnCrossmapError
       end
     end
   end

@@ -1,12 +1,13 @@
 module GnCrossmap
   # Saves output from GN Resolver to disk
   class Writer
-    def initialize(output_path, original_fields)
-      @path = output_path
+    def initialize(output_io, original_fields, output_name)
+      @output_io = output_io
       @output_fields = output_fields(original_fields)
-      @output = CSV.open(@path, "w:utf-8")
+      @output = CSV.new(@output_io)
       @output << @output_fields
-      GnCrossmap.log("Open output file '#{@path}'")
+      @output_name = output_name
+      GnCrossmap.log("Open output to #{@output_name}")
     end
 
     def write(record)
@@ -14,8 +15,8 @@ module GnCrossmap
     end
 
     def close
-      GnCrossmap.log("Close output file '#{@path}'")
-      @output.close
+      GnCrossmap.log("Close #{@output_name}")
+      @output_io.close
     end
 
     private

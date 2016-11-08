@@ -4,14 +4,14 @@ module GnCrossmap
     RANKS = %i(kingdom subkingdom phylum subphylum superclass class
                subclass cohort superorder order suborder infraorder superfamily
                family subfamily tribe subtribe genus subgenus section species
-               subspecies variety form)
-    SPECIES_RANKS = %i(genus species subspecies variety form)
+               subspecies variety form).freeze
+    SPECIES_RANKS = %i(genus species subspecies variety form).freeze
 
     def initialize(fields)
       @fields = fields
       err = "At least some of these fields must exist in " \
         "the CSV header: '#{RANKS.join('\', \'')}'"
-      fail GnCrossmapError, err if (RANKS - @fields).size == RANKS.size
+      raise GnCrossmapError, err if (RANKS - @fields).size == RANKS.size
     end
 
     def id_name_rank(row)
@@ -29,7 +29,7 @@ module GnCrossmap
 
     def find_rank
       name_rank = nil
-      RANKS.reverse_each do  |rank|
+      RANKS.reverse_each do |rank|
         next if @row[rank].to_s.strip == ""
         name_rank = rank
         break
