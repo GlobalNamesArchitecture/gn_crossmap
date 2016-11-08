@@ -24,7 +24,7 @@ module GnCrossmap
       original_fields + [:matchedType, :inputName, :matchedName,
                          :matchedCanonicalForm, :inputRank, :matchedRank,
                          :synonymStatus, :acceptedName, :matchedEditDistance,
-                         :marchedScore, :matchTaxonID]
+                         :matchedScore, :matchTaxonID]
     end
   end
 end
