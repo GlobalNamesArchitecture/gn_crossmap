@@ -16,6 +16,8 @@ opts = Trollop.options do
   opt(:output, "Path to output file", default: OUTPUT)
   opt(:data_source_id, "Data source id from GN Resolver",
       default: CATALOGUE_OF_LIFE)
+  opt(:skip_original, "If given, only 'taxonID' is shown " \
+      "from the original input", type: :boolean)
 end
 
 Trollop.die :input, "must be set" if opts[:input].nil?
@@ -24,7 +26,8 @@ unless File.exist?(opts[:input]) || opts[:input] == "-"
 end
 
 begin
-  GnCrossmap.run(opts[:input], opts[:output], opts[:data_source_id])
+  GnCrossmap.run(opts[:input], opts[:output], opts[:data_source_id],
+                 opts[:skip_original])
 rescue GnCrossmapError => e
   GnCrossmap.logger.error(e.message)
 end

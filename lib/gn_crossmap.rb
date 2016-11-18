@@ -22,9 +22,9 @@ module GnCrossmap
   class << self
     attr_writer :logger
 
-    def run(input, output, data_source_id)
+    def run(input, output, data_source_id, skip_original)
       input_io, output_io = io(input, output)
-      reader = Reader.new(input_io, input_name(input))
+      reader = Reader.new(input_io, input_name(input), skip_original)
       data = reader.read
       writer = Writer.new(output_io, reader.original_fields,
                           output_name(output))

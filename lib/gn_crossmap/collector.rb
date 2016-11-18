@@ -3,10 +3,11 @@ module GnCrossmap
   class Collector
     attr_reader :data
 
-    def initialize
+    def initialize(skip_original)
       @data = []
       @fields = nil
       @collector = nil
+      @skip_original = skip_original
     end
 
     def process_row(row)
@@ -20,7 +21,12 @@ module GnCrossmap
       @fields = @row.map { |f| prepare_field(f) }
       @collector = collector_factory
       err = "taxonID must be present in the csv header"
-      raise GnCrossmapError, err unless @fields.include?(:taxonid)
+      raise GnCrossmapError, err unless taxon_id?
+    end
+
+    def taxon_id?
+      @taxon_id_index = @fields.index(:taxonid)
+      !@taxon_id_index.nil?
     end
 
     def prepare_field(field)
@@ -32,8 +38,12 @@ module GnCrossmap
       @row = @fields.zip(@row).to_h
       data = @collector.id_name_rank(@row)
       return unless data
-      data[:original] = @row.values
+      data[:original] = prepare_original
       @data << data
+    end
+
+    def prepare_original
+      @skip_original ? [@row[:taxonid]] : @row.values
     end
 
     def collector_factory

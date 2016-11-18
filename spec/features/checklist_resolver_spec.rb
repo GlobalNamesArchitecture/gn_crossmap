@@ -5,7 +5,7 @@ describe "resolving variety of csv files" do
         output = "/tmp/#{input}-processed.csv"
         input = FILES[input]
         FileUtils.rm(output) if File.exist?(output)
-        GnCrossmap.run(input, output, 1)
+        GnCrossmap.run(input, output, 1, true)
         expect(File.exist?(output)).to be true
       end
     end

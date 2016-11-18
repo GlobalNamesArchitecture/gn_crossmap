@@ -1,4 +1,7 @@
 describe GnCrossmap::Collector do
+  let(:skip_original) { false }
+  subject { GnCrossmap::Collector.new(skip_original) }
+
   context "name assembled from columns" do
     let(:fields) do
       %i(taxonid kingdom subkingdom phylum subphylum superclass class
@@ -6,7 +9,6 @@ describe GnCrossmap::Collector do
          family subfamily tribe subtribe genus subgenus section species
          subspecies variety form scientificnameauthorship)
     end
-    subject { GnCrossmap::Collector.new }
 
     describe ".new" do
       it "initializes" do
