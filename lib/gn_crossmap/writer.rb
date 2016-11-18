@@ -4,7 +4,7 @@ module GnCrossmap
     def initialize(output_io, original_fields, output_name)
       @output_io = output_io
       @output_fields = output_fields(original_fields)
-      @output = CSV.new(@output_io)
+      @output = CSV.new(@output_io, col_sep: "\t")
       @output << @output_fields
       @output_name = output_name
       GnCrossmap.log("Open output to #{@output_name}")
