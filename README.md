@@ -57,7 +57,7 @@ require "gn_crossmap"
 # If you want to change logger -- default Logging is to standard output
 GnCrossmap.logger = MyCustomLogger.new
 
-GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5)
+GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5, true)
 ```
 
 ### Input file format
