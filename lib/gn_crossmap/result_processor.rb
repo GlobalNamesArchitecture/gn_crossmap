@@ -55,7 +55,7 @@ module GnCrossmap
       [matched_type(result), datum[:supplied_name_string],
        result[:name_string], result[:canonical_form],
        @input[datum[:supplied_id]][:rank], matched_rank(result),
-       synonym, result[:current_name_string],
+       synonym, result[:current_name_string] || result[:name_string],
        result[:edit_distance], result[:score], result[:taxon_id]]
     end
 
