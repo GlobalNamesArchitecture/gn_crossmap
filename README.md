@@ -60,13 +60,14 @@ cat my_list.csv | crossmap -i my_list.csv -s
 
 ### Usage as Ruby Library (API description)
 
-#### `GnCrossmap.run` method
+#### `GnCrossmap.run`
+
+Compares an input list to a data source from [GN Resolver][resolver] and
+writes result into an output file.
 
 ```ruby
 GnCrossmap.run(input, output, data_source_id, skip_original)
 ```
-
-#### Parameters
 
 ``input``
 : (string) Either a path to a csv file with list of names, or "-" which
@@ -81,6 +82,12 @@ designates `STDIN`
 ``skip_original``
 : (boolean) if true only `taxonID` is preserved from original data. Otherwise
 all original data is preserved
+
+#### `GnCrossmap.logger=`
+
+Allows to set logger to a custom logger (default is `STDERR`)
+
+#### Usage Example
 
 ```ruby
 require "gn_crossmap"
