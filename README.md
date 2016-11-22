@@ -92,7 +92,7 @@ Allows to set logger to a custom logger (default is `STDERR`)
 ```ruby
 require "gn_crossmap"
 
-# If you want to change logger -- default Logging is to standard output
+# If you want to change logger -- default Logging is to standard error
 GnCrossmap.logger = MyCustomLogger.new
 
 GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5, true)

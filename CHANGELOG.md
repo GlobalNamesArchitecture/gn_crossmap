@@ -1,5 +1,13 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 1.0.0
+
+* @dimus - #18 output file optionally removes original fields except `taxonID`
+
+* @dimus - #19 `acceptedName` field if filled for all matched names
+
+* @dimus - #22 output is now tab-separated instead of comma-separated
+
 ## 0.2.2
 
 * @dimus - gem update
