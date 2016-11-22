@@ -3,7 +3,7 @@ module GnCrossmap
   class ResultProcessor
     MATCH_TYPES = {
       0 => "No match",
-      1 => "Exact match",
+      1 => "Exact string match",
       2 => "Canonical form exact match",
       3 => "Canonical form fuzzy match",
       4 => "Partial canonical form match",

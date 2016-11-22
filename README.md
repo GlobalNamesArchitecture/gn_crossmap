@@ -27,29 +27,60 @@ gem 'gn_crossmap'
 
 And then execute:
 
-    bundle
+```bash
+bundle
+```
 
 Or install it yourself as:
 
-    gem install gn_crossmap
+```bash
+gem install gn_crossmap
+```
 
 ## Usage
 
 ### Usage from command line
 
-    # to see help
-    crossmap --help
+```bash
+# to see help
+crossmap --help
 
-    # to compare with default source (Catalogue of Life)
-    crossmap -i my_list.csv -o my_list_col.csv
+# to compare with default source (Catalogue of Life)
+crossmap -i my_list.csv -o my_list_col.csv
 
-    # to compare with other source (Index Fungorum in this example)
-    crossmap -i my_list.csv -o my_list_if.csv -d 5
+# to compare with other source (Index Fungorum in this example)
+crossmap -i my_list.csv -o my_list_if.csv -d 5
 
-    # to use standard intput and/or output
-    cat my_list.csv | crossmap -i - -o - > output
+# to use standard intput and/or output
+cat my_list.csv | crossmap -i - -o - > output
 
-### Usage as Ruby Library
+# to keep only taxonID from original input
+cat my_list.csv | crossmap -i my_list.csv -s
+```
+
+### Usage as Ruby Library (API description)
+
+#### `GnCrossmap.run` method
+
+```ruby
+GnCrossmap.run(input, output, data_source_id, skip_original)
+```
+
+#### Parameters
+
+``input``
+: (string) Either a path to a csv file with list of names, or "-" which
+designates `STDIN`
+
+``output``
+: (string) Either a path to the output file, or "-" which designates `STDOUT`
+
+``data_source_id``
+: (integer) id of a data source from [GN resolver][resolver]
+
+``skip_original``
+: (boolean) if true only `taxonID` is preserved from original data. Otherwise
+all original data is preserved
 
 ```ruby
 require "gn_crossmap"
@@ -136,7 +167,7 @@ score                | heuristic score from 0 to 1 where 1 is a good match, 0.5 
 
 The output fomat returns 7 possible types of matches:
 
-1. **Exact match** - The exact name was matched (but ignoring non-ascii characters)
+1. **Exact string match** - The exact name was matched (but ignoring non-ascii characters)
 2. **Exact match by canonical form of a name** - The canonical form of the name (a version of a scientific name that contains complete versions of the latin words, but lacks insertions of subtaxa, annotations, or authority information) was matched
 3. **Fuzzy match by canonical form** - The canonical form gave a fuzzy (detecting lexical or spelling variations of a name using Tony Rees' algorithm TAXAMATCH) match
 4. **Partial exact match by species part of canonical form** - The canonical form returned a partial but exact match
