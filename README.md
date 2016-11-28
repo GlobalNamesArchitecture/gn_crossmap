@@ -104,8 +104,37 @@ block:
 ```ruby
 GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5, true) do |stats|
   puts stats
+  put "Matches:"
+  stats[:matches].each do |key, value|
+    puts "#{GnCrossmap::MATCH_TYPES[key]}: #{value}"
+  end
 end
 ```
+
+#### Intermediate stats format
+
+|Field           | Description                                             |
+|----------------|---------------------------------------------------------|
+|total           | total number of names in original list                  |
+|current         | number of names already processed                       |
+|start_time      | Start of resolution                                     |
+|last_batch_time | time span of the last batch processing                  |
+|matches         | Distribution of processed data by match type (see below)|
+
+#### Match types
+
+Match types dictionary can be accessed with `GnCrossmap::MATCH_TYPES` constant
+
+| Match code | Match type                       |
+|------------|----------------------------------|
+|0           |No match                          |
+|1           |Exact string match                |
+|2           |Canonical form exact match        |
+|3           |Canonical form fuzzy match        |
+|4           |Partial canonical form match      |
+|5           |Partial canonical form fuzzy match|
+|6           |Genus part match                  |
+|7           |Error in matching                 |
 
 ### Input file format
 

@@ -1,17 +1,6 @@
 module GnCrossmap
   # Processes data received from the GN Resolver
   class ResultProcessor
-    MATCH_TYPES = {
-      0 => "No match",
-      1 => "Exact string match",
-      2 => "Canonical form exact match",
-      3 => "Canonical form fuzzy match",
-      4 => "Partial canonical form match",
-      5 => "Partial canonical form fuzzy match",
-      6 => "Genus part match",
-      7 => "Error in matching"
-    }.freeze
-
     attr_reader :input, :writer
 
     def initialize(writer, stats)
@@ -38,7 +27,7 @@ module GnCrossmap
       @stats[:matches][0] += 1
       @stats[:current] += 1
       res = @original_data[datum[:supplied_id]]
-      res += [MATCH_TYPES[0], datum[:supplied_name_string], nil,
+      res += [GnCrossmap::MATCH_TYPES[0], datum[:supplied_name_string], nil,
               nil, @input[datum[:supplied_id]][:rank], nil,
               nil, nil, nil]
       @writer.write(res)
@@ -75,7 +64,7 @@ module GnCrossmap
     end
 
     def matched_type(record)
-      MATCH_TYPES[record[:match_type]]
+      GnCrossmap::MATCH_TYPES[record[:match_type]]
     end
   end
 end

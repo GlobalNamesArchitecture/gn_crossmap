@@ -29,7 +29,7 @@ module GnCrossmap
     private
 
     def match_types
-      matches = GnCrossmap::ResultProcessor::MATCH_TYPES.keys
+      matches = GnCrossmap::MATCH_TYPES.keys
       matches.each_with_object({}) do |key, obj|
         obj[key] = 0
       end
