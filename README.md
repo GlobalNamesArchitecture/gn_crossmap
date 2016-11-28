@@ -118,7 +118,7 @@ end
 |total           | total number of names in original list                  |
 |current         | number of names already processed                       |
 |start_time      | Start of resolution                                     |
-|last_batch_time | time span of the last batch processing                  |
+|last_batch_time | time required to process the last batch of names        |
 |matches         | Distribution of processed data by match type (see below)|
 
 #### Match types
