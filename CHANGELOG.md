@@ -1,5 +1,10 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 1.1.0
+
+* @dimus - #23 optional block for GnCrossmap.run gives access to intermediate
+           results
+
 ## 1.0.0
 
 * @dimus - #18 output file optionally removes original fields except `taxonID`
