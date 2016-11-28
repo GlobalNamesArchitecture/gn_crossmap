@@ -104,7 +104,7 @@ block:
 ```ruby
 GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5, true) do |stats|
   puts stats
-  put "Matches:"
+  puts "Matches:"
   stats[:matches].each do |key, value|
     puts "#{GnCrossmap::MATCH_TYPES[key]}: #{value}"
   end
