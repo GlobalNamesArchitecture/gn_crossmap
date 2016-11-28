@@ -8,12 +8,14 @@ module GnCrossmap
       3 => "Canonical form fuzzy match",
       4 => "Partial canonical form match",
       5 => "Partial canonical form fuzzy match",
-      6 => "Genus part match"
+      6 => "Genus part match",
+      7 => "Error in matching"
     }.freeze
 
     attr_reader :input, :writer
 
-    def initialize(writer)
+    def initialize(writer, stats)
+      @stats = stats
       @writer = writer
       @input = {}
     end
@@ -33,6 +35,8 @@ module GnCrossmap
     end
 
     def write_empty_result(datum)
+      @stats[:matches][0] += 1
+      @stats[:current] += 1
       res = @original_data[datum[:supplied_id]]
       res += [MATCH_TYPES[0], datum[:supplied_name_string], nil,
               nil, @input[datum[:supplied_id]][:rank], nil,
@@ -41,9 +45,16 @@ module GnCrossmap
     end
 
     def write_result(datum)
+      collect_stats(datum)
       datum[:results].each do |result|
         @writer.write(compile_result(datum, result))
       end
+    end
+
+    def collect_stats(datum)
+      match_num = datum[:results].map { |d| d[:match_type] }.min
+      @stats[:matches][match_num] += 1
+      @stats[:current] += 1
     end
 
     def compile_result(datum, result)

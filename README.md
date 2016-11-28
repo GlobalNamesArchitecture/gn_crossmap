@@ -98,6 +98,15 @@ GnCrossmap.logger = MyCustomLogger.new
 GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5, true)
 ```
 
+If you want to get intermediate statistics for each resolution cycle use a
+block:
+
+```ruby
+GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5, true) do |stats|
+  puts stats
+end
+```
+
 ### Input file format
 
 - Comma Separated File with names of fields in first row.

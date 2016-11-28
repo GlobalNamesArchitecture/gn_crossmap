@@ -28,7 +28,8 @@ module GnCrossmap
       data = reader.read
       writer = Writer.new(output_io, reader.original_fields,
                           output_name(output))
-      Resolver.new(writer, data_source_id).resolve(data)
+      resolver = Resolver.new(writer, data_source_id)
+      block_given? ? resolver.resolve(data, &Proc.new) : resolver.resolve(data)
       output
     end
 

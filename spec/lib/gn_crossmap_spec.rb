@@ -56,5 +56,17 @@ describe GnCrossmap do
           to raise_error GnCrossmapError
       end
     end
+
+    context "yielding details" do
+      let(:input) { FILES[:sciname_auth] }
+      it "gets access to intermediate details" do
+        subject.run(input, output, data_source_id, skip_original) do |stats|
+          expect(stats[:total]).to be 301
+          expect([200, 301].include?(stats[:current])).to be true
+          matches = stats[:matches].values.inject(:+)
+          expect(matches).to be stats[:current]
+        end
+      end
+    end
   end
 end
