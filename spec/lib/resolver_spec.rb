@@ -5,23 +5,25 @@ describe GnCrossmap::Resolver do
        subfamily tribe subtribe genus subgenus section species subspecies
        variety form ScientificNameAuthorship)
   end
+  let(:stats) { GnCrossmap::Stats.new }
   let(:skip_original) { false }
   let(:writer) do
     GnCrossmap::Writer.new(io(FILES[:output], "w:utf-8"),
                            original_fields,
                            FILES[:output])
   end
-  subject { GnCrossmap::Resolver.new(writer, 1) }
+  subject { GnCrossmap::Resolver.new(writer, 1, stats) }
 
   describe ".new" do
-    it "creates instance" do
+    it "creates an instance" do
       expect(subject).to be_kind_of GnCrossmap::Resolver
     end
   end
 
   describe "#resolve" do
     let(:data) do
-      GnCrossmap::Reader.new(io(FILES[:all_fields]), FILES[:all_fields], true).
+      GnCrossmap::Reader.new(io(FILES[:all_fields]),
+                             FILES[:all_fields], true, stats).
         read
     end
 
@@ -32,7 +34,8 @@ describe GnCrossmap::Resolver do
     context "Resolver sends 500 error" do
       let(:data) do
         GnCrossmap::Reader.new(io(FILES[:all_fields_tiny]),
-                               FILES[:all_fields_tiny], skip_original).read
+                               FILES[:all_fields_tiny],
+                               skip_original, stats).read
       end
 
       it "resolves data by every name" do

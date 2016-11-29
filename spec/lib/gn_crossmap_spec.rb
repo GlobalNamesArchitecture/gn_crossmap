@@ -61,10 +61,16 @@ describe GnCrossmap do
       let(:input) { FILES[:sciname_auth] }
       it "gets access to intermediate details" do
         subject.run(input, output, data_source_id, skip_original) do |stats|
-          expect(stats[:total]).to be 301
-          expect([200, 301].include?(stats[:current])).to be true
+          expect(stats[:total_records]).to be 301
+          expect([0, 200, 301].include?(stats[:resolved_records])).to be true
           matches = stats[:matches].values.inject(:+)
-          expect(matches).to be stats[:current]
+          expect(matches).to be stats[:resolved_records]
+          expect(stats.keys).
+            to match_array %i(status total_records ingested_records
+                              resolved_records ingestion_span
+                              resolution_span ingestion_start
+                              resolution_start last_batches_time
+                              matches)
         end
       end
     end

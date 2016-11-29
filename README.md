@@ -113,13 +113,18 @@ end
 
 #### Intermediate stats format
 
-|Field           | Description                                             |
-|----------------|---------------------------------------------------------|
-|total           | total number of names in original list                  |
-|current         | number of names already processed                       |
-|start_time      | Start of resolution                                     |
-|last_batch_time | time required to process the last batch of names        |
-|matches         | Distribution of processed data by match type (see below)|
+|Field             |Description                                              |
+|------------------|---------------------------------------------------------|
+|status            |current phase: (init, ingested                           |
+|total_records     |total number of names in original list                   |
+|ingestion_start   |time when the reading from csv started                   |
+|ingestion_span    |time of intermediate checkpoint of reading csv           |
+|ingested_records  |number of ingested records at an intermediate checkpoint |
+|resolution_start  |time when resolution of names started                    |
+|resolution_span   |time of intermediate checkpoint of resolving names       |
+|resolved_records  |number of names already processed                        |
+|last_batches_time |time required to process the last batch of names         |
+|matches           |Distribution of processed data by match type (see below) |
 
 #### Match types
 

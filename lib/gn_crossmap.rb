@@ -13,6 +13,7 @@ require "gn_crossmap/column_collector"
 require "gn_crossmap/sci_name_collector"
 require "gn_crossmap/resolver"
 require "gn_crossmap/result_processor"
+require "gn_crossmap/stats"
 
 # Namespace module for crossmapping checklists wth GN sources
 module GnCrossmap
@@ -32,16 +33,21 @@ module GnCrossmap
   class << self
     attr_writer :logger
 
+    # rubocop:disable Metrics/AbcSize
+
     def run(input, output, data_source_id, skip_original)
+      stats = Stats.new
       input_io, output_io = io(input, output)
-      reader = Reader.new(input_io, input_name(input), skip_original)
-      data = reader.read
+      reader = Reader.new(input_io, input_name(input), skip_original, stats)
+      data = block_given? ? reader.read(&Proc.new) : reader.read
       writer = Writer.new(output_io, reader.original_fields,
                           output_name(output))
-      resolver = Resolver.new(writer, data_source_id)
+      resolver = Resolver.new(writer, data_source_id, stats)
       block_given? ? resolver.resolve(data, &Proc.new) : resolver.resolve(data)
       output
     end
+
+    # rubocop:enable all
 
     def logger
       @logger ||= Logger.new(STDERR)

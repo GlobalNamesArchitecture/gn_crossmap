@@ -3,9 +3,8 @@ module GnCrossmap
   class Resolver
     URL = "http://resolver.globalnames.org/name_resolvers.json".freeze
 
-    def initialize(writer, data_source_id)
-      @stats = { total: 0, current: 0, start_time: nil, last_batch_time: nil,
-                 matches: match_types }
+    def initialize(writer, data_source_id, stats)
+      @stats = stats
       @processor = GnCrossmap::ResultProcessor.new(writer, @stats)
       @ds_id = data_source_id
       @count = 0
@@ -14,13 +13,12 @@ module GnCrossmap
     end
 
     def resolve(data)
-      @stats[:total] = data.size
-      @stats[:start_time] = Time.now
+      update_stats(data.size)
       data.each_slice(@batch) do |slice|
         with_log do
           names = collect_names(slice)
           remote_resolve(names)
-          yield(@stats) if block_given?
+          yield(@stats.stats) if block_given?
         end
       end
       @processor.writer.close
@@ -28,18 +26,18 @@ module GnCrossmap
 
     private
 
-    def match_types
-      matches = GnCrossmap::MATCH_TYPES.keys
-      matches.each_with_object({}) do |key, obj|
-        obj[key] = 0
-      end
+    def update_stats(records_num)
+      @stats.stats[:total_records] = records_num
+      @stats.stats[:resolution_start] = Time.now
+      @stats.stats[:status] = :resolution
     end
 
     def with_log
       s = @count + 1
       @count += @batch
-      e = [@count, @stats[:total]].min
-      GnCrossmap.log("Resolve #{s}-#{e} out of #{@stats[:total]} records")
+      e = [@count, @stats.stats[:total_records]].min
+      GnCrossmap.log("Resolve #{s}-#{e} out of " \
+                     "#{@stats.stats[:total_records]} records")
       yield
     end
 
@@ -59,7 +57,14 @@ module GnCrossmap
     rescue RestClient::Exception
       single_remote_resolve(names)
     ensure
-      @stats[:last_batch_time] = Time.now - batch_start
+      update_batch_times(batch_start)
+    end
+
+    def update_batch_times(batch_start)
+      s = @stats.stats
+      s[:last_batches_time].shift if s[:last_batches_time].size > 2
+      s[:last_batches_time] << Time.now - batch_start
+      s[:resolution_span] = Time.now - s[:resolution_start]
     end
 
     def single_remote_resolve(names)
@@ -75,8 +80,8 @@ module GnCrossmap
     end
 
     def process_resolver_error(err, name)
-      @stats[:matches][7] += 1
-      @stats[:current] += 1
+      @stats.stats[:matches][7] += 1
+      @stats.stats[:resolved_records] += 1
       GnCrossmap.logger.error("Resolver broke on '#{name}': #{err.message}")
     end
   end
