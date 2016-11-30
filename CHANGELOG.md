@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 1.2.2
+
+* @dimus - fix `resolution_stop` and final status in stats
+
 ## 1.2.1
 
 * @dimus - Add `resolution_stop` field for stats
