@@ -11,8 +11,6 @@ in [GN Resolver][resolver].
 
 Checklist has to be in a CSV format.
 
-[Issues on waffle.io][waffle]
-
 ## Compatibility
 
 This gem is compatible with Ruby versions higher or equal to 2.1.0
@@ -269,4 +267,3 @@ See [LICENSE][license] for details.
 [terms]: http://rs.tdwg.org/dwc/terms
 [files]:  https://github.com/GlobalNamesArchitecture/gn_crossmap/tree/master/spec/files
 [output]: https://github.com/GlobalNamesArchitecture/gn_crossmap/tree/master/spec/files/output-example.csv
-[waffle]: https://waffle.io/GlobalNamesArchitecture/gn_crossmap
