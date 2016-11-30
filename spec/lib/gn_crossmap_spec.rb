@@ -70,7 +70,7 @@ describe GnCrossmap do
                               resolved_records ingestion_span
                               resolution_span ingestion_start
                               resolution_start last_batches_time
-                              matches)
+                              matches resolution_stop)
         end
       end
     end

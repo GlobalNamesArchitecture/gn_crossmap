@@ -119,6 +119,7 @@ end
 |ingestion_span    |time of intermediate checkpoint of reading csv           |
 |ingested_records  |number of ingested records at an intermediate checkpoint |
 |resolution_start  |time when resolution of names started                    |
+|resolution_stop   |time when resolution of names stopped                    |
 |resolution_span   |time of intermediate checkpoint of resolving names       |
 |resolved_records  |number of names already processed                        |
 |last_batches_time |time required to process the last batch of names         |

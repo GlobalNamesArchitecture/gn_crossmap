@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 1.2.1
+
+* @dimus - Add `resolution_stop` field for stats
+
 ## 1.2.0
 
 * @dimus - #24 optional block for GnCrossmap.run now also gives access to

@@ -21,10 +21,16 @@ module GnCrossmap
           yield(@stats.stats) if block_given?
         end
       end
-      @processor.writer.close
+      wrap_up
     end
 
     private
+
+    def wrap_up
+      @stats.stats[:resolution_stop] = Time.now
+      @stats.stats[:status] = :finish
+      @processor.writer.close
+    end
 
     def update_stats(records_num)
       @stats.stats[:total_records] = records_num
