@@ -1,5 +1,10 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 1.2.0
+
+* @dimus - #24 optional block for GnCrossmap.run now also gives access to
+           intermediate results of CSV file reading
+
 ## 1.1.0
 
 * @dimus - #23 optional block for GnCrossmap.run gives access to intermediate
