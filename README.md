@@ -37,6 +37,10 @@ gem install gn_crossmap
 
 ## Usage
 
+### Usage as a Web Application
+
+see [gn_crossmap_web] project
+
 ### Usage from command line
 
 ```bash
@@ -268,3 +272,4 @@ See [LICENSE][license] for details.
 [terms]: http://rs.tdwg.org/dwc/terms
 [files]:  https://github.com/GlobalNamesArchitecture/gn_crossmap/tree/master/spec/files
 [output]: https://github.com/GlobalNamesArchitecture/gn_crossmap/tree/master/spec/files/output-example.csv
+[gn_crossmap_web]: https://github.com/GlobalNamesArchitecture/gn_crossmap_web
