@@ -60,7 +60,9 @@ describe GnCrossmap do
     context "yielding details" do
       let(:input) { FILES[:sciname_auth] }
       it "gets access to intermediate details" do
+        states = []
         subject.run(input, output, data_source_id, skip_original) do |stats|
+          states << stats[:status]
           expect(stats[:total_records]).to be 301
           expect([0, 200, 301].include?(stats[:resolved_records])).to be true
           matches = stats[:matches].values.inject(:+)
@@ -72,6 +74,7 @@ describe GnCrossmap do
                               resolution_start last_batches_time
                               matches resolution_stop)
         end
+        expect(states.uniq).to match_array %i(ingestion resolution finish)
       end
     end
   end

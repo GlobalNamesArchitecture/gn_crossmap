@@ -22,6 +22,7 @@ module GnCrossmap
         end
       end
       wrap_up
+      yield(@stats.stats) if block_given?
     end
 
     private
