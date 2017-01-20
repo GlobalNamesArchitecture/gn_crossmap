@@ -31,4 +31,28 @@ describe "features" do
       FileUtils.rm(output)
     end
   end
+
+  context "use alternative headers" do
+    it "uses alternative headers for resolution" do
+      output = "/tmp/output.csv"
+      input = FILES[:no_taxonid]
+      alt_headers = %w(taxonID scientificName rank)
+      GnCrossmap.run(input, output, 1, true, alt_headers)
+      CSV.open(output, col_sep: "\t", headers: true).each do |r|
+        next unless r["matchedEditDistance"] == "0"
+        expect(r["matchedName"].size).to be > 1
+        expect(r["acceptedName"].size).to be > 1
+      end
+      FileUtils.rm(output)
+    end
+
+    it "breaks without alternative headers" do
+      output = "/tmp/output.csv"
+      input = FILES[:no_taxonid]
+      expect do
+        GnCrossmap.run(input, output, 1, true)
+      end.to raise_error GnCrossmapError
+      FileUtils.rm(output)
+    end
+  end
 end

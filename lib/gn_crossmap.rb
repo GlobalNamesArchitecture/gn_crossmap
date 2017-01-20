@@ -35,10 +35,11 @@ module GnCrossmap
 
     # rubocop:disable Metrics/AbcSize
 
-    def run(input, output, data_source_id, skip_original)
+    def run(input, output, data_source_id, skip_original, alt_headers = [])
       stats = Stats.new
       input_io, output_io = io(input, output)
-      reader = Reader.new(input_io, input_name(input), skip_original, stats)
+      reader = Reader.new(input_io, input_name(input),
+                          skip_original, alt_headers, stats)
       data = block_given? ? reader.read(&Proc.new) : reader.read
       writer = Writer.new(output_io, reader.original_fields,
                           output_name(output))

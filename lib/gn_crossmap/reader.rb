@@ -4,8 +4,9 @@ module GnCrossmap
   class Reader
     attr_reader :original_fields
 
-    def initialize(csv_io, input_name, skip_original, stats)
+    def initialize(csv_io, input_name, skip_original, alt_headers, stats)
       @stats = stats
+      @alt_headers = alt_headers
       @csv_io = csv_io
       @col_sep = col_sep
       @original_fields = nil
@@ -33,11 +34,17 @@ module GnCrossmap
       dc = Collector.new(@skip_original)
       csv = CSV.new(@csv_io, col_sep: col_sep)
       csv.each_with_index do |row, i|
-        @original_fields = headers(row) if @original_fields.nil?
+        row = process_headers(row) if @original_fields.nil?
         yield @stats.stats if log_progress(i) && block_given?
         dc.process_row(row)
       end && @csv_io.close
       dc.data
+    end
+
+    def process_headers(row)
+      @original_fields = headers(row)
+      row = @alt_headers unless @alt_headers.empty?
+      row
     end
 
     def log_progress(count)

@@ -23,7 +23,7 @@ describe GnCrossmap::Resolver do
   describe "#resolve" do
     let(:data) do
       GnCrossmap::Reader.new(io(FILES[:all_fields]),
-                             FILES[:all_fields], true, stats).
+                             FILES[:all_fields], true, [], stats).
         read
     end
 
@@ -35,7 +35,7 @@ describe GnCrossmap::Resolver do
       let(:data) do
         GnCrossmap::Reader.new(io(FILES[:all_fields_tiny]),
                                FILES[:all_fields_tiny],
-                               skip_original, stats).read
+                               skip_original, [], stats).read
       end
 
       it "resolves data by every name" do

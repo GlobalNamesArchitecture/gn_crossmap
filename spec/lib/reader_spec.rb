@@ -3,7 +3,7 @@ describe GnCrossmap::Reader do
   let(:skip_original) { false }
   let(:stats) { GnCrossmap::Stats.new }
   subject do
-    GnCrossmap::Reader.new(csv_io, FILES[:all_fields], skip_original, stats)
+    GnCrossmap::Reader.new(csv_io, FILES[:all_fields], skip_original, [], stats)
   end
 
   describe ".new" do
