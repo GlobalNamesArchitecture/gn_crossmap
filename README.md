@@ -39,7 +39,7 @@ gem install gn_crossmap
 
 ### Usage as a Web Application
 
-see [gn_crossmap_web] project
+see [gn\_crossmap\_web] project
 
 ### Usage from command line
 
@@ -68,7 +68,7 @@ Compares an input list to a data source from [GN Resolver][resolver] and
 writes result into an output file.
 
 ```ruby
-GnCrossmap.run(input, output, data_source_id, skip_original)
+GnCrossmap.run(input, output, data_source_id, skip_original, alt_headers)
 ```
 
 ``input``
@@ -85,6 +85,10 @@ designates `STDIN`
 : (boolean) if true only `taxonID` is preserved from original data. Otherwise
 all original data is preserved
 
+``alt_headers``
+: (array) empty array by default. If `alt_headers` are not empty they are used
+instead of the headers supplied with the file
+
 #### `GnCrossmap.logger=`
 
 Allows to set logger to a custom logger (default is `STDERR`)
@@ -95,9 +99,15 @@ Allows to set logger to a custom logger (default is `STDERR`)
 require "gn_crossmap"
 
 # If you want to change logger -- default Logging is to standard error
+
 GnCrossmap.logger = MyCustomLogger.new
 
 GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5, true)
+
+# if you want to use alternative headers instead of ones supplied in a file
+
+alt_headers = %w(taxonId, scientificName, rank)
+GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5, true, alt_headers)
 ```
 
 If you want to get intermediate statistics for each resolution cycle use a
