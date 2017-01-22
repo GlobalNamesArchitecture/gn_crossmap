@@ -68,7 +68,10 @@ Compares an input list to a data source from [GN Resolver][resolver] and
 writes result into an output file.
 
 ```ruby
-GnCrossmap.run(input, output, data_source_id, skip_original, alt_headers)
+
+opts = { input: input, output: output, data_source_id: 1 ,
+         skip_original: true, alt_headers: [] }
+GnCrossmap.run(opts)
 ```
 
 ``input``
@@ -102,19 +105,23 @@ require "gn_crossmap"
 
 GnCrossmap.logger = MyCustomLogger.new
 
+opts = { input: "path/to/input.csv", output: "path/to/output.csv,
+         data_source_id: 5 , skip_original: true }
 GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5, true)
 
 # if you want to use alternative headers instead of ones supplied in a file
 
-alt_headers = %w(taxonId, scientificName, rank)
-GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5, true, alt_headers)
+opts = { input: "path/to/input.csv", output: "path/to/output.csv,
+         data_source_id: 5 , skip_original: true,
+         alt_headers: %w(taxonId, scientificName, rank) }
+GnCrossmap.run(opts)
 ```
 
 If you want to get intermediate statistics for each resolution cycle use a
 block:
 
 ```ruby
-GnCrossmap.run("path/to/input.csv", "path/to/output.csv", 5, true) do |stats|
+GnCrossmap.run(opts) do |stats|
   puts stats
   puts "Matches:"
   stats[:matches].each do |key, value|

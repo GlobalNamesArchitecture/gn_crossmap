@@ -9,59 +9,62 @@ describe GnCrossmap do
   end
 
   describe ".run" do
-    let(:input) { FILES[:sciname_auth] }
-    let(:output) { FILES[:output] }
-    let(:data_source_id) { 1 }
-    let(:skip_original) { false }
+    let(:opts) do
+      { input: FILES[:sciname_auth],
+        output: FILES[:output],
+        data_source_id: 1,
+        skip_original: false }
+    end
     it "runs crossmapping" do
-      expect(subject.run(input, output, data_source_id, skip_original)).
-        to eq output
+      expect(subject.run(opts)).
+        to eq opts[:output]
     end
 
     context "spaces in fields" do
-      let(:input) { FILES[:spaces_in_fields] }
+      let(:opts2) { opts.merge(input: FILES[:spaces_in_fields]) }
       it "suppose to work even when fields have additional spaces" do
-        expect(subject.run(input, output, data_source_id, skip_original)).
-          to eq output
-        expect(File.readlines(output).size).to be > 100
+        expect(subject.run(opts2)).
+          to eq opts[:output]
+        expect(File.readlines(opts[:output]).size).to be > 100
       end
     end
 
     context "original fields flag" do
+      let(:opts3) { opts.merge(skip_original: true) }
       it "leaves only taxonID when skip_original is true" do
-        i = File.open(input)
+        i = File.open(opts3[:input])
         expect(i.first).to include("taxonRank")
         i.close
-        subject.run(input, output, data_source_id, true)
-        o = File.open(output)
+        subject.run(opts3)
+        o = File.open(opts3[:output])
         expect(o.first).to_not include("taxonRank")
         o.close
       end
 
-      it "keeps original fields when keep_original is true" do
-        i = File.open(input)
+      it "keeps original fields when skip_original is false" do
+        i = File.open(opts[:input])
         expect(i.first).to include("taxonRank")
         i.close
-        subject.run(input, output, data_source_id, skip_original)
-        o = File.open(output)
+        subject.run(opts)
+        o = File.open(opts[:output])
         expect(o.first).to include("taxonRank")
         o.close
       end
     end
 
     context "no taxonid" do
-      let(:input) { FILES[:no_taxonid] }
+      let(:opts4) { opts.merge(input: FILES[:no_taxonid]) }
       it "raises an error" do
-        expect { subject.run(input, output, data_source_id, skip_original) }.
+        expect { subject.run(opts4) }.
           to raise_error GnCrossmapError
       end
     end
 
     context "yielding details" do
-      let(:input) { FILES[:sciname_auth] }
+      let(:opts5) { opts.merge(input: FILES[:sciname_auth]) }
       it "gets access to intermediate details" do
         states = []
-        subject.run(input, output, data_source_id, skip_original) do |stats|
+        subject.run(opts5) do |stats|
           states << stats[:status]
           expect(stats[:total_records]).to be 301
           expect([0, 200, 301].include?(stats[:resolved_records])).to be true

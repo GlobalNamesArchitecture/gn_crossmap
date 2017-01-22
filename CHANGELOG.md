@@ -1,5 +1,13 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 2.0.0
+
+* @dimus - #26 change GnCrossmap.run to take opts parameter
+
+## 1.3.0
+
+* @dimus - #25 add `alt_headers` parameter
+
 ## 1.2.2
 
 * @dimus - fix `resolution_stop` and final status in stats

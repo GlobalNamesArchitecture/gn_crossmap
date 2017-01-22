@@ -1,4 +1,5 @@
 require "csv"
+require "ostruct"
 require "rest_client"
 require "tempfile"
 require "logger"
@@ -35,17 +36,17 @@ module GnCrossmap
 
     # rubocop:disable Metrics/AbcSize
 
-    def run(input, output, data_source_id, skip_original, alt_headers = [])
-      stats = Stats.new
-      input_io, output_io = io(input, output)
-      reader = Reader.new(input_io, input_name(input),
-                          skip_original, alt_headers, stats)
+    def run(opts)
+      opts = OpenStruct.new({ stats: Stats.new, alt_headers: [] }.merge(opts))
+      input_io, output_io = io(opts.input, opts.output)
+      reader = Reader.new(input_io, input_name(opts.input),
+                          opts.skip_original, opts.alt_headers, opts.stats)
       data = block_given? ? reader.read(&Proc.new) : reader.read
       writer = Writer.new(output_io, reader.original_fields,
-                          output_name(output))
-      resolver = Resolver.new(writer, data_source_id, stats)
+                          output_name(opts.output))
+      resolver = Resolver.new(writer, opts.data_source_id, opts.stats)
       block_given? ? resolver.resolve(data, &Proc.new) : resolver.resolve(data)
-      output
+      opts.output
     end
 
     # rubocop:enable all

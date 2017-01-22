@@ -26,8 +26,7 @@ unless File.exist?(opts[:input]) || opts[:input] == "-"
 end
 
 begin
-  GnCrossmap.run(opts[:input], opts[:output], opts[:data_source_id],
-                 opts[:skip_original])
+  GnCrossmap.run(opts)
 rescue GnCrossmapError => e
   GnCrossmap.logger.error(e.message)
 end
