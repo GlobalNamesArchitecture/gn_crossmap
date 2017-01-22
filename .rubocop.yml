@@ -2,6 +2,7 @@ AllCops:
   Exclude:
     - db/**/*
     - bundle_bin/**/*
+    - spec/**/*
   Include:
     - exe/crossmap
 Style/StringLiterals:
