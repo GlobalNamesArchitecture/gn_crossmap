@@ -60,4 +60,16 @@ describe "features" do
       FileUtils.rm(opts[:output])
     end
   end
+
+  context "stop trigger" do
+    it "stops process with a 'STOP' command" do
+      opts = { output: "/tmp/output.csv",
+               input: FILES[:sciname],
+               data_source_id: 1, skip_original: true }
+      GnCrossmap.run(opts) { "STOP" }
+      lines_num = File.readlines(opts[:output]).size
+      expect(lines_num).to be 201
+      FileUtils.rm(opts[:output])
+    end
+  end
 end

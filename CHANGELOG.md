@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 2.1.0
+
+* @dimus - #27 terminate resolution by a trigger
+
 ## 2.0.0
 
 * @dimus - #26 change GnCrossmap.run to take opts parameter

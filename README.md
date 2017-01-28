@@ -130,6 +130,15 @@ GnCrossmap.run(opts) do |stats|
 end
 ```
 
+To trigger termination of the resolution before it is completed
+
+```ruby
+GnCrossmap.run(opts) do
+  # do something and then return STOP string from the block
+  "STOP"
+end
+```
+
 #### Intermediate stats format
 
 |Field             |Description                                              |

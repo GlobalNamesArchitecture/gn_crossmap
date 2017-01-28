@@ -14,18 +14,23 @@ module GnCrossmap
 
     def resolve(data)
       update_stats(data.size)
-      data.each_slice(@batch) do |slice|
-        with_log do
-          names = collect_names(slice)
-          remote_resolve(names)
-          yield(@stats.stats) if block_given?
-        end
-      end
+      block_given? ? process(data, &Proc.new) : process(data)
       wrap_up
       yield(@stats.stats) if block_given?
     end
 
     private
+
+    def process(data)
+      cmd = nil
+      data.each_slice(@batch) do |slice|
+        with_log do
+          remote_resolve(collect_names(slice))
+          cmd = yield(@stats.stats) if block_given?
+        end
+        break if cmd == "STOP"
+      end
+    end
 
     def wrap_up
       @stats.stats[:resolution_stop] = Time.now
