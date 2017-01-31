@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 2.1.1
+
+* @dimus - fix stats for ingestion
+
 ## 2.1.0
 
 * @dimus - #27 terminate resolution by a trigger

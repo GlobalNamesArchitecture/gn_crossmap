@@ -1,6 +1,6 @@
 # Namespace module for crossmapping checklists to GN sources
 module GnCrossmap
-  VERSION = "2.1.0".freeze
+  VERSION = "2.1.1".freeze
 
   def self.version
     VERSION
