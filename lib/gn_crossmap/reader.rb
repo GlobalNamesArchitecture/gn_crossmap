@@ -33,12 +33,23 @@ module GnCrossmap
     def parse_input
       dc = Collector.new(@skip_original)
       csv = CSV.new(@csv_io, col_sep: col_sep)
+      block_given? ? process(csv, dc, &Proc.new) : process(csv, dc)
+      wrap_up
+      yield @stats.stats if block_given?
+      dc.data
+    end
+
+    def process(csv, data_collector)
       csv.each_with_index do |row, i|
         row = process_headers(row) if @original_fields.nil?
         yield @stats.stats if log_progress(i) && block_given?
-        dc.process_row(row)
+        data_collector.process_row(row)
       end && @csv_io.close
-      dc.data
+    end
+
+    def wrap_up
+      @stats.stats[:ingested_records] = @stats.stats[:total_records]
+      @stats.stats[:ingestion_span] = Time.now - @stats.stats[:ingestion_start]
     end
 
     def process_headers(row)
@@ -48,7 +59,7 @@ module GnCrossmap
     end
 
     def log_progress(count)
-      return false unless (count % 10_000).zero?
+      return false unless (count % 1_000).zero?
       GnCrossmap.log("Ingesting csv row #{count + 1}")
       @stats.stats[:ingested_records] = count + 1
       @stats.stats[:ingestion_span] = Time.now - @stats.stats[:ingestion_start]
