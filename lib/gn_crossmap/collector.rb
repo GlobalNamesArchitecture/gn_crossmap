@@ -31,6 +31,7 @@ module GnCrossmap
 
     def prepare_field(field)
       field = field.to_s.tr(":", "/")
+      return :none if field == ""
       field.split("/")[-1].strip.downcase.to_sym
     end
 
