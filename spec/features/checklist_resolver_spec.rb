@@ -59,6 +59,21 @@ describe "features" do
       end.to raise_error GnCrossmapError
       FileUtils.rm(opts[:output])
     end
+
+    it "uses complex alternative headers" do
+      opts = { output: "/tmp/output.csv",
+               input: FILES[:fix_headers],
+               data_source_id: 1, skip_original: true,
+               alt_headers: %w(nil nil taxonID rank genus species nil scientificNameAuthorship, nil) }
+      GnCrossmap.run(opts)
+      CSV.open(opts[:output], col_sep: "\t", headers: true).each do |r|
+        next unless r["matchedEditDistance"] == "0"
+        expect(r["matchedName"].size).to be > 1
+        expect(r["acceptedName"].size).to be > 1
+      end
+      FileUtils.rm(opts[:output])
+
+    end
   end
 
   context "stop trigger" do

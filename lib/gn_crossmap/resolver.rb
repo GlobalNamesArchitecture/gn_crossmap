@@ -56,9 +56,10 @@ module GnCrossmap
     def collect_names(slice)
       @current_data = {}
       slice.each_with_object("") do |row, str|
-        @current_data[row[:id]] = row[:original]
-        @processor.input[row[:id]] = { rank: row[:rank] }
-        str << "#{row[:id]}|#{row[:name]}\n"
+        id = row[:id].strip
+        @current_data[id] = row[:original]
+        @processor.input[id] = { rank: row[:rank] }
+        str << "#{id}|#{row[:name]}\n"
       end
     end
 
