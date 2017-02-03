@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 2.1.3
+
+* @dimus - fix nil situation in headers' fields
+
 ## 2.1.2
 
 * @dimus - fix recognition of taxonID with traling space
