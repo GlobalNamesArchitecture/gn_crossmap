@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 2.1.2
+
+* @dimus - fix recognition of taxonID with traling space
+
 ## 2.1.1
 
 * @dimus - fix stats for ingestion
