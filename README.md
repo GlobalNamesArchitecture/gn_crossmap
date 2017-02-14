@@ -154,6 +154,7 @@ end
 |resolved_records  |number of names already processed                        |
 |last_batches_time |time required to process the last batch of names         |
 |matches           |Distribution of processed data by match type (see below) |
+|errors            |First 0-10 errors found during the csv file processing   |
 
 #### Match types
 

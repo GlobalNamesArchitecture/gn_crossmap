@@ -20,7 +20,7 @@ taxonID	scientificName	taxonRank
 449	Mesozoa	phylum
 455	Mollusca	phylum
 511	Myxozoa	phylum
-517	Nematoda	phylum
+517	Nematoda	"phylum"
 541	Nemertea	phylum
 549	Onychophora	phylum
 552	Phoronida	phylum
@@ -293,7 +293,7 @@ taxonID	scientificName	taxonRank
 142807	Macrobiotus willardi Pilato, 1977	species
 142809	Macrobiotus zetlandicus Murray, 1907	species
 142881	Macrobiotus occidentalis subsp. occidentalis Murray, 1910	subspecies
-142878	Macrobiotus islandicus subsp. islandicus Richters, 1904	subspecies
+142878	"Macrobiotus islandicus subsp. islandicus Richters, 1904"	subspecies
 142877	Macrobiotus hufelandi subsp. hufelandi C.A.S. Schultze, 1834	subspecies
 142876	Macrobiotus harmsworthi subsp. harmsworthi Murray, 1907	subspecies
 142880	Macrobiotus harmsworthi subsp. obscurus Dastych, 1985	subspecies

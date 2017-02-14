@@ -9,6 +9,7 @@ module GnCrossmap
       @alt_headers = alt_headers
       @csv_io = csv_io
       @col_sep = col_sep
+      @quote_char = quote_char(@col_sep)
       @original_fields = nil
       @input_name = input_name
       @skip_original = skip_original
@@ -30,9 +31,13 @@ module GnCrossmap
       [";", ",", "\t"].map { |s| [line.count(s), s] }.sort.last.last
     end
 
+    def quote_char(col_sep)
+      col_sep == "\t" ? "\x00" : '"'
+    end
+
     def parse_input
       dc = Collector.new(@skip_original)
-      csv = CSV.new(@csv_io, col_sep: col_sep)
+      csv = CSV.new(@csv_io, col_sep: @col_sep, quote_char: @quote_char)
       block_given? ? process(csv, dc, &Proc.new) : process(csv, dc)
       wrap_up
       yield @stats.stats if block_given?
@@ -40,11 +45,22 @@ module GnCrossmap
     end
 
     def process(csv, data_collector)
-      csv.each_with_index do |row, i|
-        row = process_headers(row) if @original_fields.nil?
-        yield @stats.stats if log_progress(i) && block_given?
-        data_collector.process_row(row)
+      counter = 0
+      loop do
+        yield @stats.stats if log_progress(counter) && block_given?
+        rl = read_line(csv, data_collector)
+        break unless rl
+        counter += 1
       end && @csv_io.close
+    end
+
+    def read_line(csv, data_collector)
+      row = csv.readline
+      return false if row.nil?
+      row = process_headers(row) if @original_fields.nil?
+      data_collector.process_row(row)
+    rescue CSV::MalformedCSVError => e
+      @stats.stats[:errors] << e.message if @stats.stats[:errors].size < 10
     end
 
     def wrap_up

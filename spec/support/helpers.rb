@@ -14,5 +14,6 @@ FILES = {
   spaces_in_fields: "#{files_path}/spaces-in-fields.csv",
   no_taxonid: "#{files_path}/no-taxonid.csv",
   fix_headers: "#{files_path}/fix-headers.csv",
+  csv_relaxed: "#{files_path}/csv-relaxed.csv",
   output: "/tmp/output.csv"
 }.freeze

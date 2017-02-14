@@ -1,5 +1,11 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 2.2.3
+
+* @dimus - make csv processing more permissive, continue
+           it after meeting malformed csv rows. Add "errors"
+           field into status report.
+
 ## 2.1.3
 
 * @dimus - fix nil situation in headers' fields

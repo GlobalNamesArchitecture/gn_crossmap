@@ -13,6 +13,7 @@ module GnCrossmap
     def process_row(row)
       @row = row
       @fields ? collect_data : init_fields_collector
+      true
     end
 
     private
