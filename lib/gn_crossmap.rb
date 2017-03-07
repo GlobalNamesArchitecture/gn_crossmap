@@ -37,14 +37,12 @@ module GnCrossmap
     # rubocop:disable Metrics/AbcSize
 
     def run(opts)
-      opts = OpenStruct.new({ stats: Stats.new, alt_headers: [] }.merge(opts))
+      opts = opts_struct(opts)
       input_io, output_io = io(opts.input, opts.output)
-      reader = Reader.new(input_io, input_name(opts.input),
-                          opts.skip_original, opts.alt_headers, opts.stats)
+      reader = create_reader(input_io, opts)
       data = block_given? ? reader.read(&Proc.new) : reader.read
-      writer = Writer.new(output_io, reader.original_fields,
-                          output_name(opts.output))
-      resolver = Resolver.new(writer, opts.data_source_id, opts.stats)
+      writer = create_writer(reader, output_io, opts)
+      resolver = create_resolver(writer, opts)
       block_given? ? resolver.resolve(data, &Proc.new) : resolver.resolve(data)
       opts.output
     end
@@ -60,6 +58,25 @@ module GnCrossmap
     end
 
     private
+
+    def create_resolver(writer, opts)
+      Resolver.new(writer, opts.data_source_id, opts.resolver_url, opts.stats)
+    end
+
+    def create_writer(reader, output_io, opts)
+      Writer.new(output_io, reader.original_fields, output_name(opts.output))
+    end
+
+    def create_reader(input_io, opts)
+      Reader.new(input_io, input_name(opts.input),
+                 opts.skip_original, opts.alt_headers, opts.stats)
+    end
+
+    def opts_struct(opts)
+      resolver_url = "http://resolver.globalnames.org/name_resolvers.json"
+      OpenStruct.new({ stats: Stats.new, alt_headers: [],
+                       resolver_url: resolver_url }.merge(opts))
+    end
 
     def io(input, output)
       io_in = iogen(input, INPUT_MODE)

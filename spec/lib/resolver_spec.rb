@@ -1,4 +1,5 @@
 describe GnCrossmap::Resolver do
+  let(:url) {  "http://resolver.globalnames.org/name_resolvers.json" }
   let(:original_fields) do
     %w(TaxonId kingdom subkingdom phylum subphylum superclass class subclass
        cohort superorder order suborder infraorder superfamily family
@@ -12,7 +13,7 @@ describe GnCrossmap::Resolver do
                            original_fields,
                            FILES[:output])
   end
-  subject { GnCrossmap::Resolver.new(writer, 1, stats) }
+  subject { GnCrossmap::Resolver.new(writer, 1, url, stats) }
 
   describe ".new" do
     it "creates an instance" do

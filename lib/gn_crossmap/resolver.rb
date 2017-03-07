@@ -1,10 +1,9 @@
 module GnCrossmap
   # Sends data to GN Resolver and collects results
   class Resolver
-    URL = "http://resolver.globalnames.org/name_resolvers.json".freeze
-
-    def initialize(writer, data_source_id, stats)
+    def initialize(writer, data_source_id, resolver_url, stats)
       @stats = stats
+      @resolver_url = resolver_url
       @processor = GnCrossmap::ResultProcessor.new(writer, @stats)
       @ds_id = data_source_id
       @count = 0
@@ -65,7 +64,7 @@ module GnCrossmap
 
     def remote_resolve(names)
       batch_start = Time.now
-      res = RestClient.post(URL, data: names, data_source_ids: @ds_id)
+      res = RestClient.post(@resolver_url, data: names, data_source_ids: @ds_id)
       @processor.process(res, @current_data)
     rescue RestClient::Exception
       single_remote_resolve(names)
@@ -83,7 +82,8 @@ module GnCrossmap
     def single_remote_resolve(names)
       names.split("\n").each do |name|
         begin
-          res = RestClient.post(URL, data: name, data_source_ids: @ds_id)
+          res = RestClient.post(@resolver_url, data: name,
+                                               data_source_ids: @ds_id)
           @processor.process(res, @current_data)
         rescue RestClient::Exception => e
           process_resolver_error(e, name)

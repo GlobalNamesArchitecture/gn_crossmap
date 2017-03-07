@@ -92,6 +92,9 @@ all original data is preserved
 : (array) empty array by default. If `alt_headers` are not empty they are used
 instead of the headers supplied with the file
 
+``resolver_url``
+: URL to globalnames' resolver. Default is ``http://resolver.globalnames.org``
+
 #### `GnCrossmap.logger=`
 
 Allows to set logger to a custom logger (default is `STDERR`)
