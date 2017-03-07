@@ -48,7 +48,8 @@ module GnCrossmap
       @count += @batch
       e = [@count, @stats.stats[:total_records]].min
       GnCrossmap.log("Resolve #{s}-#{e} out of " \
-                     "#{@stats.stats[:total_records]} records")
+                     "#{@stats.stats[:total_records]} records at " \
+                     "#{@resolver_url}")
       yield
     end
 
