@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 2.3.0
+
+* @dimus - add option to supply url for global names resolver
+
 ## 2.2.3
 
 * @dimus - make csv processing more permissive, continue
