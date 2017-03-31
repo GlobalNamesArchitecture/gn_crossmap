@@ -4,6 +4,10 @@
 
 * @dimus - allow lists without taxonID
 
+## 2.3.1
+
+* @dimus - show resolver url in log
+
 ## 2.3.0
 
 * @dimus - add option to supply url for global names resolver
