@@ -8,8 +8,8 @@ module GnCrossmap
 
     def id_name_rank(row)
       @row = row
-      id = @row[:taxonid]
       name = find_name
+      id = GnCrossmap.find_id(@row, name)
       rank = @row[:taxonrank]
       rank = parse_rank if rank.nil?
       id && name ? { id: id, name: name, rank: rank } : nil

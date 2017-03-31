@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.0.0
+
+* @dimus - allow lists without taxonID
+
 ## 2.3.0
 
 * @dimus - add option to supply url for global names resolver

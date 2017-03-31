@@ -5,6 +5,8 @@ AllCops:
     - spec/**/*
   Include:
     - exe/crossmap
+    - "**/Gemfile"
+    - "**/Rakefile"
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 Style/DotPosition:

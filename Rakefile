@@ -8,4 +8,4 @@ end
 
 RuboCop::RakeTask.new
 
-task default: [:rubocop, :rspec]
+task default: %i(rubocop rspec)

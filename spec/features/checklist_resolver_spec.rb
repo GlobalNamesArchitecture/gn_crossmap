@@ -38,7 +38,7 @@ describe "features" do
   context "use alternative headers" do
     it "uses alternative headers for resolution" do
       opts = { output: "/tmp/output.csv",
-               input: FILES[:no_taxonid],
+               input: FILES[:no_name],
                data_source_id: 1, skip_original: true,
                alt_headers: %w(taxonID scientificName rank) }
       GnCrossmap.run(opts)
@@ -52,19 +52,16 @@ describe "features" do
 
     it "breaks without alternative headers" do
       opts = { output: "/tmp/output.csv",
-               input: FILES[:no_taxonid],
-               data_source_id: 1, skip_original: 1 }
-      expect do
-        GnCrossmap.run(opts)
-      end.to raise_error GnCrossmapError
-      FileUtils.rm(opts[:output])
+               input: FILES[:no_name],
+               data_source_id: 1, skip_original: true }
+      expect { GnCrossmap.run(opts) }.to raise_error GnCrossmapError
     end
 
     it "uses complex alternative headers" do
       opts = { output: "/tmp/output.csv",
                input: FILES[:fix_headers],
                data_source_id: 1, skip_original: true,
-               alt_headers: %w(nil nil taxonID rank genus species nil scientificNameAuthorship, nil) }
+               alt_headers: %w(nil nil taxonID rank genus species nil scientificNameAuthorship nil) }
       GnCrossmap.run(opts)
       CSV.open(opts[:output], col_sep: "\t", headers: true).each do |r|
         next unless r["matchedEditDistance"] == "0"
@@ -72,7 +69,6 @@ describe "features" do
         expect(r["acceptedName"].size).to be > 1
       end
       FileUtils.rm(opts[:output])
-
     end
   end
 

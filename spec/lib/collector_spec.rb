@@ -118,10 +118,16 @@ describe GnCrossmap::Collector do
         ["142886", "Macrobiotus echinogenitus var. areolatus", "Murray, 1907"]
       end
 
-      it "raises error" do
-        expect do
-          subject.process_row(fields)
-        end.to raise_error GnCrossmapError
+      it "processes the row, assigning gn uuid as id" do
+        subject.process_row(fields)
+        subject.process_row(row)
+        expect(subject.data).to eq(
+          [{ id: "4939ff2a-b709-58a4-82ed-890efa22bfdd",
+             name: "Macrobiotus echinogenitus var. areolatus Murray, 1907",
+             rank: "variety",
+             original: ["142886", "Macrobiotus echinogenitus var. areolatus",
+                        "Murray, 1907"] }]
+        )
       end
     end
 

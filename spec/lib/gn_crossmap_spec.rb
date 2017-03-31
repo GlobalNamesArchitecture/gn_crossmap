@@ -31,6 +31,7 @@ describe GnCrossmap do
 
     context "original fields flag" do
       let(:opts3) { opts.merge(skip_original: true) }
+      let(:opts4) { opts.merge(input: FILES[:no_taxonid], skip_original: true) }
       it "leaves only taxonID when skip_original is true" do
         i = File.open(opts3[:input])
         expect(i.first).to include("taxonRank")
@@ -38,6 +39,21 @@ describe GnCrossmap do
         subject.run(opts3)
         o = File.open(opts3[:output])
         expect(o.first).to_not include("taxonRank")
+        o.close
+      end
+
+      it "leaves no original fields if there is no taxonID" do
+        i = File.open(opts4[:input])
+        headers = i.first
+        expect(headers).to include("scientificName")
+        expect(headers).to include("taxonRank")
+        i.close
+        subject.run(opts4)
+        o = File.open(opts4[:output])
+        headers = o.first
+        expect(headers).to_not include("taxonID")
+        expect(headers).to_not include("scientificName")
+        expect(headers).to_not include("taxonRank")
         o.close
       end
 
@@ -54,9 +70,9 @@ describe GnCrossmap do
 
     context "no taxonid" do
       let(:opts4) { opts.merge(input: FILES[:no_taxonid]) }
-      it "raises an error" do
-        expect { subject.run(opts4) }.
-          to raise_error GnCrossmapError
+      it "works without taxonid" do
+        subject.run(opts4)
+        expect(File.readlines(opts[:output]).size).to be > 100
       end
     end
 

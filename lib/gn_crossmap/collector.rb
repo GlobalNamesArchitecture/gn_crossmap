@@ -21,13 +21,6 @@ module GnCrossmap
     def init_fields_collector
       @fields = @row.map { |f| prepare_field(f) }
       @collector = collector_factory
-      err = "taxonID must be present in the csv header"
-      raise GnCrossmapError, err unless taxon_id?
-    end
-
-    def taxon_id?
-      @taxon_id_index = @fields.index(:taxonid)
-      !@taxon_id_index.nil?
     end
 
     def prepare_field(field)

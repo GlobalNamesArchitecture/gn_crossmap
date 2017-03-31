@@ -16,12 +16,12 @@ module GnCrossmap
 
     def id_name_rank(row)
       @row = row
-      id = @row[:taxonid]
-      return nil if id.to_s.strip == ""
       rank = find_rank
       return nil unless rank
       name = assemble_name(rank)
       return nil unless name
+      id = GnCrossmap.find_id(@row, name)
+      return nil if id.strip.to_s == ""
       { id: id, name: name, rank: rank.to_s }
     end
 

@@ -13,6 +13,7 @@ FILES = {
   sciname_rank: "#{files_path}/taxon-rank-tab.csv",
   spaces_in_fields: "#{files_path}/spaces-in-fields.csv",
   no_taxonid: "#{files_path}/no-taxonid.csv",
+  no_name: "#{files_path}/no-name.csv",
   fix_headers: "#{files_path}/fix-headers.csv",
   csv_relaxed: "#{files_path}/csv-relaxed.csv",
   output: "/tmp/output.csv"

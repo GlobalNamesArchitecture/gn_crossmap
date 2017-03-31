@@ -5,6 +5,7 @@ require "tempfile"
 require "logger"
 require "logger/colors"
 require "biodiversity"
+require "gn_uuid"
 require "gn_crossmap/errors"
 require "gn_crossmap/version"
 require "gn_crossmap/reader"
@@ -55,6 +56,10 @@ module GnCrossmap
 
     def log(message)
       logger.info(message)
+    end
+
+    def find_id(row, name)
+      row.key?(:taxonid) ? row[:taxonid].strip : GnUUID.uuid(name)
     end
 
     private

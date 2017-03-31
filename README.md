@@ -56,7 +56,8 @@ crossmap -i my_list.csv -o my_list_if.csv -d 5
 # to use standard intput and/or output
 cat my_list.csv | crossmap -i - -o - > output
 
-# to keep only taxonID from original input
+# to keep only taxonID (if given) from original input
+# no original fields will be kept without taxonID
 cat my_list.csv | crossmap -i my_list.csv -s
 ```
 
@@ -85,8 +86,9 @@ designates `STDIN`
 : (integer) id of a data source from [GN resolver][resolver]
 
 ``skip_original``
-: (boolean) if true only `taxonID` is preserved from original data. Otherwise
-all original data is preserved
+: (boolean) if true only `taxonID` (if given) is preserved
+from original data. Otherwise all original data is preserved. If there is no
+``taxonID``, no original data will be preserved.
 
 ``alt_headers``
 : (array) empty array by default. If `alt_headers` are not empty they are used
@@ -184,7 +186,14 @@ Match types dictionary can be accessed with `GnCrossmap::MATCH_TYPES` constant
 `subspecies` `variety` `form scientificNameAuthorship` `scientificName`
 `taxonRank`
 
-#### Simple Example
+#### simplest Example -- only scientificName
+
+| scientificName                                          |
+|---------------------------------------------------------|
+| Animalia                                                |
+| Macrobiotus echinogenitus subsp. areolatus Murray, 1907 |
+
+#### taxonID and scientificName Example
 
     taxonID;scientificName
     1;Macrobiotus echinogenitus subsp. areolatus Murray, 1907
