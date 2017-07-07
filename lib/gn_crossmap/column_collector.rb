@@ -1,11 +1,11 @@
 module GnCrossmap
   # Assemble data from CSV reader by checking column fields
   class ColumnCollector
-    RANKS = %i(kingdom subkingdom phylum subphylum superclass class
+    RANKS = %i[kingdom subkingdom phylum subphylum superclass class
                subclass cohort superorder order suborder infraorder superfamily
                family subfamily tribe subtribe genus subgenus section species
-               subspecies variety form).freeze
-    SPECIES_RANKS = %i(genus species subspecies variety form).freeze
+               subspecies variety form].freeze
+    SPECIES_RANKS = %i[genus species subspecies variety form].freeze
 
     def initialize(fields)
       @fields = fields

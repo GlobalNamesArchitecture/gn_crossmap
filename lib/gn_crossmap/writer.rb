@@ -22,10 +22,10 @@ module GnCrossmap
     private
 
     def output_fields(original_fields)
-      original_fields + %i(matchedType inputName matchedName
+      original_fields + %i[matchedType inputName matchedName
                            matchedCanonicalForm inputRank matchedRank
                            synonymStatus acceptedName matchedEditDistance
-                           matchedScore matchTaxonID)
+                           matchedScore matchTaxonID]
     end
   end
 end
