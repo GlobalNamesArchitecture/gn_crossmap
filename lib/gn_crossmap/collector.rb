@@ -30,15 +30,16 @@ module GnCrossmap
     end
 
     def collect_data
-      @row = @fields.zip(@row).to_h
-      data = @collector.id_name_rank(@row)
+      @row = @fields.zip(@row)
+      @row_hash = @row.to_h
+      data = @collector.id_name_rank(@row_hash)
       return unless data
       data[:original] = prepare_original
       @data << data
     end
 
     def prepare_original
-      @skip_original ? [@row[:taxonid]] : @row.values
+      @skip_original ? [@row_hash[:taxonid]] : @row.map(&:last)
     end
 
     def collector_factory

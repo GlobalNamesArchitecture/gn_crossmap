@@ -40,7 +40,7 @@ describe "features" do
       opts = { output: "/tmp/output.csv",
                input: FILES[:no_name],
                data_source_id: 1, skip_original: true,
-               alt_headers: %w(taxonID scientificName rank) }
+               alt_headers: %w[taxonID scientificName rank] }
       GnCrossmap.run(opts)
       CSV.open(opts[:output], col_sep: "\t", headers: true).each do |r|
         next unless r["matchedEditDistance"] == "0"
@@ -48,6 +48,19 @@ describe "features" do
         expect(r["acceptedName"].size).to be > 1
       end
       FileUtils.rm(opts[:output])
+    end
+
+    it "ignores original headers if alternative headers exit" do
+      opts = { output: "/tmp/output.csv",
+               input: FILES[:all_fields_tiny],
+               data_source_id: 1,
+               alt_headers: %w[taxonID scientificName] }
+      GnCrossmap.run(opts)
+      CSV.open(opts[:output], col_sep: "\t", headers: true).each do |r|
+        next unless r["matchedEditDistance"] == "0"
+        expect(r["inputName"]).to eq "Animalia"
+        expect(r["acceptedName"]).to eq "Animalia"
+      end
     end
 
     it "breaks without alternative headers" do
@@ -61,7 +74,7 @@ describe "features" do
       opts = { output: "/tmp/output.csv",
                input: FILES[:fix_headers],
                data_source_id: 1, skip_original: true,
-               alt_headers: %w(nil nil taxonID rank genus species nil scientificNameAuthorship nil) }
+               alt_headers: %w[nil nil taxonID rank genus species nil scientificNameAuthorship nil] }
       GnCrossmap.run(opts)
       CSV.open(opts[:output], col_sep: "\t", headers: true).each do |r|
         next unless r["matchedEditDistance"] == "0"

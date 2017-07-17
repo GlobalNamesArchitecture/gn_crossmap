@@ -12,3 +12,4 @@ output.csv
 t
 gn_crossmap-*.gem
 .byebug_history
+.nvimlog

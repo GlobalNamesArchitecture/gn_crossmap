@@ -70,8 +70,18 @@ module GnCrossmap
 
     def process_headers(row)
       @original_fields = headers(row)
-      row = @alt_headers unless @alt_headers.empty?
+      row = produce_alt_headers(row) if @alt_headers && !@alt_headers.empty?
       row
+    end
+
+    def produce_alt_headers(row)
+      tail_size = row.size - @alt_headers.size
+      if tail_size <= 0
+        @alt_headers = @alt_headers[0..row.size - 1]
+      else
+        tail_size.times { @alt_headers << "" }
+      end
+      @alt_headers = @alt_headers.map { |h| h.nil? ? "" : h }
     end
 
     def log_progress(count)
