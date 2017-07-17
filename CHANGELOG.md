@@ -1,5 +1,10 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.0.1
+
+* @dimus - fixes #31 bug: prevent csv row to get  squashed
+           when original or alternative headers are not unique to each other
+
 ## 3.0.0
 
 * @dimus - allow lists without taxonID
