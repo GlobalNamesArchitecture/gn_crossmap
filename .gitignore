@@ -10,6 +10,7 @@
 output.csv
 .vim.custom
 t
+t.csv
 gn_crossmap-*.gem
 .byebug_history
 .nvimlog
