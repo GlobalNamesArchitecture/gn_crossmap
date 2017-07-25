@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.0.2
+
+* @dimus - Fixes #32 normalize capitalization of ranks according to Codes
+
 ## 3.0.1
 
 * @dimus - fixes #31 bug: prevent csv row to get  squashed
