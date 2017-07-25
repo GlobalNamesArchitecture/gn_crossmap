@@ -17,14 +17,14 @@ describe GnCrossmap do
     end
     it "runs crossmapping" do
       expect(subject.run(opts)).
-        to eq opts[:output]
+        to be_kind_of GnCrossmap::Stats
     end
 
     context "spaces in fields" do
       let(:opts2) { opts.merge(input: FILES[:spaces_in_fields]) }
       it "suppose to work even when fields have additional spaces" do
         expect(subject.run(opts2)).
-          to eq opts[:output]
+          to be_kind_of GnCrossmap::Stats
         expect(File.readlines(opts[:output]).size).to be > 100
       end
     end
@@ -87,13 +87,13 @@ describe GnCrossmap do
           matches = stats[:matches].values.inject(:+)
           expect(matches).to be stats[:resolved_records]
           expect(stats.keys).
-            to match_array %i(status total_records ingested_records
+            to match_array %i[status total_records ingested_records
                               resolved_records ingestion_span
                               resolution_span ingestion_start
                               resolution_start last_batches_time
-                              matches resolution_stop errors)
+                              matches resolution_stop errors]
         end
-        expect(states.uniq).to match_array %i(ingestion resolution finish)
+        expect(states.uniq).to match_array %i[ingestion resolution finish]
       end
     end
   end

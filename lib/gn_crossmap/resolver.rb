@@ -1,6 +1,8 @@
 module GnCrossmap
   # Sends data to GN Resolver and collects results
   class Resolver
+    attr_reader :stats
+
     def initialize(writer, data_source_id, resolver_url, stats)
       @stats = stats
       @resolver_url = resolver_url

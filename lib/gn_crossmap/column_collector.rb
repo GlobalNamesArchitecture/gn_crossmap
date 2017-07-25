@@ -40,9 +40,10 @@ module GnCrossmap
     def assemble_name(name_rank)
       name = @row[name_rank]
       if SPECIES_RANKS[1..-1].include?(name_rank)
-        name = assemble_species_name(name, name_rank)
+        assemble_species_name(name, name_rank)
+      else
+        name.capitalize
       end
-      name
     end
 
     def assemble_species_name(name, name_rank)
@@ -59,17 +60,23 @@ module GnCrossmap
       end
     end
 
+    # rubocop:disable Metrics/MethodLength
+
     def add_infrarank(name, rank)
       case rank
+      when :species
+        name.downcase
       when :subspecies
-        "subsp. #{name}"
+        "subsp. #{name.downcase}"
       when :variety
-        "var. #{name}"
+        "var. #{name.downcase}"
       when :form
-        "f. #{name}"
+        "f. #{name.downcase}"
       else
-        name
+        name.capitalize
       end
     end
+
+    # rubocop:enable all
   end
 end

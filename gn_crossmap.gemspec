@@ -8,7 +8,7 @@ require "gn_crossmap/version"
 # rubocop:disable Metrics/BlockLength:
 
 Gem::Specification.new do |gem|
-  gem.required_ruby_version = ">= 2.1"
+  gem.required_ruby_version = ">= 2.4"
   gem.name          = "gn_crossmap"
   gem.version       = GnCrossmap::VERSION
   gem.license       = "MIT"

@@ -45,7 +45,7 @@ module GnCrossmap
       writer = create_writer(reader, output_io, opts)
       resolver = create_resolver(writer, opts)
       block_given? ? resolver.resolve(data, &Proc.new) : resolver.resolve(data)
-      opts.output
+      resolver.stats
     end
 
     # rubocop:enable all

@@ -1,0 +1,302 @@
+TaxonId	matchedType	inputName	matchedName	matchedCanonicalForm	inputRank	matchedRank	synonymStatus	acceptedName	matchedEditDistance	matchedScore	matchTaxonID
+1	Exact string match	Animalia	Animalia	Animalia	kingdom	kingdom		Animalia	0	0.75	33521288
+2	Exact string match	Acanthocephala	Acanthocephala	Acanthocephala	phylum	genus		Acanthocephala	0	0.75	33539389
+14	Exact string match	Annelida	Annelida	Annelida	phylum	phylum		Annelida	0	0.75	33521477
+39	Exact string match	Arthropoda	Arthropoda	Arthropoda	phylum	phylum		Arthropoda	0	0.75	33521342
+176	Exact string match	Brachiopoda	Brachiopoda	Brachiopoda	phylum	phylum		Brachiopoda	0	0.75	33527003
+183	Exact string match	Cephalorhyncha	Cephalorhyncha	Cephalorhyncha	phylum	genus		Cephalorhyncha	0	0.75	33635966
+193	Exact string match	Chaetognatha	Chaetognatha	Chaetognatha	phylum	phylum		Chaetognatha	0	0.75	33522194
+196	Exact string match	Chordata	Chordata	Chordata	phylum	phylum		Chordata	0	0.75	33521289
+338	Exact string match	Cnidaria	Cnidaria	Cnidaria	phylum	phylum		Cnidaria	0	0.75	33522061
+371	Exact string match	Ctenophora	Ctenophora	Ctenophora	phylum	genus		Ctenophora	0	0.75	33594274
+381	Exact string match	Cycliophora	Cycliophora	Cycliophora	phylum	phylum		Cycliophora	0	0.75	33521605
+384	Exact string match	Echinodermata	Echinodermata	Echinodermata	phylum	phylum		Echinodermata	0	0.75	33521507
+421	Exact string match	Echiura	Echiura	Echiura	phylum	phylum		Echiura	0	0.75	33525460
+424	Canonical form fuzzy match	Ectoprocta	Entoprocta	Entoprocta	phylum	phylum		Entoprocta	1	0.5	33526192
+431	Exact string match	Entoprocta	Entoprocta	Entoprocta	phylum	phylum		Entoprocta	0	0.75	33526192
+436	Exact string match	Gastrotricha	Gastrotricha	Gastrotricha	phylum	phylum		Gastrotricha	0	0.75	33524497
+440	Exact string match	Gnathostomulida	Gnathostomulida	Gnathostomulida	phylum	phylum		Gnathostomulida	0	0.75	33521327
+444	Exact string match	Hemichordata	Hemichordata	Hemichordata	phylum	phylum		Hemichordata	0	0.75	33525467
+449	No match	Mesozoa			phylum				
+455	Exact string match	Mollusca	Mollusca	Mollusca	phylum	phylum		Mollusca	0	0.75	33521301
+511	Exact string match	Myxozoa	Myxozoa	Myxozoa	phylum	phylum		Myxozoa	0	0.75	33526292
+517	Exact string match	Nematoda	Nematoda	Nematoda	phylum	phylum		Nematoda	0	0.75	33526516
+541	Exact string match	Nemertea	Nemertea	Nemertea	phylum	phylum		Nemertea	0	0.75	33522094
+549	Exact string match	Onychophora	Onychophora	Onychophora	phylum	genus		Onychophora	0	0.75	33708758
+552	Exact string match	Phoronida	Phoronida	Phoronida	phylum	phylum		Phoronida	0	0.75	33523929
+555	Exact string match	Placozoa	Placozoa	Placozoa	phylum	phylum		Placozoa	0	0.75	33532103
+558	Exact string match	Platyhelminthes	Platyhelminthes	Platyhelminthes	phylum	phylum		Platyhelminthes	0	0.75	33521309
+587	Exact string match	Porifera	Porifera	Porifera	phylum	phylum		Porifera	0	0.75	33527549
+620	Exact string match	Rotifera	Rotifera	Rotifera	phylum	phylum		Rotifera	0	0.75	33529232
+628	Exact string match	Sipuncula	Sipuncula	Sipuncula	phylum	phylum		Sipuncula	0	0.75	33525478
+631	Exact string match	Tardigrada	Tardigrada	Tardigrada	phylum	phylum		Tardigrada	0	0.75	33526859
+1447	Exact string match	Choanozoa	Choanozoa	Choanozoa	phylum	phylum		Choanozoa	0	0.75	33523364
+126323	Exact string match	Bryozoa	Bryozoa	Bryozoa	phylum	phylum		Bryozoa	0	0.75	33524015
+128966	No match	Choanoflagellata			phylum				
+136021	Exact string match	Pogonophora	Pogonophora	Pogonophora	phylum	genus		Pogonophora	0	0.75	33686555
+136022	No match	Frenulata			class				
+136023	No match	Monilifera			class				
+136024	No match	Vestimentifera			class				
+1448	No match	Mesomycetozoea			class				
+1452	Canonical form exact match	Not_assigned_6336	Not assigned	Not assigned	class	class		Not assigned	0	0.988	33521328
+147216	No match	Choanoflagellatea			class				
+147219	Canonical form fuzzy match	Craspedida	Craspedia	Craspedia	order	genus		Craspedia	1	0.5	33717549
+118262	No match	Codonosigaceae			family				
+118267	No match	Salpingoecaceae			family				
+147236	No match	Acanthoecaceae			family				
+147447	Canonical form fuzzy match	Acanthocorbis	Acanthocoris	Acanthocoris	genus	genus		Acanthocoris	1	0.5	33607780
+147448	Canonical form fuzzy match	Acanthoeca	Acanthoecia	Acanthoecia	genus	genus		Acanthoecia	1	0.5	33592319
+147449	No match	Amoenoscapa			genus				
+147450	No match	Cosmoeca			genus				
+147451	No match	Crinolina			genus				
+147452	Canonical form fuzzy match	Crucispina	Crurispina	Crurispina	genus	genus		Crurispina	1	0.5	33779726
+147453	No match	Diaphanoeca			genus				
+147454	Exact string match	Diplotheca	Diplotheca	Diplotheca	genus	genus		Diplotheca	0	0.75	33757453
+147455	Canonical form fuzzy match	Monocosta	Monocesta	Monocesta	genus	genus		Monocesta	1	0.5	33552945
+147456	No match	Nannoeca			genus				
+147457	No match	Parvicorbicula			genus				
+147458	Exact string match	Platypleura	Platypleura	Platypleura	genus	genus		Platypleura	0	0.75	33662111
+147459	No match	Pleurasiga			genus				
+147460	No match	Polyfibula			genus				
+147461	No match	Polyoeca			genus				
+147462	No match	Saepicula			genus				
+147463	No match	Saroeca			genus				
+147464	No match	Savillea			genus				
+147465	No match	Stephanoeca			genus				
+147934	No match	Stephanoeca complexa (Norris) Throndsen, 1974			species				
+147935	No match	Stephanoeca diplocostata Ellis, 1930			species				
+147936	No match	Stephanoeca elegans (Norris) Throndsen, 1974			species				
+147937	No match	Stephanoeca kentii Ellis, 1930			species				
+149958	No match	Stephanoeca apheles Thomsen, Buck & Chavez, 1991			species				
+149959	No match	Stephanoeca cupula (Leadbeater) Thomsen, 1988			species				
+149960	No match	Stephanoeca norrisii Thomsen, 1973			species				
+149961	No match	Stephanoeca urnula Thomsen, 1973			species				
+149956	No match	Savillea micropora (Norris) Leadbeater, 1975			species				
+149957	No match	Savillea parva (Ellis) Loeblich III, 1967			species				
+149955	No match	Saroeca attenuata Thomsen, 1979			species				
+149954	No match	Saepicula pulchra Leadbeater, 1980			species				
+149953	No match	Polyoeca dichotoma (Kent, 1881)			species				
+147933	No match	Polyfibula sphyrelata (Thomsen) Manton in Manton & Bremer, 1981			species				
+147930	No match	Pleurasiga echinocostata Espeland in Espeland & Throndsen, 1986			species				
+147931	No match	Pleurasiga minima Throndsen, 1970			species				
+147932	No match	Pleurasiga reynoldsii Throndsen, 1970			species				
+147929	Genus part match	Platypleura infundibuliformis (Leadbeater) Thomsen in Thomsen & Boonruang, 1983	Platypleura	Platypleura	species	genus		Platypleura	0	0.75	33662111
+147927	No match	Parvicorbicula quadricostata Throndsen, 1970			species				
+147928	No match	Parvicorbicula socialis (Meunier) Deflandre, 1960			species				
+149951	No match	Parvicorbicula circularis Thomsen, 1976			species				
+149952	No match	Parvicorbicula superpositus Booth, 1990			species				
+149950	No match	Nannoeca minuta (Leadbeater) Thomsen, 1988			species				
+149949	No match	Monocosta fennica Thomsen, 1979			species				
+149948	Genus part match	Diplotheca costata Valkanov, 1970	Diplotheca	Diplotheca	species	genus		Diplotheca	0	0.75	33757453
+147925	No match	Diaphanoeca grandis Ellis, 1930			species				
+147926	No match	Diaphanoeca sphaerica Thomsen, 1982			species				
+149946	No match	Diaphanoeca pedicellata Leadbeater, 1972			species				
+149947	No match	Diaphanoeca undulata Thomsen, 1982			species				
+147924	No match	Crucispina cruciformis Espeland in Espeland & Throndsen, 1986			species				
+147923	No match	Crinolina isefiordensis Thomsen, 1976			species				
+149945	No match	Crinolina aperta (Leadbeater) Thomsen			species				
+149943	No match	Cosmoeca norvegica Thomsen in Thomsen & Boonruang, 1984			species				
+149944	No match	Cosmoeca ventricosa Thomsen in Thomsen & Boonruang, 1984			species				
+149942	No match	Amoenoscapa caudata			species				
+149940	No match	Acanthoeca brevipoda Ellis, 1930			species				
+149941	No match	Acanthoeca spectabilis Ellis, 1930			species				
+147920	No match	Acanthocorbis asymmetrica (Thomsen) Hara & Takahashi, 1984			species				
+147921	No match	Acanthocorbis campanula (Espeland) Thomsen in Thomsen, Buck & Chavez, 1991			species				
+147922	No match	Acanthocorbis unguiculata (Thomsen) Hara & Takahashi, 1984			species				
+149938	No match	Acanthocorbis apoda (Leadbeater) Hara & Takahashi, 1984			species				
+149939	No match	Acanthocorbis haurakiana Thomsen in Thomsen, Buck & Chavez, 1991			species				
+118268	No match	Stelexomonas			genus				
+118270	No match	Salpingoeca			genus				
+118273	Canonical form fuzzy match	Aulomonas	Allomonas	Allomonas	genus	genus		Allomonas	1	0.5	33632582
+147603	No match	Bicosta			genus				
+147604	No match	Calliacantha			genus				
+147605	No match	Pachysoeca			genus				
+150385	No match	Pachysoeca ruttneri (Bourr.) Fott			species				
+150386	No match	Pachysoeca urnula (Skuja) ?			species				
+147948	No match	Calliacantha natans (Grøntved) Leadbeater, 1978			species				
+150382	No match	Calliacantha longicaudata (Leadbeater) Leadbeater, 1978			species				
+150383	No match	Calliacantha multispina Manton & Oates			species				
+150384	No match	Calliacantha simplex Manton & Oates, 1979			species				
+147946	No match	Bicosta minor (Reynolds) Leadbeater, 1978			species				
+147947	No match	Bicosta spinifera (Throndsen) Leadbeater, 1978			species				
+150381	No match	Bicosta antennigera Moestrup, 1979			species				
+118274	No match	Aulomonas purdyi Lackey			species				
+118271	No match	Salpingoeca frequentissima (Zacharias) Lemmermann			species				
+149806	No match	Salpingoeca aggregata Valkanov			species				
+149807	No match	Salpingoeca amphoridium James-Clark			species				
+149808	No match	Salpingoeca collaris Stokes			species				
+149809	No match	Salpingoeca gracilis Clark			species				
+149810	No match	Salpingoeca inquillata Kent			species				
+149811	No match	Salpingoeca marina James-Clark			species				
+149812	No match	Salpingoeca minuta Kent			species				
+118269	No match	Stelexomonas dichotoma Lackey			species				
+118263	No match	Codosiga			genus				
+118265	Canonical form fuzzy match	Desmarella	Desmacella	Desmacella	genus	genus		Desmacella	1	0.5	33536188
+147601	No match	Monosiga			genus				
+147602	No match	Proterospongia			genus				
+151163	No match	Sphaeroeca			genus				
+151257	No match	Sphaeroeca volvox Lauterborn			species				
+147945	No match	Proterospongia dybsoeënsis Grøntved			species				
+147944	No match	Monosiga mikropelagica Throndsen			species				
+150379	No match	Monosiga baltica Willén			species				
+150380	No match	Monosiga ovata Kent, 1880			species				
+151239	No match	Monosiga micropelagica Throndsen			species				
+151240	No match	Monosiga marina Grøntved			species				
+118266	No match	Desmarella moniliformis Kent			species				
+118264	No match	Codosiga botrytis (Ehrenberg) Kent			species				
+1453	Canonical form exact match	Not_assigned_6337	Not assigned	Not assigned	order	class		Not assigned	0	0.988	33521328
+1449	No match	Amoebidiales			order				
+1450	No match	Eccrinales			order				
+1451	Canonical form exact match	Not_assigned_6339	Not assigned	Not assigned	order	class		Not assigned	0	0.988	33521328
+632	Exact string match	Eutardigrada	Eutardigrada	Eutardigrada	class	class		Eutardigrada	0	0.75	33526860
+635	Exact string match	Heterotardigrada	Heterotardigrada	Heterotardigrada	class	class		Heterotardigrada	0	0.75	33526871
+638	Exact string match	Mesotardigrada	Mesotardigrada	Mesotardigrada	class	class		Mesotardigrada	0	0.75	33526885
+639	Exact string match	Thermozodia	Thermozodia	Thermozodia	order	order		Thermozodia	0	0.75	33526886
+636	Exact string match	Arthrotardigrada	Arthrotardigrada	Arthrotardigrada	order	order		Arthrotardigrada	0	0.75	33526872
+637	Exact string match	Echiniscoidea	Echiniscoidea	Echiniscoidea	order	order		Echiniscoidea	0	0.75	33526880
+51909	Exact string match	Echiniscoididae	Echiniscoididae	Echiniscoididae	family	family		Echiniscoididae	0	0.75	33526883
+137920	Exact string match	Echiniscidae	Echiniscidae	Echiniscidae	family	family		Echiniscidae	0	0.75	33526882
+142628	Exact string match	Bryodelphax	Bryodelphax	Bryodelphax	genus	genus		Bryodelphax	0	0.75	33592750
+142631	No match	Diploechiniscus			genus				
+142633	Exact string match	Echiniscus	Echiniscus	Echiniscus	genus	genus		Echiniscus	0	0.75	33548677
+142634	No match	Emydium			genus				
+142638	Exact string match	Hypechiniscus	Hypechiniscus	Hypechiniscus	genus	genus		Hypechiniscus	0	0.75	33573307
+142649	Exact string match	Proechiniscus	Proechiniscus	Proechiniscus	genus	genus		Proechiniscus	0	0.75	33622795
+142650	Exact string match	Pseudechiniscus	Pseudechiniscus	Pseudechiniscus	genus	genus		Pseudechiniscus	0	0.75	33591335
+142655	Exact string match	Testechiniscus	Testechiniscus	Testechiniscus	genus	genus		Testechiniscus	0	0.75	33591375
+142815	Exact string match	Testechiniscus spitsbergensis (Scourfield, 1897)	Testechiniscus spitsbergensis (Scourfield, 1897)	Testechiniscus spitsbergensis	species	species	synonym	Testechiniscus spitzbergensis (Scourfield, 1897)	0	0.999	a444e66ccbe5f77af22717dd4a47a4e9
+142705	Exact string match	Pseudechiniscus facettalis Petersen, 1951	Pseudechiniscus facettalis Petersen, 1951	Pseudechiniscus facettalis	species	species		Pseudechiniscus facettalis Petersen, 1951	0	0.999	8931cdb69c1c093f93ae9bb3a3845a63
+142714	Exact string match	Pseudechiniscus hanneae Petersen, 1951	Pseudechiniscus hanneae Petersen, 1951	Pseudechiniscus hanneae	species	species	synonym	Proechiniscus hanneae (Petersen, 1951)	0	0.999	6ca394a9100c3f59ef90e9892cf86f8b
+142813	Exact string match	Pseudechiniscus suillus (Ehrenberg, 1853)	Pseudechiniscus suillus (Ehrenberg, 1853)	Pseudechiniscus suillus	species	species		Pseudechiniscus suillus (Ehrenberg, 1853)	0	0.999	e6660a8f5ebe64218a17385699c0b5cd
+142814	Exact string match	Pseudechiniscus victor (Ehrenberg, 1853)	Pseudechiniscus victor (Ehrenberg, 1853)	Pseudechiniscus victor	species	species		Pseudechiniscus victor (Ehrenberg, 1853)	0	0.999	c0152b0d185a1858267d862c7563a5cf
+142871	Exact string match	Pseudechiniscus islandicus (Richters, 1904)	Pseudechiniscus islandicus (Richters, 1904)	Pseudechiniscus islandicus	species	species		Pseudechiniscus islandicus (Richters, 1904)	0	0.999	e8c59400e6a78ef3d0b3067f5181fe65
+142812	Canonical form exact match	Proechiniscus hanneae (Peterson, 1951)	Proechiniscus hanneae (Petersen, 1951)	Proechiniscus hanneae	species	species		Proechiniscus hanneae (Petersen, 1951)	0	0.997	74401ba7f409acdce202b4bdd4010ab8
+142708	Exact string match	Hypechiniscus gladiator (Murray, 1905)	Hypechiniscus gladiator (Murray, 1905)	Hypechiniscus gladiator	species	species		Hypechiniscus gladiator (Murray, 1905)	0	0.999	8a06a0288bdbc57ab3a4b9cf8850eb72
+142888	Canonical form exact match	Hypechiniscus gladiator subsp. gladiator (Murray, 1905)	Hypechiniscus gladiator gladiator (Murray, 1905)	Hypechiniscus gladiator gladiator	subspecies	infraspecies		Hypechiniscus gladiator gladiator (Murray, 1905)	0	1.0	8498130f8f48d1697088a1afbd9a6352
+142710	Exact string match	Emydium granulatum Doyère, 1840	Emydium granulatum Doyère, 1840	Emydium granulatum	species	species	synonym	Echiniscus granulatus (Doyère, 1840)	0	0.999	927fde296e566b8b6e2e387a7f108ab2
+142785	Canonical form fuzzy match	Emydium spinulosus Doyère, 1840	Emydium spinulosum Doyère, 1840	Emydium spinulosum	species	species	synonym	Echiniscus spinulosus (Doyère, 1840)	1	0.96	e832909d23ee2a1bb8c88f549516a474
+142795	Exact string match	Emydium testudo Doyère, 1840	Emydium testudo Doyère, 1840	Emydium testudo	species	species	synonym	Echiniscus testudo (Doyère, 1840)	0	0.999	809d2997bd50ad335ee7c3bde5d3c047
+142669	Exact string match	Echiniscus arctomys Ehrenberg, 1853	Echiniscus arctomys Ehrenberg, 1853	Echiniscus arctomys	species	species		Echiniscus arctomys Ehrenberg, 1853	0	0.999	3daaa04adaae1eef8b4c6d5c500a7da4
+142682	Exact string match	Echiniscus blumi Richters, 1903	Echiniscus blumi Richters, 1903	Echiniscus blumi	species	species		Echiniscus blumi Richters, 1903	0	0.999	46b47042c539bd21f0141f018ddf82cd
+142683	Exact string match	Echiniscus capillatus Ramazzotti, 1956	Echiniscus capillatus Ramazzotti, 1956	Echiniscus capillatus	species	species		Echiniscus capillatus Ramazzotti, 1956	0	0.999	b8c8d74cf253e96c795d5631dcd1ec18
+142686	Exact string match	Echiniscus columinis Murray, 1911	Echiniscus columinis Murray, 1911	Echiniscus columinis	species	species		Echiniscus columinis Murray, 1911	0	0.999	cfb8dc97095eb003058383bfa9f186a1
+142707	Exact string match	Echiniscus gladiator Murray, 1905	Echiniscus gladiator Murray, 1905	Echiniscus gladiator	species	species	synonym	Hypechiniscus gladiator (Murray, 1905)	0	0.999	fcf37f6e08153bbc1317f4fad3acfb89
+142724	Exact string match	Echiniscus islandicus Richters, 1904	Echiniscus islandicus Richters, 1904	Echiniscus islandicus	species	species	synonym	Pseudechiniscus islandicus (Richters, 1904)	0	0.999	9ed1ea1771655f5bbc5986e4ac7751ce
+142733	Canonical form exact match	Echiniscus merokensis Richters, 1903	Echiniscus merokensis Richters, 1904	Echiniscus merokensis	species	species		Echiniscus merokensis Richters, 1904	0	0.997	6e35ed8b9cbd8771461e8a534a46f472
+142735	Exact string match	Echiniscus militaris Murray, 1911	Echiniscus militaris Murray, 1911	Echiniscus militaris	species	species		Echiniscus militaris Murray, 1911	0	0.999	2bbb035bb75689a2b94b1188e59cec3f
+142746	Exact string match	Echiniscus oihonnae Richters, 1903	Echiniscus oihonnae Richters, 1903	Echiniscus oihonnae	species	species		Echiniscus oihonnae Richters, 1903	0	0.999	6917bf673163c5a0b15faa993cc9c6fb
+142757	Partial canonical form match	Echiniscus phocae Bois-Reymond Marcus, E. du, 1944.	Echiniscus phocae Du Bois-Reymond Marcus, 1944	Echiniscus phocae	species	species		Echiniscus phocae Du Bois-Reymond Marcus, 1944	0	0.988	fdae9568fbc06819d6f8de954bf0a3d5
+142765	Exact string match	Echiniscus quadrispinosus Richters, 1902	Echiniscus quadrispinosus Richters, 1902	Echiniscus quadrispinosus	species	species		Echiniscus quadrispinosus Richters, 1902	0	0.999	cfc1dcd0f0ab07dc7fdaeb1e5c1253af
+142767	Exact string match	Echiniscus reticulatus Murray, 1905	Echiniscus reticulatus Murray, 1905	Echiniscus reticulatus	species	species		Echiniscus reticulatus Murray, 1905	0	0.999	5ce7da9af1366c3080a222efcfdf62ed
+142779	Genus part match	Echiniscus sigismundi Schultze, 1865	Echiniscus	Echiniscus	species	genus		Echiniscus	0	0.75	33548677
+142780	Genus part match	Echiniscus sinensis Pilato, 1974	Echiniscus	Echiniscus	species	genus		Echiniscus	0	0.75	33548677
+142784	Exact string match	Echiniscus spiculifer Schaudinn, 1901	Echiniscus spiculifer Schaudinn, 1901	Echiniscus spiculifer	species	species		Echiniscus spiculifer Schaudinn, 1901	0	0.999	a88e15ee0e02ace86c82570aac0e2914
+142786	Exact string match	Echiniscus spitsbergensis Scourfield, 1897	Echiniscus spitsbergensis Scourfield, 1897	Echiniscus spitsbergensis	species	species	synonym	Testechiniscus spitzbergensis (Scourfield, 1897)	0	0.999	6357b5dd8e62fd19b3877724d4e65122
+142792	Exact string match	Echiniscus suillus Ehrenberg, 1853	Echiniscus suillus Ehrenberg, 1853	Echiniscus suillus	species	species	synonym	Pseudechiniscus suillus (Ehrenberg, 1853)	0	0.999	ee315b4ca5704159d6f073d010bcb7a8
+142797	Exact string match	Echiniscus trisetosus Cuénot, 1932	Echiniscus trisetosus Cuénot, 1932	Echiniscus trisetosus	species	species		Echiniscus trisetosus Cuénot, 1932	0	0.999	9e6a9e512992c4fddeab02c9d91a32de
+142800	Genus part match	Echiniscus victor Ehrenberg, 1853	Echiniscus	Echiniscus	species	genus		Echiniscus	0	0.75	33548677
+142806	Exact string match	Echiniscus wendti Richters, 1903	Echiniscus wendti Richters, 1903	Echiniscus wendti	species	species		Echiniscus wendti Richters, 1903	0	0.999	0e330bc2c6db48f42a56125f1e6ecb4f
+142811	Exact string match	Echiniscus granulatus (Doyère, 1840)	Echiniscus granulatus (Doyère, 1840)	Echiniscus granulatus	species	species		Echiniscus granulatus (Doyère, 1840)	0	0.999	a0a0e0add09a122d89c2f5ffc6df8685
+142869	Exact string match	Echiniscus spinulosus (Doyère, 1840)	Echiniscus spinulosus (Doyère, 1840)	Echiniscus spinulosus	species	species		Echiniscus spinulosus (Doyère, 1840)	0	0.999	73cfafc2ba1db2fbdbb202e82c986320
+142870	Exact string match	Echiniscus testudo (Doyère, 1840)	Echiniscus testudo (Doyère, 1840)	Echiniscus testudo	species	species		Echiniscus testudo (Doyère, 1840)	0	0.999	040b74afa3222e50eda9132dbb1cf3a4
+142883	Canonical form exact match	Echiniscus quadrispinosus subsp. quadrispinosus Richters, 1902	Echiniscus quadrispinosus quadrispinosus Richters, 1902	Echiniscus quadrispinosus quadrispinosus	subspecies	infraspecies		Echiniscus quadrispinosus quadrispinosus Richters, 1902	0	1.0	0e5b15f015fe6f61d0bc5412e32b1811
+142879	Canonical form exact match	Echiniscus merokensis subsp. merokensis Richters, 1903	Echiniscus merokensis merokensis Richters, 1904	Echiniscus merokensis merokensis	subspecies	infraspecies		Echiniscus merokensis merokensis Richters, 1904	0	1.0	cdfa12816b6734ca50ca2cfa84c56be7
+142884	Canonical form exact match	Echiniscus merokensis subsp. suecicus Thulin, 1911	Echiniscus merokensis suecicus Thulin, 1911	Echiniscus merokensis suecicus	subspecies	infraspecies		Echiniscus merokensis suecicus Thulin, 1911	0	1.0	d766951c6c6da0079ad5f2888a99ead8
+142872	Canonical form exact match	Echiniscus blumi subsp. blumi Richters, 1903	Echiniscus blumi blumi Richters, 1903	Echiniscus blumi blumi	subspecies	infraspecies		Echiniscus blumi blumi Richters, 1903	0	1.0	dae96e625750f7cb739da92f050fd14e
+142810	No match	Diploechiniscus oihonnae (Richters, 1903)			species				
+142754	Exact string match	Bryodelphax parvulus Thulin, 1928	Bryodelphax parvulus Thulin, 1928	Bryodelphax parvulus	species	species		Bryodelphax parvulus Thulin, 1928	0	0.999	e048ce1b39141ec381a77ce2b161aa8d
+142755	Genus part match	Bryodelphax parvuspolaris 'Kaczmarek, Zawierucha, Smykla, & Michalczyk, 2012	Bryodelphax	Bryodelphax	species	genus		Bryodelphax	0	0.75	33592750
+142852	Exact string match	Bryodelphax sinensis (Pilato, 1974)	Bryodelphax sinensis (Pilato, 1974)	Bryodelphax sinensis	species	species		Bryodelphax sinensis (Pilato, 1974)	0	0.999	6427c8296dd6cce731530538218af0cd
+51910	Exact string match	Echiniscoides	Echiniscoides	Echiniscoides	genus	genus		Echiniscoides	0	0.75	33638009
+51911	Canonical form exact match	Echiniscoides sigismundi (Schultze, 1865)	Echiniscoides sigismundi (M. Schultze, 1865)	Echiniscoides sigismundi	species	species		Echiniscoides sigismundi (M. Schultze, 1865)	0	0.75	1a04f9996ee5ebfa6c6425ae06ee5fe8
+142875	Canonical form exact match	Echiniscoides sigismundi subsp. groenlandicus Kristensen & Hallas, 1980	Echiniscoides sigismundi groenlandicus Kristensen and Hallas, 1980	Echiniscoides sigismundi groenlandicus	subspecies	infraspecies		Echiniscoides sigismundi groenlandicus Kristensen and Hallas, 1980	0	1.0	8af999a6afad4b050e22daadcf3d3e8c
+142887	Canonical form exact match	Echiniscoides sigismundi subsp. sigismundi (Schultze, 1865)	Echiniscoides sigismundi sigismundi (M. Schultze, 1865)	Echiniscoides sigismundi sigismundi	variety	infraspecies		Echiniscoides sigismundi sigismundi (M. Schultze, 1865)	0	0.997	84463c442f19128440d9f2ee94ac86b2
+51906	Exact string match	Batillipedidae	Batillipedidae	Batillipedidae	family	family		Batillipedidae	0	0.75	33526873
+51907	Exact string match	Batillipes	Batillipes	Batillipes	genus	genus		Batillipes	0	0.75	33592645
+51908	Exact string match	Batillipes mirus Richters, 1909	Batillipes mirus Richters, 1909	Batillipes mirus	species	species		Batillipes mirus Richters, 1909	0	0.999	b508c8eb8bf0ac38582506696e693d00
+633	Exact string match	Apochela	Apochela	Apochela	order	order		Apochela	0	0.75	33526861
+634	Exact string match	Parachela	Parachela	Parachela	order	genus		Parachela	0	0.75	33651660
+137922	No match	Eohypsibioidea			superfamily				
+137923	No match	Hypsibioidea			superfamily				
+137924	No match	Isohypsibioidea			superfamily				
+137925	No match	Macrobiotoidea			superfamily				
+142613	Exact string match	Macrobiotidae	Macrobiotidae	Macrobiotidae	family	family		Macrobiotidae	0	0.75	33526868
+142614	No match	Murrayidae			family				
+142630	Exact string match	Dactylobiotus	Dactylobiotus	Dactylobiotus	genus	genus		Dactylobiotus	0	0.75	33571363
+142646	Exact string match	Murrayon	Murrayon	Murrayon	genus	genus		Murrayon	0	0.75	33647024
+142848	Exact string match	Murrayon dianeae (Kristensen, 1982)	Murrayon dianeae (Kristensen, 1982)	Murrayon dianeae	species	species		Murrayon dianeae (Kristensen, 1982)	0	0.999	5ded3768547e26075e4cd2e3e2c9d7ba
+142849	Exact string match	Murrayon hastatus (Murray, 1907)	Murrayon hastatus (Murray, 1907)	Murrayon hastatus	species	species		Murrayon hastatus (Murray, 1907)	0	0.999	9d14dfc3b5b35be6edaa2ce539672e5d
+142850	Exact string match	Murrayon hibernicus (Murray, 1911)	Murrayon hibernicus (Murray, 1911)	Murrayon hibernicus	species	species		Murrayon hibernicus (Murray, 1911)	0	0.999	c272571416d683326d1c3119c392a416
+142851	Exact string match	Murrayon pullari (Murray, 1907)	Murrayon pullari (Murray, 1907)	Murrayon pullari	species	species		Murrayon pullari (Murray, 1907)	0	0.999	5dbea2a025619a16af5827851f3e34eb
+142743	Canonical form exact match	Dactylobiotus octavi Guidetti, Altiero & Hansen, 2006	Dactylobiotus octavi Guidetti, Altiero and Hansen, 2006	Dactylobiotus octavi	species	species		Dactylobiotus octavi Guidetti, Altiero and Hansen, 2006	0	0.997	262f5cf1ea8db53e8abf4d0a734a8863
+142845	Exact string match	Dactylobiotus ambiguus (Murray, 1907)	Dactylobiotus ambiguus (Murray, 1907)	Dactylobiotus ambiguus	species	species		Dactylobiotus ambiguus (Murray, 1907)	0	0.999	91ef291a4c7a995c48b977306c0b6283
+142846	Exact string match	Dactylobiotus ampullaceus (Thulin, 1911)	Dactylobiotus ampullaceus (Thulin, 1911)	Dactylobiotus ampullaceus	species	species		Dactylobiotus ampullaceus (Thulin, 1911)	0	0.999	55900500527e655cdc124467b078e2de
+142847	Exact string match	Dactylobiotus dispar (Murray, 1907)	Dactylobiotus dispar (Murray, 1907)	Dactylobiotus dispar	species	species		Dactylobiotus dispar (Murray, 1907)	0	0.999	e26bdc0ebc4d40e21551c005b7c6fc68
+142855	Exact string match	Dactylobiotus macronyx (Dujardin, 1851)	Dactylobiotus macronyx (Dujardin, 1851)	Dactylobiotus macronyx	species	species		Dactylobiotus macronyx (Dujardin, 1851)	0	0.999	ae91b26cbc0a0dffdd766783bb2457d3
+142622	Exact string match	Adorybiotus	Adorybiotus	Adorybiotus	genus	genus		Adorybiotus	0	0.75	33591347
+142640	Exact string match	Macrobiotus	Macrobiotus	Macrobiotus	genus	genus		Macrobiotus	0	0.75	33547246
+142644	Exact string match	Minibiotus	Minibiotus	Minibiotus	genus	genus		Minibiotus	0	0.75	33612207
+142647	No match	Paramacrobiotus			genus				
+142653	Exact string match	Richtersius	Richtersius	Richtersius	genus	genus		Richtersius	0	0.75	33640446
+142654	No match	Tenuibiotus			genus				
+142854	No match	Tenuibiotus willardi (Pilato, 1977)			species				
+142868	No match	Tenuibiotus voronkovi (Tumanov, 2007)			species				
+142844	Exact string match	Richtersius coronifer (Richters, 1903)	Richtersius coronifer (Richters, 1903)	Richtersius coronifer	species	species		Richtersius coronifer (Richters, 1903)	0	0.999	8bdc2897db136347c4a6d3ecdea6f88d
+142842	No match	Paramacrobiotus areolatus (Murray, 1907)			species				
+142843	No match	Paramacrobiotus richtersi (Murray, 1911)			species				
+142716	Genus part match	Minibiotus harrylewisi Meyer & Hinton, 2009	Minibiotus	Minibiotus	species	genus		Minibiotus	0	0.75	33612207
+142841	Canonical form exact match	Minibiotus intermedius (Plate, 1888)	Minibiotus intermedius (Plate, 1889)	Minibiotus intermedius	species	species		Minibiotus intermedius (Plate, 1889)	0	0.997	1fd7ab8b15d242aae608ff85ee8f0de5
+142867	Genus part match	Minibiotus crassidens (Murray, 1907)	Minibiotus	Minibiotus	species	genus		Minibiotus	0	0.75	33612207
+142660	Exact string match	Macrobiotus ambiguus Murray, 1907	Macrobiotus ambiguus Murray, 1907	Macrobiotus ambiguus	species	species	synonym	Dactylobiotus ambiguus (Murray, 1907)	0	0.999	cf9ece8cb9c04b90fd0d65b46d1a3f7c
+142661	Genus part match	Macrobiotus ampullaceus Thulin, 1911	Macrobiotus	Macrobiotus	species	genus		Macrobiotus	0	0.75	33547246
+142665	Exact string match	Macrobiotus annulatus Murray, 1905	Macrobiotus annulatus Murray, 1905	Macrobiotus annulatus	species	species	synonym	Isohypsibius annulatus (Murray, 1905)	0	0.999	2f1bce2412070da45ca2434ec7de3c9e
+142667	Exact string match	Macrobiotus antarcticus Richters, 1904	Macrobiotus antarcticus Richters, 1904	Macrobiotus antarcticus	species	species	synonym	Acutuncus antarcticus (Richters, 1904)	0	0.999	da4bf002397a40b0f1b0a047d39a8fda
+142668	Exact string match	Macrobiotus arcticus Murray, 1907	Macrobiotus arcticus Murray, 1907	Macrobiotus arcticus	species	species	synonym	Hypsibius arcticus (Murray, 1907)	0	0.999	aa4ff78d3a9d737e4c29e02a8f90e46e
+142672	Exact string match	Macrobiotus ariekammensis Weglarska, 1965	Macrobiotus ariekammensis Wêglarska, 1965	Macrobiotus ariekammensis	species	species		Macrobiotus ariekammensis Wêglarska, 1965	0	0.999	f375ebca0fbdde8916704e9ebb5ca0cf
+142674	Genus part match	Macrobiotus asperus Murray, 1906	Macrobiotus	Macrobiotus	species	genus		Macrobiotus	0	0.75	33547246
+142676	Exact string match	Macrobiotus augusti Murray, 1907	Macrobiotus augusti Murray, 1907	Macrobiotus augusti	species	species	synonym	Thulinius augusti (Murray, 1907)	0	0.999	8f451690d4b6d89a570850ef67913d28
+142688	Exact string match	Macrobiotus convergens Urbanowicz, 1925	Macrobiotus convergens Urbanowicz, 1925	Macrobiotus convergens	species	species	synonym	Hypsibius convergens (Urbanowicz, 1925)	0	0.999	f99719189163c9175e69113fe4fb519e
+142690	Exact string match	Macrobiotus coronifer Richters, 1903	Macrobiotus coronifer Richters, 1903	Macrobiotus coronifer	species	species	synonym	Richtersius coronifer (Richters, 1903)	0	0.999	8591a23f12baba27d77686b24235bd35
+142693	Canonical form exact match	Macrobiotus crassidens Murray, J., 1907. Some South African Tardigrada. J. R. Micr. Soc. London, 5: 515 - 524	Macrobiotus crassidens Murray, 1907	Macrobiotus crassidens	species	species		Macrobiotus crassidens Murray, 1907	0	0.997	62f3496a57dd48b9bcbf27a858d6399f
+142694	Exact string match	Macrobiotus crenulatus Richters, 1904	Macrobiotus crenulatus Richters, 1904	Macrobiotus crenulatus	species	species		Macrobiotus crenulatus Richters, 1904	0	0.999	a24307dc8507670cf177985f0c58492f
+142697	Exact string match	Macrobiotus dianeae Kristensen, 1982	Macrobiotus dianeae Kristensen, 1982	Macrobiotus dianeae	species	species	synonym	Murrayon dianeae (Kristensen, 1982)	0	0.999	22ebc2e37a9c43a9d7968e937c6184fe
+142698	Exact string match	Macrobiotus dispar Murray, 1907	Macrobiotus dispar Murray, 1907	Macrobiotus dispar	species	species	synonym	Dactylobiotus dispar (Murray, 1907)	0	0.999	437a8d6b25f9888277041f257819e372
+142699	Exact string match	Macrobiotus dujardin Doyère, 1840	Macrobiotus dujardin Doyère, 1840	Macrobiotus dujardin	species	species	synonym	Hypsibius dujardini (Doyère, 1840)	0	0.999	b342ff51baf29aa3f13c68517bef9f1a
+142701	Canonical form exact match	Macrobiotus echinogenitus Richters, 1903	Macrobiotus echinogenitus Richters, 1904	Macrobiotus echinogenitus	species	species		Macrobiotus echinogenitus Richters, 1904	0	0.997	9ebd177fd9370f34b5a125f1a1b65816
+142709	Exact string match	Macrobiotus grandis Richters, 1911	Macrobiotus grandis Richters, 1911	Macrobiotus grandis	species	species		Macrobiotus grandis Richters, 1911	0	0.999	1ac5cd1588ca78f9208e2dea548b14ad
+142711	Exact string match	Macrobiotus granulatus Richters, 1903	Macrobiotus granulatus Richters, 1903	Macrobiotus granulatus	species	species	synonym	Adorybiotus granulatus (Richters, 1903)	0	0.999	bec2116f6a57d9dd60cea3757e25351f
+142715	Exact string match	Macrobiotus harmsworthi Murray, 1907	Macrobiotus harmsworthi Murray, 1907	Macrobiotus harmsworthi	species	species		Macrobiotus harmsworthi Murray, 1907	0	0.999	b33da90c711a330bfa9b29f693567839
+142717	Exact string match	Macrobiotus hastatus Murray, 1907	Macrobiotus hastatus Murray, 1907	Macrobiotus hastatus	species	species	synonym	Murrayon hastatus (Murray, 1907)	0	0.999	3a0e2ad1aa0e126326c9a677bf9c714b
+142718	Exact string match	Macrobiotus hibernicus Murray, 1911	Macrobiotus hibernicus Murray, 1911	Macrobiotus hibernicus	species	species	synonym	Murrayon hibernicus (Murray, 1911)	0	0.999	71349e1489d3f732c52347401a51dedd
+142719	Exact string match	Macrobiotus hibiscus de Barros, 1942	Macrobiotus hibiscus De Barros, 1942	Macrobiotus hibiscus	species	species		Macrobiotus hibiscus De Barros, 1942	0	0.999	3d3f8b513773297c25bff7804af2fec1
+142721	Exact string match	Macrobiotus hufelandi C.A.S. Schultze, 1834	Macrobiotus hufelandi C.A.S. Schultze, 1834	Macrobiotus hufelandi	species	species		Macrobiotus hufelandi C.A.S. Schultze, 1834	0	0.999	cdf5e8f2aaf144fd5170f295c272c445
+142723	Canonical form exact match	Macrobiotus intermedius Plate, 1888	Macrobiotus intermedius Plate, 1889	Macrobiotus intermedius	species	species	synonym	Minibiotus intermedius (Plate, 1889)	0	0.997	0e64cb77ff5d37fbd5b062d41973ed9d
+142725	Canonical form exact match	Macrobiotus islandicus 'Richters, 1904	Macrobiotus islandicus Richters, 1904	Macrobiotus islandicus	species	species		Macrobiotus islandicus Richters, 1904	0	0.988	2e6fb5ae1f74b001c9b47bd41e5e7a08
+142728	Canonical form exact match	Macrobiotus macrocalix Bertolani & Rebecchi, 1993	Macrobiotus macrocalix Bertolani and Rebecchi, 1993	Macrobiotus macrocalix	species	species		Macrobiotus macrocalix Bertolani and Rebecchi, 1993	0	0.997	216f814d848939440144d97206b31805
+142730	Exact string match	Macrobiotus macronyx Dujardin, 1851	Macrobiotus macronyx Dujardin, 1851	Macrobiotus macronyx	species	species	synonym	Dactylobiotus macronyx (Dujardin, 1851)	0	0.999	5914f118917b60e7bd6f72d018be77d0
+142736	Exact string match	Macrobiotus montanus Murray, 1910	Macrobiotus montanus Murray, 1910	Macrobiotus montanus	species	species		Macrobiotus montanus Murray, 1910	0	0.999	915e1a2cc65a01ac5c022121f7c15b42
+142739	Canonical form exact match	Macrobiotus norvegicus Mihelcic, 1971/1972	Macrobiotus norvegicus Mihelcic, 1971	Macrobiotus norvegicus	species	species		Macrobiotus norvegicus Mihelcic, 1971	0	0.997	9a932c69bf61a5b9c46a05f5add878fc
+142741	Exact string match	Macrobiotus oberhaeuser Doyère, 1840	Macrobiotus oberhaeuser Doyère, 1840	Macrobiotus oberhaeuser	species	species	synonym	Ramazzottius oberhaeuseri (Doyère, 1840)	0	0.999	4a02cf7813bb6c8d4c7a902960b34f13
+142742	Exact string match	Macrobiotus occidentalis Murray, 1910	Macrobiotus occidentalis Murray, 1910	Macrobiotus occidentalis	species	species		Macrobiotus occidentalis Murray, 1910	0	0.999	6e41e295b44c95e57cc3d4c28e7fe498
+142747	Exact string match	Macrobiotus orcadensis Murray, 1907	Macrobiotus orcadensis Murray, 1907	Macrobiotus orcadensis	species	species		Macrobiotus orcadensis Murray, 1907	0	0.999	43b8df00d25c0af902e1b11608783884
+142749	Exact string match	Macrobiotus ornatus Richters, 1900	Macrobiotus ornatus Richters, 1900	Macrobiotus ornatus	species	species	synonym	Calohypsibius ornatus (Richters, 1900)	0	0.999	837998ea73cce8968a6a8a6b62211dc5
+142753	Exact string match	Macrobiotus papillifer Murray, 1905	Macrobiotus papillifer Murray, 1905	Macrobiotus papillifer	species	species	synonym	Isohypsibius papillifer (Murray, 1905)	0	0.999	25891b58b74b293d1e29edec2f0c8e70
+142756	Canonical form exact match	Macrobiotus persimilis Binda & Pilato, 1972	Macrobiotus persimilis Binda and Pilato, 1972	Macrobiotus persimilis	species	species		Macrobiotus persimilis Binda and Pilato, 1972	0	0.997	da1cf86bae685e5d15a90c5d81bd7dc3
+142764	Exact string match	Macrobiotus pullari Murray, 1907	Macrobiotus pullari Murray, 1907	Macrobiotus pullari	species	species	synonym	Murrayon pullari (Murray, 1907)	0	0.999	aec1425a5fb765b267bdd2ce6f523567
+142769	Exact string match	Macrobiotus richtersi Murray, 1911	Macrobiotus richtersi Murray, 1911	Macrobiotus richtersi	species	species		Macrobiotus richtersi Murray, 1911	0	0.999	9dbdb3a0e96e0959ca5388cf61b8a5fe
+142773	Exact string match	Macrobiotus sattleri Richters, 1902	Macrobiotus sattleri Richters, 1902	Macrobiotus sattleri	species	species	synonym	Isohypsibius sattleri (Richters, 1902)	0	0.999	a854de3115b719b000d2e6205d4371af
+142776	Exact string match	Macrobiotus schaudinni Richters, 1909	Macrobiotus schaudinni Richters, 1909	Macrobiotus schaudinni	species	species	synonym	Isohypsibius schaudinni (Richters, 1909)	0	0.999	d7a8864745d1d367ce650fa7837274bf
+142783	Exact string match	Macrobiotus spectabilis Thulin, 1928	Macrobiotus spectabilis Thulin, 1928	Macrobiotus spectabilis	species	species		Macrobiotus spectabilis Thulin, 1928	0	0.999	3163af8b77514a6a351beef3935cb021
+142791	Genus part match	Macrobiotus stenostomus Richters, 1908	Macrobiotus	Macrobiotus	species	genus		Macrobiotus	0	0.75	33547246
+142799	Canonical form exact match	Macrobiotus tuberculatus Plate, 1888	Macrobiotus tuberculatus Plate, 1889	Macrobiotus tuberculatus	species	species	synonym	Isohypsibius tuberculatus (Plate, 1889)	0	0.997	25d9f8930edd49416853abc0fbb8970f
+142803	Genus part match	Macrobiotus voronkovi Tumanov, 2007	Macrobiotus	Macrobiotus	species	genus		Macrobiotus	0	0.75	33547246
+142807	Exact string match	Macrobiotus willardi Pilato, 1977	Macrobiotus willardi Pilato, 1977	Macrobiotus willardi	species	species		Macrobiotus willardi Pilato, 1977	0	0.999	701ff72becfdb2d8993d7e89d6682337
+142809	Exact string match	Macrobiotus zetlandicus Murray, 1907	Macrobiotus zetlandicus Murray, 1907	Macrobiotus zetlandicus	species	species	synonym	Hypsibius zetlandicus (Murray, 1907)	0	0.999	a6f3bf2667d762336bba5ad0eec1fb81
+142881	Canonical form exact match	Macrobiotus occidentalis subsp. occidentalis Murray, 1910	Macrobiotus occidentalis occidentalis Murray, 1910	Macrobiotus occidentalis occidentalis	subspecies	infraspecies		Macrobiotus occidentalis occidentalis Murray, 1910	0	1.0	d494c1395ae6ee64ace6bf3ba7429380
+142878	Canonical form exact match	Macrobiotus islandicus subsp. islandicus Richters, 1904	Macrobiotus islandicus islandicus Richters, 1904	Macrobiotus islandicus islandicus	subspecies	infraspecies		Macrobiotus islandicus islandicus Richters, 1904	0	1.0	5dcfefaea3463812f79418e9f02704b5
+142877	Canonical form exact match	Macrobiotus hufelandi subsp. hufelandi C.A.S. Schultze, 1834	Macrobiotus hufelandi hufelandi C.A.S. Schultze, 1834	Macrobiotus hufelandi hufelandi	subspecies	infraspecies		Macrobiotus hufelandi hufelandi C.A.S. Schultze, 1834	0	1.0	9862df3d26a2ccc776e76046f6d0c0d0
+142876	Canonical form exact match	Macrobiotus harmsworthi subsp. harmsworthi Murray, 1907	Macrobiotus harmsworthi harmsworthi Murray, 1907	Macrobiotus harmsworthi harmsworthi	subspecies	infraspecies		Macrobiotus harmsworthi harmsworthi Murray, 1907	0	1.0	3269e915acc967c03b1904fba5fb2e5d
+142880	Canonical form exact match	Macrobiotus harmsworthi subsp. obscurus Dastych, 1985	Macrobiotus harmsworthi obscurus Dastych, 1985	Macrobiotus harmsworthi obscurus	subspecies	infraspecies		Macrobiotus harmsworthi obscurus Dastych, 1985	0	1.0	5591dcdddb9a23b8a286a05fb05dd26d
+142886	Partial canonical form match	Macrobiotus echinogenitus subsp. areolatus Murray, 1907	Macrobiotus echinogenitus Richters, 1904	Macrobiotus echinogenitus	subspecies	species		Macrobiotus echinogenitus Richters, 1904	0	0.988	9ebd177fd9370f34b5a125f1a1b65816
+142887	Partial canonical form match	Macrobiotus echinogenitus var. areolatus Murray, 1907	Macrobiotus echinogenitus Richters, 1904	Macrobiotus echinogenitus	variety	species		Macrobiotus echinogenitus Richters, 1904	0	0.988	9ebd177fd9370f34b5a125f1a1b65816
+142888	Partial canonical form match	Macrobiotus echinogenitus f. areolatus Murray, 1907	Macrobiotus echinogenitus Richters, 1904	Macrobiotus echinogenitus	form	species		Macrobiotus echinogenitus Richters, 1904	0	0.988	9ebd177fd9370f34b5a125f1a1b65816

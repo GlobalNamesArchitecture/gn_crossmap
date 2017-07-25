@@ -15,6 +15,22 @@ describe "features" do
     end
   end
 
+  context "dealing with unexpected capitalizations" do
+    it "normalizes capitalizations for pre-parsed fields" do
+      opts = { output: "/tmp/output.csv",
+               input: FILES[:all_caps],
+               data_source_id: 1, skip_original: true }
+      stats_caps = GnCrossmap.run(opts)
+      FileUtils.rm(opts[:output])
+      opts = { output: "/tmp/output.csv",
+               input: FILES[:all_fields],
+               data_source_id: 1, skip_original: true }
+      stats_nocaps = GnCrossmap.run(opts)
+      expect(stats_caps.stats[:matches]).to eq stats_nocaps.stats[:matches]
+      FileUtils.rm(opts[:output])
+    end
+  end
+
   context "combining acceptedName output" do
     it "gives accepted name for all matches" do
       opts = { output: "/tmp/output.csv",
