@@ -1,5 +1,12 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.0.3
+
+* @dimus - Fixes #33 infraspecies rank is given for all 'unknown' infra-specific
+           ranks (when rank is not given)
+
+* @dimus - Fixes #32 normalize capitalization of ranks according to Codes
+
 ## 3.0.2
 
 * @dimus - Fixes #32 normalize capitalization of ranks according to Codes
