@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module GnCrossmap
   # Sends data to GN Resolver and collects results
   class Resolver
@@ -57,12 +59,12 @@ module GnCrossmap
 
     def collect_names(slice)
       @current_data = {}
-      slice.each_with_object("") do |row, str|
+      slice.each_with_object([]) do |row, str|
         id = row[:id].strip
         @current_data[id] = row[:original]
         @processor.input[id] = { rank: row[:rank] }
-        str << "#{id}|#{row[:name]}\n"
-      end
+        str << "#{id}|#{row[:name]}"
+      end.join("\n")
     end
 
     def remote_resolve(names)

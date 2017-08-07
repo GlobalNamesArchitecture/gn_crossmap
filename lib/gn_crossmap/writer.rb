@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module GnCrossmap
   # Saves output from GN Resolver to disk
   class Writer

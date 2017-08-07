@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module GnCrossmap
   # Processes data received from the GN Resolver
   class ResultProcessor

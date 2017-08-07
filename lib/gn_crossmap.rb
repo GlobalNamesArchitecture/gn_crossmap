@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "csv"
 require "ostruct"
 require "rest_client"
@@ -19,8 +21,8 @@ require "gn_crossmap/stats"
 
 # Namespace module for crossmapping checklists wth GN sources
 module GnCrossmap
-  INPUT_MODE = "r:utf-8".freeze
-  OUTPUT_MODE = "w:utf-8".freeze
+  INPUT_MODE = "r:utf-8"
+  OUTPUT_MODE = "w:utf-8"
   MATCH_TYPES = {
     0 => "No match",
     1 => "Exact string match",

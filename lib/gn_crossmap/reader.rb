@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module GnCrossmap
   # Reads supplied csv file and creates ruby structure to compare
   # with a Global Names Resolver source
@@ -99,7 +101,7 @@ module GnCrossmap
 
     def taxon_id_header(hdrs)
       hdrs.each do |h|
-        return [h] if h =~ /taxonid\s*$/i
+        return [h] if h && h.match?(/taxonid\s*$/i)
       end
       []
     end

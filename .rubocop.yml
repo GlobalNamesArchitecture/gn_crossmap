@@ -3,6 +3,7 @@ AllCops:
     - db/**/*
     - bundle_bin/**/*
     - spec/**/*
+    - bin/**/*
   Include:
     - exe/crossmap
     - "**/Gemfile"

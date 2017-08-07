@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module GnCrossmap
   # Assemble data from CSV reader by parsing scientificName field
   class SciNameCollector
