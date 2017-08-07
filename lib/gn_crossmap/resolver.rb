@@ -5,10 +5,12 @@ module GnCrossmap
   class Resolver
     attr_reader :stats
 
-    def initialize(writer, data_source_id, resolver_url, stats)
+    def initialize(writer, data_source_id,
+                   resolver_url, stats, with_classification = false)
       @stats = stats
       @resolver_url = resolver_url
-      @processor = GnCrossmap::ResultProcessor.new(writer, @stats)
+      @processor = GnCrossmap::ResultProcessor.
+                   new(writer, @stats, with_classification)
       @ds_id = data_source_id
       @count = 0
       @current_data = {}

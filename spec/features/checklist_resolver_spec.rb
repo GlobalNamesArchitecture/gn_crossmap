@@ -112,4 +112,22 @@ describe "features" do
       FileUtils.rm(opts[:output])
     end
   end
+
+  context "with classification" do
+    it "creates classification if the option is true" do
+      opts = { output: "/tmp/output.csv",
+               input: FILES[:sciname],
+               data_source_id: 1, skip_original: true,
+               with_classification: true }
+      GnCrossmap.run(opts)
+      classification_exists = false
+      CSV.open(opts[:output], col_sep: "\t", headers: true).each do |r|
+        if r["classification"] && r["classification"].split(", ").size > 1
+          classification_exists = true
+        end
+      end
+      expect(classification_exists).to be true
+      FileUtils.rm(opts[:output])
+    end
+  end
 end

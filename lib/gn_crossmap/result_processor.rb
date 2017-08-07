@@ -5,7 +5,9 @@ module GnCrossmap
   class ResultProcessor
     attr_reader :input, :writer
 
-    def initialize(writer, stats)
+    def initialize(writer, stats, with_classification = false)
+      @with_classification = with_classification
+      @parser = ScientificNameParser.new
       @stats = stats
       @writer = writer
       @input = {}
@@ -30,8 +32,8 @@ module GnCrossmap
       @stats.stats[:resolved_records] += 1
       res = @original_data[datum[:supplied_id]]
       res += [GnCrossmap::MATCH_TYPES[0], datum[:supplied_name_string], nil,
-              nil, @input[datum[:supplied_id]][:rank], nil,
-              nil, nil, nil]
+              datum[:supplied_canonical_form], nil,
+              @input[datum[:supplied_id]][:rank], nil, nil, nil, nil]
       @writer.write(res)
     end
 
@@ -52,13 +54,28 @@ module GnCrossmap
       @original_data[datum[:supplied_id]] + new_data(datum, result)
     end
 
+    # rubocop:disable Metrics/AbcSize
+
     def new_data(datum, result)
       synonym = result[:current_name_string] ? "synonym" : nil
-      [matched_type(result), datum[:supplied_name_string],
-       result[:name_string], result[:canonical_form],
-       @input[datum[:supplied_id]][:rank], matched_rank(result),
-       synonym, result[:current_name_string] || result[:name_string],
-       result[:edit_distance], result[:score], result[:taxon_id]]
+      res = [matched_type(result), datum[:supplied_name_string],
+             result[:name_string], canonical(datum[:supplied_name_string]),
+             result[:canonical_form], @input[datum[:supplied_id]][:rank],
+             matched_rank(result), synonym,
+             result[:current_name_string] || result[:name_string],
+             result[:edit_distance], result[:score], result[:taxon_id]]
+      res << classification(result) if @with_classification
+      res
+    end
+
+    # rubocop:enable all
+
+    def canonical(name_string)
+      parsed = @parser.parse(name_string)[:scientificName]
+      parsed[:canonical].nil? || parsed[:hybrid] ? nil : parsed[:canonical]
+    rescue StandardError
+      @parser = ScientificNameParser.new
+      nil
     end
 
     def matched_rank(record)
@@ -68,5 +85,19 @@ module GnCrossmap
     def matched_type(record)
       GnCrossmap::MATCH_TYPES[record[:match_type]]
     end
+
+    # rubocop:disable Metrics/AbcSize
+
+    def classification(result)
+      return nil if result[:classification_path].to_s.strip == ""
+      path = result[:classification_path].split("|")
+      ranks = result[:classification_path_ranks].split("|")
+      if path.size == ranks.size
+        path = path.zip(ranks).map { |e| "#{e[0]}(#{e[1]})" }
+      end
+      path.join(", ")
+    end
+
+    # rubocop:enable all
   end
 end

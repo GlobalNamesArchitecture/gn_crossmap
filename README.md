@@ -59,6 +59,9 @@ cat my_list.csv | crossmap -i - -o - > output
 # to keep only taxonID (if given) from original input
 # no original fields will be kept without taxonID
 cat my_list.csv | crossmap -i my_list.csv -s
+
+# to show classification from the source
+cat my_list.csv | crossmap -i my_list.csv -w
 ```
 
 ### Usage as Ruby Library (API description)
@@ -96,6 +99,9 @@ instead of the headers supplied with the file
 
 ``resolver_url``
 : URL to globalnames' resolver. Default is ``http://resolver.globalnames.org``
+
+``with_classification``
+: (boolean) if true, adds classification path to the output
 
 #### `GnCrossmap.logger=`
 

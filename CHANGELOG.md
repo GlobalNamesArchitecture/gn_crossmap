@@ -1,5 +1,11 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.1.0
+
+* @dimus - Fixes #34 add canonical form input
+
+* @dimus - Fixes #35 optionally returns classification path
+
 ## 3.0.3
 
 * @dimus - Fixes #33 infraspecies rank is given for all 'unknown' infra-specific
