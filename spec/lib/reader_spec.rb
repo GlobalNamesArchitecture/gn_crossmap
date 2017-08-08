@@ -1,3 +1,5 @@
+#frozen_string_literal: true
+
 describe GnCrossmap::Reader do
   let(:csv_io) { io(FILES[:all_fields], "r:utf-8") }
   let(:skip_original) { false }
@@ -9,6 +11,17 @@ describe GnCrossmap::Reader do
   describe ".new" do
     it "creates instance" do
       expect(subject).to be_kind_of GnCrossmap::Reader
+    end
+
+    context "single column" do
+      let(:csv_io) { io(FILES[:single_field], "r:utf-8") }
+      subject do
+        GnCrossmap::Reader.new(csv_io, FILES[:single_field],
+                               skip_original, [], stats)
+      end
+      it "makes tab a separator" do
+        expect(subject.col_sep).to eq "\t"
+      end
     end
   end
 

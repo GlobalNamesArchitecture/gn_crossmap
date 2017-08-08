@@ -4,13 +4,13 @@ module GnCrossmap
   # Reads supplied csv file and creates ruby structure to compare
   # with a Global Names Resolver source
   class Reader
-    attr_reader :original_fields
+    attr_reader :original_fields, :col_sep
 
     def initialize(csv_io, input_name, skip_original, alt_headers, stats)
       @stats = stats
       @alt_headers = alt_headers
       @csv_io = csv_io
-      @col_sep = col_sep
+      @col_sep = detect_col_sep
       @quote_char = quote_char(@col_sep)
       @original_fields = nil
       @input_name = input_name
@@ -26,11 +26,14 @@ module GnCrossmap
 
     private
 
-    def col_sep
+    def detect_col_sep
       line = @csv_io.first
       @stats.stats[:total_records] = @csv_io.readlines.size
       @csv_io.rewind
-      [";", ",", "\t"].map { |s| [line.count(s), s] }.sort.last.last
+      data = [[";", 1], [",", 0], ["\t", 2]].map do |s, weight|
+        [line.count(s), weight, s]
+      end
+      data.sort.last.last
     end
 
     def quote_char(col_sep)

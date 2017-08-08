@@ -12,6 +12,7 @@ FILES = {
   sciname: "#{files_path}/simple-comma.csv",
   sciname_auth: "#{files_path}/authorship-tab.csv",
   sciname_rank: "#{files_path}/taxon-rank-tab.csv",
+  single_field: "#{files_path}/single-field.csv",
   spaces_in_fields: "#{files_path}/spaces-in-fields.csv",
   no_taxonid: "#{files_path}/no-taxonid.csv",
   no_name: "#{files_path}/no-name.csv",
