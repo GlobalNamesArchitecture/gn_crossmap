@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.1.1
+
+* @dimus - Fixes #36 move edit distance close to canonical forms in output
+
 ## 3.1.0
 
 * @dimus - Fixes #34 add canonical form input

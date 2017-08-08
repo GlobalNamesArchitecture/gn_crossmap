@@ -60,10 +60,10 @@ module GnCrossmap
       synonym = result[:current_name_string] ? "synonym" : nil
       res = [matched_type(result), datum[:supplied_name_string],
              result[:name_string], canonical(datum[:supplied_name_string]),
-             result[:canonical_form], @input[datum[:supplied_id]][:rank],
-             matched_rank(result), synonym,
+             result[:canonical_form], result[:edit_distance],
+             @input[datum[:supplied_id]][:rank], matched_rank(result), synonym,
              result[:current_name_string] || result[:name_string],
-             result[:edit_distance], result[:score], result[:taxon_id]]
+             result[:score], result[:taxon_id]]
       res << classification(result) if @with_classification
       res
     end
