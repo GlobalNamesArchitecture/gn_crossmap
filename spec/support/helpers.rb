@@ -10,7 +10,6 @@ def uniform_rows?(file_path)
   File.open(file_path).each do |l|
     fields = l.split("\t")
     headers = fields unless headers
-    require "byebug"; byebug if fields.size != headers.size
     return false if fields.size != headers.size
   end
   true

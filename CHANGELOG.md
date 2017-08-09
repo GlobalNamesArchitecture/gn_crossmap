@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.1.4
+
+* @dimus - test typo
+
 ## 3.1.3
 
 * @dimus - Fix formatting bug for empty results, remove BOM char from headers
