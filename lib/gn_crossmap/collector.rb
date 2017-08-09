@@ -26,7 +26,7 @@ module GnCrossmap
     end
 
     def prepare_field(field)
-      field = field.to_s.tr(":", "/")
+      field = field.to_s.tr(":", "/").delete("\u{feff}")
       return :none if field == ""
       field.split("/")[-1].strip.downcase.to_sym
     end

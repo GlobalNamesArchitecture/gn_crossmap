@@ -30,11 +30,17 @@ module GnCrossmap
     def write_empty_result(datum)
       @stats.stats[:matches][0] += 1
       @stats.stats[:resolved_records] += 1
-      res = @original_data[datum[:supplied_id]]
-      res += [GnCrossmap::MATCH_TYPES[0], datum[:supplied_name_string], nil,
-              datum[:supplied_canonical_form], nil,
-              @input[datum[:supplied_id]][:rank], nil, nil, nil, nil]
+      res = compile_empty_result(datum)
       @writer.write(res)
+    end
+
+    def compile_empty_result(datum)
+      res = @original_data[datum[:supplied_id]]
+      res += [GnCrossmap::MATCH_TYPES[0], datum[:supplied_name_string],
+              nil, nil, nil, nil,
+              @input[datum[:supplied_id]][:rank], nil, nil, nil, nil, nil]
+      res <<  nil if @with_classification
+      res
     end
 
     def write_result(datum)
@@ -72,7 +78,8 @@ module GnCrossmap
 
     def canonical(name_string)
       parsed = @parser.parse(name_string)[:scientificName]
-      parsed[:canonical].nil? || parsed[:hybrid] ? nil : parsed[:canonical]
+      return nil if parsed[:canonical].nil? || parsed[:hybrid]
+      parsed[:canonical]
     rescue StandardError
       @parser = ScientificNameParser.new
       nil

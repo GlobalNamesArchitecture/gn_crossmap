@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.1.3
+
+* @dimus - Fix formatting bug for empty results, remove BOM char from headers
+
 ## 3.1.2
 
 * @dimus - Fixes #37 tab is now default if separator is not found

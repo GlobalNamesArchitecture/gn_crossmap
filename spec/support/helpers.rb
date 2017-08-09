@@ -5,6 +5,17 @@ def io(file, mode = "r:utf-8")
   IO.new(fd, mode: mode)
 end
 
+def uniform_rows?(file_path)
+  headers = nil
+  File.open(file_path).each do |l|
+    fields = l.split("\t")
+    headers = fields unless headers
+    require "byebug"; byebug if fields.size != headers.size
+    return false if fields.size != headers.size
+  end
+  true
+end
+
 FILES = {
   all_fields: "#{files_path}/all-fields-semicolon.csv",
   all_fields_tiny: "#{files_path}/all-fields-tiny.csv",

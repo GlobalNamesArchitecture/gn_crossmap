@@ -1,15 +1,18 @@
 describe "features" do
   context "resolving variety of csv files" do
-    %i(all_fields sciname sciname_auth sciname_rank csv_relaxed).each do |input|
+    %i(single_field all_fields sciname sciname_auth sciname_rank csv_relaxed).
+      each do |input|
       context input do
         it "resolves #{input}" do
           opts = { output: "/tmp/#{input}-processed.csv",
                    input: FILES[input],
                    data_source_id: 1,
-                   skip_original: true }
+                   with_classification: [true, false].sample,
+                   skip_original: [true, false].sample }
           FileUtils.rm(opts[:output]) if File.exist?(opts[:output])
           GnCrossmap.run(opts)
           expect(File.exist?(opts[:output])).to be true
+          expect(uniform_rows?(opts[:output])).to be true
         end
       end
     end
