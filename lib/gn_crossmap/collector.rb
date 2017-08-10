@@ -41,7 +41,7 @@ module GnCrossmap
     end
 
     def prepare_original
-      @skip_original ? [@row_hash[:taxonid]] : @row.map(&:last)
+      @skip_original ? [@row_hash[:taxonid]].compact : @row.map(&:last)
     end
 
     def collector_factory

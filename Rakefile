@@ -11,3 +11,8 @@ end
 RuboCop::RakeTask.new
 
 task default: %i[rubocop rspec]
+
+desc "open an irb session preloaded with this gem"
+task :console do
+  sh "irb -r pp -r ./lib/gn_crossmap.rb"
+end
