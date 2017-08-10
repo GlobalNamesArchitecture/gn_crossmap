@@ -1,5 +1,10 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.1.5
+
+* @dimus - Fix number of columns in the output when there is no taxon_id given
+           and skip_original flag is set in options
+
 ## 3.1.4
 
 * @dimus - test typo
