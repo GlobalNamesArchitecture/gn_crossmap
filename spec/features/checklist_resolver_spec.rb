@@ -1,7 +1,7 @@
 describe "features" do
   context "resolving variety of csv files" do
-    %i(single_field all_fields sciname sciname_auth sciname_rank csv_relaxed).
-      each do |input|
+    %i(single_field empty_row all_fields sciname sciname_auth
+       sciname_rank csv_relaxed).each do |input|
       context input do
         it "resolves #{input}" do
           opts = { output: "/tmp/#{input}-processed.csv",

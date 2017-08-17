@@ -19,6 +19,7 @@ FILES = {
   all_fields: "#{files_path}/all-fields-semicolon.csv",
   all_fields_tiny: "#{files_path}/all-fields-tiny.csv",
   all_caps: "#{files_path}/all-caps.csv",
+  empty_row: "#{files_path}/empty-row.csv",
   sciname: "#{files_path}/simple-comma.csv",
   sciname_auth: "#{files_path}/authorship-tab.csv",
   sciname_rank: "#{files_path}/taxon-rank-tab.csv",

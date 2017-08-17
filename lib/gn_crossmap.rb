@@ -61,7 +61,11 @@ module GnCrossmap
     end
 
     def find_id(row, name)
-      row.key?(:taxonid) ? row[:taxonid].strip : GnUUID.uuid(name)
+      if row.key?(:taxonid) && row[:taxonid]
+        row[:taxonid].to_s.strip
+      else
+        GnUUID.uuid(name.to_s)
+      end
     end
 
     private
