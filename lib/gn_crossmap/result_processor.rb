@@ -36,7 +36,7 @@ module GnCrossmap
 
     def compile_empty_result(datum)
       res = @original_data[datum[:supplied_id]]
-      res += [GnCrossmap::MATCH_TYPES[0], datum[:supplied_name_string],
+      res += [GnCrossmap::MATCH_TYPES[0], 0, datum[:supplied_name_string],
               nil, nil, nil, nil,
               @input[datum[:supplied_id]][:rank], nil, nil, nil, nil, nil]
       res <<  nil if @with_classification
@@ -45,8 +45,9 @@ module GnCrossmap
 
     def write_result(datum)
       collect_stats(datum)
+      match_size = datum[:results].size
       datum[:results].each do |result|
-        @writer.write(compile_result(datum, result))
+        @writer.write(compile_result(datum, result, match_size))
       end
     end
 
@@ -56,15 +57,16 @@ module GnCrossmap
       @stats.stats[:resolved_records] += 1
     end
 
-    def compile_result(datum, result)
-      @original_data[datum[:supplied_id]] + new_data(datum, result)
+    def compile_result(datum, result, match_size)
+      @original_data[datum[:supplied_id]] + new_data(datum,
+                                                     result, match_size)
     end
 
     # rubocop:disable Metrics/AbcSize
 
-    def new_data(datum, result)
+    def new_data(datum, result, match_size)
       synonym = result[:current_name_string] ? "synonym" : nil
-      res = [matched_type(result), datum[:supplied_name_string],
+      res = [matched_type(result), match_size, datum[:supplied_name_string],
              result[:name_string], canonical(datum[:supplied_name_string]),
              result[:canonical_form], result[:edit_distance],
              @input[datum[:supplied_id]][:rank], matched_rank(result), synonym,

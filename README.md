@@ -251,15 +251,17 @@ More examples can be found in [spec/files][files] directory
 
 Field                | Description
 ---------------------|-----------------------------------------------------------
-taxonID              | original ID attached to a name in the checklist
-scientificName       | name from the checklist
-matchedScientificName| name matched from the GN Reolver data source
-matchedCanonicalForm | canonical form of the matched name
-rank                 | rank from the source (if it was given/inferred)
-matchedRank          | corresponding rank from the data source
-matchType            | what kind of match it is
+classification       | classification path of the data source (if available)
 editDistance         | for fuzzy-matching -- how many characters differ between checklist and data source name
+matchSize            | number of returned matches for a name
+matchType            | what kind of match it is
+matchedCanonicalForm | canonical form of the matched name
+matchedRank          | corresponding rank from the data source
+matchedScientificName| name matched from the GN Reolver data source
+rank                 | rank from the source (if it was given/inferred)
+scientificName       | name from the checklist
 score                | heuristic score from 0 to 1 where 1 is a good match, 0.5 match requires further human investigation
+taxonID              | original ID attached to a name in the checklist
 
 #### Types of Matches
 

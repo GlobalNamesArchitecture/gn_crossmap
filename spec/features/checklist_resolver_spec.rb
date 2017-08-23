@@ -34,6 +34,20 @@ describe "features" do
     end
   end
 
+  context "matchSize" do
+    it "shows how many matches happen" do
+      opts = { output: "/tmp/output.csv",
+               input: FILES[:sciname],
+               data_source_id: 1, skip_original: true }
+      GnCrossmap.run(opts)
+      expect(File.exist?(opts[:output])).to be true
+      res = CSV.open(opts[:output], col_sep: "\t", headers: true).map do |r|
+        r["matchSize"]
+      end.uniq.sort
+      expect(res).to eq %w[0 1]
+    end
+  end
+
   context "combining acceptedName output" do
     it "gives accepted name for all matches" do
       opts = { output: "/tmp/output.csv",
