@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.2.0
+
+* @dimus - Add a column `matchSize` with number of matches for each name
+
 ## 3.1.5
 
 * @dimus - Fix number of columns in the output when there is no taxon_id given
