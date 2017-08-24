@@ -1,19 +1,17 @@
 describe GnCrossmap::Resolver do
-  let(:url) {  "http://resolver.globalnames.org/name_resolvers.json" }
   let(:original_fields) do
     %w(TaxonId kingdom subkingdom phylum subphylum superclass class subclass
        cohort superorder order suborder infraorder superfamily family
        subfamily tribe subtribe genus subgenus section species subspecies
        variety form ScientificNameAuthorship)
   end
-  let(:stats) { GnCrossmap::Stats.new }
-  let(:skip_original) { false }
+  let(:opts) { GnCrossmap.opts_struct({}) }
   let(:writer) do
     GnCrossmap::Writer.new(io(FILES[:output], "w:utf-8"),
                            original_fields,
                            FILES[:output])
   end
-  subject { GnCrossmap::Resolver.new(writer, 1, url, stats) }
+  subject { GnCrossmap::Resolver.new(writer, opts) }
 
   describe ".new" do
     it "creates an instance" do
@@ -24,7 +22,7 @@ describe GnCrossmap::Resolver do
   describe "#resolve" do
     let(:data) do
       GnCrossmap::Reader.new(io(FILES[:all_fields]),
-                             FILES[:all_fields], true, [], stats).
+                             FILES[:all_fields], true, [], opts.stats).
         read
     end
 
@@ -36,7 +34,7 @@ describe GnCrossmap::Resolver do
       let(:data) do
         GnCrossmap::Reader.new(io(FILES[:all_fields_tiny]),
                                FILES[:all_fields_tiny],
-                               skip_original, [], stats).read
+                               opts.skip_original, [], opts.stats).read
       end
 
       it "resolves data by every name" do

@@ -1,5 +1,11 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.3.0
+
+* @dimus - Add option `opts.threads` for threads number for concurrent jobs.
+           Resolution now happens concurrently if the number of jobs is more
+           than 1. Max amount of jobs is 10.
+
 ## 3.2.0
 
 * @dimus - Add a column `matchSize` with number of matches for each name

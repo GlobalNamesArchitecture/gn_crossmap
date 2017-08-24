@@ -13,11 +13,13 @@ module GnCrossmap
       @input = {}
     end
 
-    def process(result, original_data)
+    def process(results, original_data)
       @original_data = original_data
-      res = rubyfy(result)
-      res[:data].each do |d|
-        d[:results].nil? ? write_empty_result(d) : write_result(d)
+      results.each do |result|
+        res = rubyfy(result)
+        res[:data].each do |d|
+          d[:results].nil? ? write_empty_result(d) : write_result(d)
+        end
       end
     end
 

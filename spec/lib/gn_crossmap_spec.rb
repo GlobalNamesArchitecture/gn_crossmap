@@ -83,7 +83,8 @@ describe GnCrossmap do
         subject.run(opts5) do |stats|
           states << stats[:status]
           expect(stats[:total_records]).to be 301
-          expect([0, 200, 301].include?(stats[:resolved_records])).to be true
+          expect([0, 101, 201, 200, 301].include?(stats[:resolved_records])).
+            to be true
           matches = stats[:matches].values.inject(:+)
           expect(matches).to be stats[:resolved_records]
           expect(stats.keys).
