@@ -7,9 +7,11 @@ require "tempfile"
 require "logger"
 require "logger/colors"
 require "biodiversity"
+require "concurrent"
 require "gn_uuid"
 require "gn_crossmap/errors"
 require "gn_crossmap/version"
+require "gn_crossmap/resolver_job"
 require "gn_crossmap/reader"
 require "gn_crossmap/writer"
 require "gn_crossmap/collector"
@@ -45,7 +47,7 @@ module GnCrossmap
       reader = create_reader(input_io, opts)
       data = block_given? ? reader.read(&Proc.new) : reader.read
       writer = create_writer(reader, output_io, opts)
-      resolver = create_resolver(writer, opts)
+      resolver = Resolver.new(writer, opts)
       block_given? ? resolver.resolve(data, &Proc.new) : resolver.resolve(data)
       resolver.stats
     end
@@ -68,12 +70,19 @@ module GnCrossmap
       end
     end
 
-    private
-
-    def create_resolver(writer, opts)
-      Resolver.new(writer, opts.data_source_id, opts.resolver_url,
-                   opts.stats, opts.with_classification)
+    def opts_struct(opts)
+      resolver_url = "http://resolver.globalnames.org/name_resolvers.json"
+      threads = opts[:threads].to_i
+      opts[:threads] = threads.between?(1, 10) ? threads : 2
+      with_classification = opts[:with_classification] ? true : false
+      opts[:with_classification] = with_classification
+      data_source_id = opts[:data_source_id].to_i
+      opts[:data_source_id] = data_source_id.zero? ? 1 : data_source_id
+      OpenStruct.new({ stats: Stats.new, alt_headers: [],
+                       resolver_url: resolver_url }.merge(opts))
     end
+
+    private
 
     def create_writer(reader, output_io, opts)
       Writer.new(output_io, reader.original_fields,
@@ -83,12 +92,6 @@ module GnCrossmap
     def create_reader(input_io, opts)
       Reader.new(input_io, input_name(opts.input),
                  opts.skip_original, opts.alt_headers, opts.stats)
-    end
-
-    def opts_struct(opts)
-      resolver_url = "http://resolver.globalnames.org/name_resolvers.json"
-      OpenStruct.new({ stats: Stats.new, alt_headers: [],
-                       resolver_url: resolver_url }.merge(opts))
     end
 
     def io(input, output)

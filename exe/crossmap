@@ -8,6 +8,7 @@ puts "This program requires Ruby >= v. 2.4.1" if RUBY_VERSION < "2.4.1"
 
 CATALOGUE_OF_LIFE = 1
 OUTPUT = "output.csv"
+THREADS = 1
 opts = Trollop.options do
   banner "Compares a list of scientific names to scientific names from a " \
     "data source from Global Names Resolver\n\n " \
@@ -16,6 +17,7 @@ opts = Trollop.options do
 
   opt(:input, "Path to input file", type: :string)
   opt(:output, "Path to output file", default: OUTPUT)
+  opt(:threads, "Threads number for resolution", default: THREADS)
   opt(:data_source_id, "Data source id from GN Resolver",
       default: CATALOGUE_OF_LIFE)
   opt(:skip_original, "If given, only 'taxonID' is shown " \
