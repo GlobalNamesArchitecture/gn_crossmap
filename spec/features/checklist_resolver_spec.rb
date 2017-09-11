@@ -1,7 +1,7 @@
 describe "features" do
   context "resolving variety of csv files" do
-    %i(single_field empty_row all_fields sciname sciname_auth
-       sciname_rank csv_relaxed).each do |input|
+    %i[single_field empty_row all_fields sciname sciname_auth
+       sciname_rank csv_relaxed].each do |input|
       context input do
         it "resolves #{input}" do
           opts = { output: "/tmp/#{input}-processed.csv",
@@ -125,7 +125,7 @@ describe "features" do
                data_source_id: 1, skip_original: true }
       GnCrossmap.run(opts) { "STOP" }
       lines_num = File.readlines(opts[:output]).size
-      expect(lines_num).to be 201
+      expect(lines_num).to be 1
       FileUtils.rm(opts[:output])
     end
   end
