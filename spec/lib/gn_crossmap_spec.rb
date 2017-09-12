@@ -91,7 +91,7 @@ describe GnCrossmap do
             to match_array %i[status total_records ingested_records
                               resolved_records ingestion_span
                               resolution_span ingestion_start
-                              resolution_start last_batches_time
+                              resolution_start speed current_speed
                               matches resolution_stop errors]
         end
         expect(states.uniq).to match_array %i[ingestion resolution finish]

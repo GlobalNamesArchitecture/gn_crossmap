@@ -10,8 +10,8 @@ module GnCrossmap
                  resolved_records: 0, ingestion_span: nil,
                  resolution_span: nil, ingestion_start: nil,
                  resolution_start: nil, resolution_stop: nil,
-                 last_batches_time: [], matches: match_types,
-                 errors: [] }
+                 speed: nil, current_speed: nil, eta: nil,
+                 matches: match_types, errors: [] }
     end
 
     private

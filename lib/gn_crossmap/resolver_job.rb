@@ -54,7 +54,7 @@ module GnCrossmap
     end
 
     def stats_add_batch_time(batch_start)
-      @stats.stats[:last_batches_time] << Time.now - batch_start
+      @stats.stats[:current_speed] = @batch_data.size / (Time.now - batch_start)
     end
   end
 end

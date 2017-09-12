@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 4.0.0
+
+* @dimus - Better estimation for time left for resolver and speed
+
 ## 3.3.1
 
 * @dimus - Better error message in logger

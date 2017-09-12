@@ -163,7 +163,8 @@ end
 |resolution_stop   |time when resolution of names stopped                    |
 |resolution_span   |time of intermediate checkpoint of resolving names       |
 |resolved_records  |number of names already processed                        |
-|last_batches_time |time required to process the last batch of names         |
+|speed             |weighted speed average                                   |
+|current_speed     |speed of resolution for the last batch                   |
 |matches           |Distribution of processed data by match type (see below) |
 |errors            |First 0-10 errors found during the csv file processing   |
 

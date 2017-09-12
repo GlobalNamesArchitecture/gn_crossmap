@@ -14,6 +14,7 @@ module GnCrossmap
       @count = 0
       @jobs = []
       @batch = 200
+      @smoothing = 0.05
     end
 
     def resolve(data)
@@ -87,10 +88,13 @@ module GnCrossmap
     # rubocop:disable Metrics/AbcSize
     def update_stats(job_stats)
       s = @stats.stats
-      s[:last_batches_time].shift if s[:last_batches_time].size > 2
-      s[:last_batches_time] << job_stats.stats[:last_batches_time][0]
+      s[:current_speed] = job_stats.stats[:current_speed]
+      s[:speed] = s[:current_speed] * @threads unless s[:speed]
+      s[:speed] = s[:speed] * (1 - @smoothing) +
+                  s[:current_speed] * @smoothing * @threads
       s[:resolution_span] = Time.now - s[:resolution_start]
       s[:resolved_records] += job_stats.stats[:resolved_records]
+      s[:eta] = (s[:total_records] - s[:resolved_records]) / s[:speed]
       s[:matches][7] += job_stats.stats[:matches][7]
     end
     # rubocop:enable all
@@ -121,13 +125,14 @@ module GnCrossmap
     end
 
     def with_log
+      yield
       s = @count + 1
       @count += @batch
       e = [@count, @stats.stats[:total_records]].min
-      GnCrossmap.log("Resolve #{s}-#{e} out of " \
-                     "#{@stats.stats[:total_records]} records at " \
-                     "#{@resolver_url}")
-      yield
+      msg = format("Resolve %s-%s/%s records %d rec/s; eta: %d", s, e,
+                   @stats.stats[:total_records], @stats.stats[:speed],
+                   @stats.stats[:eta].to_i + Time.now.to_i)
+      GnCrossmap.log(msg)
     end
   end
 end
