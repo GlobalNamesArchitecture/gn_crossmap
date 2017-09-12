@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 3.3.1
+
+* @dimus - Better error message in logger
+
 ## 3.3.0
 
 * @dimus - Add option `opts.threads` for threads number for concurrent jobs.

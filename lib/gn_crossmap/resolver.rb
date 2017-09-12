@@ -80,7 +80,7 @@ module GnCrossmap
         update_stats(stats)
         @processor.process(results, current_data)
       else
-        GnCrossmap.logger.error("Remote resolver server failed")
+        GnCrossmap.logger.error(job.reason.message)
       end
     end
 

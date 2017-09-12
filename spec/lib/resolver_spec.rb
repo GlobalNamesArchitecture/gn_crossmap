@@ -37,7 +37,7 @@ describe GnCrossmap::Resolver do
                                opts.skip_original, [], opts.stats).read
       end
 
-      it "resolves data by every name" do
+      it "exits with an error log" do
         allow(RestClient).to receive(:post) { raise RestClient::Exception }
         allow(GnCrossmap).to receive(:log) {}
         expect(subject.resolve(data))
