@@ -2,13 +2,13 @@
 
 describe GnCrossmap::ResolverJob do
   let(:names) do
-"1|Pomatomus saltator
-2|Puma concolor
-3|Monochamus galloprovincialis
-5|Bubo bubo
-6|Potentilla erecta
-7|Parus major
-"
+["1|Pomatomus saltator",
+ "2|Puma concolor",
+ "3|Monochamus galloprovincialis",
+ "5|Bubo bubo",
+ "6|Potentilla erecta",
+ "7|Parus major"]
+
   end
   let(:opts) { GnCrossmap.opts_struct({}) }
   subject { GnCrossmap::ResolverJob }

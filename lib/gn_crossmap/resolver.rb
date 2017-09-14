@@ -31,7 +31,7 @@ module GnCrossmap
     private
 
     def wrap_up
-      @stats.stats[:resolution_stop] = Time.now
+      @stats.stats[:resolution][:stop_time] = Time.now
       @stats.stats[:status] = :finish
       @processor.writer.close
     end
@@ -52,7 +52,7 @@ module GnCrossmap
 
     def resolution_stats(records_num)
       @stats.stats[:total_records] = records_num
-      @stats.stats[:resolution_start] = Time.now
+      @stats.stats[:resolution][:start_time] = Time.now
       @stats.stats[:status] = :resolution
     end
 
@@ -85,20 +85,6 @@ module GnCrossmap
       end
     end
 
-    # rubocop:disable Metrics/AbcSize
-    def update_stats(job_stats)
-      s = @stats.stats
-      s[:current_speed] = job_stats.stats[:current_speed]
-      s[:speed] = s[:current_speed] * @threads unless s[:speed]
-      s[:speed] = s[:speed] * (1 - @smoothing) +
-                  s[:current_speed] * @smoothing * @threads
-      s[:resolution_span] = Time.now - s[:resolution_start]
-      s[:resolved_records] += job_stats.stats[:resolved_records]
-      s[:eta] = (s[:total_records] - s[:resolved_records]) / s[:speed]
-      s[:matches][7] += job_stats.stats[:matches][7]
-    end
-    # rubocop:enable all
-
     def create_job(batch)
       names, batch_data = collect_names(batch)
       rb = ResolverJob.new(names, batch_data, @resolver_url, @ds_id)
@@ -120,8 +106,20 @@ module GnCrossmap
         batch_data[id] = row[:original]
         @processor.input[id] = { rank: row[:rank] }
         str << "#{id}|#{row[:name]}"
-      end.join("\n")
+      end
       [names, batch_data]
+    end
+
+    # rubocop:disable Metrics/AbcSize
+    def update_stats(job_stats)
+      s = @stats.stats
+      current_speed = job_stats.stats[:current_speed] *
+                      @stats.penalty(@threads)
+
+      s[:resolution][:completed_records] +=
+        job_stats.stats[:resolution][:completed_records]
+      @stats.update_eta(current_speed)
+      s[:matches][7] += job_stats.stats[:matches][7]
     end
 
     def with_log
@@ -129,10 +127,13 @@ module GnCrossmap
       s = @count + 1
       @count += @batch
       e = [@count, @stats.stats[:total_records]].min
-      msg = format("Resolve %s-%s/%s records %d rec/s; eta: %d", s, e,
-                   @stats.stats[:total_records], @stats.stats[:speed],
-                   @stats.stats[:eta].to_i + Time.now.to_i)
+      eta = @stats.stats[:resolution][:eta].to_i + Time.now.to_i
+      msg = format("Resolve %s-%s/%s records %d rec/s; eta: %s", s, e,
+                   @stats.stats[:total_records],
+                   @stats.stats[:resolution][:speed].to_i,
+                   Time.at(eta))
       GnCrossmap.log(msg)
     end
   end
 end
+# rubocop:enable all

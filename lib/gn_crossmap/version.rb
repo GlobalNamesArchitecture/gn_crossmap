@@ -2,7 +2,7 @@
 
 # Namespace module for crossmapping checklists to GN sources
 module GnCrossmap
-  VERSION = "4.0.0"
+  VERSION = "4.0.1"
 
   def self.version
     VERSION

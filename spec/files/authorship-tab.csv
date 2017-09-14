@@ -30,19 +30,185 @@ dwc:taxonID	dwc:scientificName	dwc:scientificNameAuthorship	dwc:taxonRank
 620	Rotifera		phylum
 628	Sipuncula		phylum
 631	Tardigrada	Spallanzani, 1777	phylum
+632	Eutardigrada	Richters, 1926	class
+633	Apochela	Schuster, Nelson, Grigarick & Christenberry, 1980	order
+634	Parachela	Schuster, Nelson, Grigarick & Christenberry, 1980	order
+635	Heterotardigrada	Marcus, 1927	class
+636	Arthrotardigrada	Marcus, 1927	order
+637	Echiniscoidea	Richters, 1926	order
+638	Mesotardigrada		class
+639	Thermozodia		order
 1447	Choanozoa		phylum
+1448	Mesomycetozoea		class
+1449	Amoebidiales		order
+1450	Eccrinales		order
+1451	Not_assigned_6339		order
+1452	Not_assigned_6336		class
+1453	Not_assigned_6337		order
+51906	Batillipedidae	Ramazzotti, 1962	family
+51907	Batillipes	Richters, 1909	genus
+51908	Batillipes mirus	Richters, 1909	species
+51909	Echiniscoididae	Kristensen & Hallas, 1980	family
+51910	Echiniscoides	Plate, 1888	genus
+51911	Echiniscoides sigismundi	(Schultze, 1865)	species
+118262	Codonosigaceae		family
+118263	Codosiga	H.J.Clark	genus
+118264	Codosiga botrytis	(Ehrenberg) Kent	species
+118265	Desmarella	Kent	genus
+118266	Desmarella moniliformis	Kent	species
+118267	Salpingoecaceae		family
+118268	Stelexomonas		genus
+118269	Stelexomonas dichotoma	Lackey	species
+118270	Salpingoeca	H.J. Clark	genus
+118271	Salpingoeca frequentissima	(Zacharias) Lemmermann	species
+118273	Aulomonas	Lackey	genus
+118274	Aulomonas purdyi	Lackey	species
 126323	Bryozoa		phylum
 128966	Choanoflagellata		phylum
 136021	Pogonophora		phylum
 136022	Frenulata	Webb, 1969	class
 136023	Monilifera	Ivanov, 1991	class
 136024	Vestimentifera	Webb, 1969	class
-1448	Mesomycetozoea		class
-1452	Not_assigned_6336		class
+137920	Echiniscidae		family
+137922	Eohypsibioidea		superfamily
+137923	Hypsibioidea		superfamily
+137924	Isohypsibioidea		superfamily
+137925	Macrobiotoidea		superfamily
+142613	Macrobiotidae	Thulin, 1928	family
+142614	Murrayidae	Guidetti, Gandolfi, Rossi & Bertolani, 2005	family
+142622	Adorybiotus	Maucci & Ramazzotti, 1981	genus
+142628	Bryodelphax	Thulin, 1928	genus
+142630	Dactylobiotus	Schuster, R. O., Nelson D.R., Grigarick A.A., Christenberry D., 1980.	genus
+142631	Diploechiniscus	Vicente, Fontoura, Cesari, Rebecchi, Serrano & Bertolani, 2013	genus
+142633	Echiniscus	Schultze, 1840	genus
+142634	Emydium	Doyère, 1840	genus
+142638	Hypechiniscus	Thulin, 1928	genus
+142640	Macrobiotus	C.A.S. Schultze, 1834	genus
+142644	Minibiotus	Schuster, R. O., Nelson D.R., Grigarick A.A., Christenberry D., 1980.	genus
+142646	Murrayon	Bertolani & Pilato, 1988	genus
+142647	Paramacrobiotus	Guidetti, Schill, Bertolani, Dandekar & Wolf, 2009	genus
+142649	Proechiniscus	Kristensen, 1987	genus
+142650	Pseudechiniscus	Thulin, 1911	genus
+142653	Richtersius	Pilato & Binda, 1989	genus
+142654	Tenuibiotus	Pilato & Lisi, 2011	genus
+142655	Testechiniscus	Kristensen, 1987	genus
+142660	Macrobiotus ambiguus	Murray, 1907	species
+142661	Macrobiotus ampullaceus	Thulin, 1911	species
+142665	Macrobiotus annulatus	Murray, 1905	species
+142667	Macrobiotus antarcticus	Richters, 1904	species
+142668	Macrobiotus arcticus	Murray, 1907	species
+142669	Echiniscus arctomys	Ehrenberg, 1853	species
+142672	Macrobiotus ariekammensis	Weglarska, 1965	species
+142674	Macrobiotus asperus	Murray, 1906	species
+142676	Macrobiotus augusti	Murray, 1907	species
+142682	Echiniscus blumi	Richters, 1903	species
+142683	Echiniscus capillatus	Ramazzotti, 1956	species
+142686	Echiniscus columinis	Murray, 1911	species
+142688	Macrobiotus convergens	Urbanowicz, 1925	species
+142690	Macrobiotus coronifer	Richters, 1903	species
+142693	Macrobiotus crassidens	Murray, J., 1907. Some South African Tardigrada. J. R. Micr. Soc. London, 5: 515 - 524	species
+142694	Macrobiotus crenulatus	Richters, 1904	species
+142697	Macrobiotus dianeae	Kristensen, 1982	species
+142698	Macrobiotus dispar	Murray, 1907	species
+142699	Macrobiotus dujardin	Doyère, 1840	species
+142701	Macrobiotus echinogenitus	Richters, 1903	species
+142705	Pseudechiniscus facettalis	Petersen, 1951	species
+142707	Echiniscus gladiator	Murray, 1905	species
+142708	Hypechiniscus gladiator	(Murray, 1905)	species
+142709	Macrobiotus grandis	Richters, 1911	species
+142710	Emydium granulatum	Doyère, 1840	species
+142711	Macrobiotus granulatus	Richters, 1903	species
+142714	Pseudechiniscus hanneae	Petersen, 1951	species
+142715	Macrobiotus harmsworthi	Murray, 1907	species
+142716	Minibiotus harrylewisi	Meyer & Hinton, 2009	species
+142717	Macrobiotus hastatus	Murray, 1907	species
+142718	Macrobiotus hibernicus	Murray, 1911	species
+142719	Macrobiotus hibiscus	de Barros, 1942	species
+142721	Macrobiotus hufelandi	C.A.S. Schultze, 1834	species
+142723	Macrobiotus intermedius	Plate, 1888	species
+142724	Echiniscus islandicus	Richters, 1904	species
+142725	Macrobiotus islandicus	'Richters, 1904	species
+142728	Macrobiotus macrocalix	Bertolani & Rebecchi, 1993	species
+142730	Macrobiotus macronyx	Dujardin, 1851	species
+142733	Echiniscus merokensis	Richters, 1903	species
+142735	Echiniscus militaris	Murray, 1911	species
+142736	Macrobiotus montanus	Murray, 1910	species
+142739	Macrobiotus norvegicus	Mihelcic, 1971/1972	species
+142741	Macrobiotus oberhaeuser	Doyère, 1840	species
+142742	Macrobiotus occidentalis	Murray, 1910	species
+142743	Dactylobiotus octavi	Guidetti, Altiero & Hansen, 2006	species
+142746	Echiniscus oihonnae	Richters, 1903	species
+142747	Macrobiotus orcadensis	Murray, 1907	species
+142749	Macrobiotus ornatus	Richters, 1900	species
+142753	Macrobiotus papillifer	Murray, 1905	species
+142754	Bryodelphax parvulus	Thulin, 1928	species
+142755	Bryodelphax parvuspolaris	'Kaczmarek, Zawierucha, Smykla, & Michalczyk, 2012	species
+142756	Macrobiotus persimilis	Binda & Pilato, 1972	species
+142757	Echiniscus phocae	Bois-Reymond Marcus, E. du, 1944.	species
+142764	Macrobiotus pullari	Murray, 1907	species
+142765	Echiniscus quadrispinosus	Richters, 1902	species
+142767	Echiniscus reticulatus	Murray, 1905	species
+142769	Macrobiotus richtersi	Murray, 1911	species
+142773	Macrobiotus sattleri	Richters, 1902	species
+142776	Macrobiotus schaudinni	Richters, 1909	species
+142779	Echiniscus sigismundi	Schultze, 1865	species
+142780	Echiniscus sinensis	Pilato, 1974	species
+142783	Macrobiotus spectabilis	Thulin, 1928	species
+142784	Echiniscus spiculifer	Schaudinn, 1901	species
+142785	Emydium spinulosus	Doyère, 1840	species
+142786	Echiniscus spitsbergensis	Scourfield, 1897	species
+142791	Macrobiotus stenostomus	Richters, 1908	species
+142792	Echiniscus suillus	Ehrenberg, 1853	species
+142795	Emydium testudo	Doyère, 1840	species
+142797	Echiniscus trisetosus	Cuénot, 1932	species
+142799	Macrobiotus tuberculatus	Plate, 1888	species
+142800	Echiniscus victor	Ehrenberg, 1853	species
+142803	Macrobiotus voronkovi	Tumanov, 2007	species
+142806	Echiniscus wendti	Richters, 1903	species
+142807	Macrobiotus willardi	Pilato, 1977	species
+142809	Macrobiotus zetlandicus	Murray, 1907	species
+142810	Diploechiniscus oihonnae	(Richters, 1903)	species
+142811	Echiniscus granulatus	(Doyère, 1840)	species
+142812	Proechiniscus hanneae	(Peterson, 1951)	species
+142813	Pseudechiniscus suillus	(Ehrenberg, 1853)	species
+142814	Pseudechiniscus victor	(Ehrenberg, 1853)	species
+142815	Testechiniscus spitsbergensis	(Scourfield, 1897)	species
+142841	Minibiotus intermedius	(Plate, 1888)	species
+142842	Paramacrobiotus areolatus	(Murray, 1907)	species
+142843	Paramacrobiotus richtersi	(Murray, 1911)	species
+142844	Richtersius coronifer	(Richters, 1903)	species
+142845	Dactylobiotus ambiguus	(Murray, 1907)	species
+142846	Dactylobiotus ampullaceus	(Thulin, 1911)	species
+142847	Dactylobiotus dispar	(Murray, 1907)	species
+142848	Murrayon dianeae	(Kristensen, 1982)	species
+142849	Murrayon hastatus	(Murray, 1907)	species
+142850	Murrayon hibernicus	(Murray, 1911)	species
+142851	Murrayon pullari	(Murray, 1907)	species
+142852	Bryodelphax sinensis	(Pilato, 1974)	species
+142854	Tenuibiotus willardi	(Pilato, 1977)	species
+142855	Dactylobiotus macronyx	(Dujardin, 1851)	species
+142867	Minibiotus crassidens	(Murray, 1907)	species
+142868	Tenuibiotus voronkovi	(Tumanov, 2007)	species
+142869	Echiniscus spinulosus	(Doyère, 1840)	species
+142870	Echiniscus testudo	(Doyère, 1840)	species
+142871	Pseudechiniscus islandicus	(Richters, 1904)	species
+142872	Echiniscus blumi subsp. blumi	Richters, 1903	subspecies
+142875	Echiniscoides sigismundi subsp. groenlandicus	Kristensen & Hallas, 1980	subspecies
+142876	Macrobiotus harmsworthi subsp. harmsworthi	Murray, 1907	subspecies
+142877	Macrobiotus hufelandi subsp. hufelandi	C.A.S. Schultze, 1834	subspecies
+142878	Macrobiotus islandicus subsp. islandicus	Richters, 1904	subspecies
+142879	Echiniscus merokensis subsp. merokensis	Richters, 1903	subspecies
+142880	Macrobiotus harmsworthi subsp. obscurus	Dastych, 1985	subspecies
+142881	Macrobiotus occidentalis subsp. occidentalis	Murray, 1910	subspecies
+142883	Echiniscus quadrispinosus subsp. quadrispinosus	Richters, 1902	subspecies
+142884	Echiniscus merokensis subsp. suecicus	Thulin, 1911	subspecies
+142886	Macrobiotus echinogenitus subsp. areolatus	Murray, 1907	subspecies
+142887	Echiniscoides sigismundi subsp. sigismundi	(Schultze, 1865)	subspecies
+142888	Hypechiniscus gladiator subsp. gladiator	(Murray, 1905)	subspecies
+142889	Macrobiotus echinogenitus f. areolatus	Murray, 1907	form
+142890	Macrobiotus echinogenitus var. areolatus	Murray, 1907	variety
 147216	Choanoflagellatea		class
 147219	Craspedida		order
-118262	Codonosigaceae		family
-118267	Salpingoecaceae		family
 147236	Acanthoecaceae		family
 147447	Acanthocorbis	S.Hara & E.Takah.	genus
 147448	Acanthoeca	W.N.Ellis	genus
@@ -63,65 +229,34 @@ dwc:taxonID	dwc:scientificName	dwc:scientificNameAuthorship	dwc:taxonRank
 147463	Saroeca		genus
 147464	Savillea		genus
 147465	Stephanoeca	W.N.Ellis	genus
+147601	Monosiga	Kent	genus
+147602	Proterospongia		genus
+147603	Bicosta	B.Leadb.	genus
+147604	Calliacantha	B.Leadb.	genus
+147605	Pachysoeca		genus
+147920	Acanthocorbis asymmetrica	(Thomsen) Hara & Takahashi, 1984	species
+147921	Acanthocorbis campanula	(Espeland) Thomsen in Thomsen, Buck & Chavez, 1991	species
+147922	Acanthocorbis unguiculata	(Thomsen) Hara & Takahashi, 1984	species
+147923	Crinolina isefiordensis	Thomsen, 1976	species
+147924	Crucispina cruciformis	Espeland in Espeland & Throndsen, 1986	species
+147925	Diaphanoeca grandis	Ellis, 1930	species
+147926	Diaphanoeca sphaerica	Thomsen, 1982	species
+147927	Parvicorbicula quadricostata	Throndsen, 1970	species
+147928	Parvicorbicula socialis	(Meunier) Deflandre, 1960	species
+147929	Platypleura infundibuliformis	(Leadbeater) Thomsen in Thomsen & Boonruang, 1983	species
+147930	Pleurasiga echinocostata	Espeland in Espeland & Throndsen, 1986	species
+147931	Pleurasiga minima	Throndsen, 1970	species
+147932	Pleurasiga reynoldsii	Throndsen, 1970	species
+147933	Polyfibula sphyrelata	(Thomsen) Manton in Manton & Bremer, 1981	species
 147934	Stephanoeca complexa	(Norris) Throndsen, 1974	species
 147935	Stephanoeca diplocostata	Ellis, 1930	species
 147936	Stephanoeca elegans	(Norris) Throndsen, 1974	species
 147937	Stephanoeca kentii	Ellis, 1930	species
-149958	Stephanoeca apheles	Thomsen, Buck & Chavez, 1991	species
-149959	Stephanoeca cupula	(Leadbeater) Thomsen, 1988	species
-149960	Stephanoeca norrisii	Thomsen, 1973	species
-149961	Stephanoeca urnula	Thomsen, 1973	species
-149956	Savillea micropora	(Norris) Leadbeater, 1975	species
-149957	Savillea parva	(Ellis) Loeblich III, 1967	species
-149955	Saroeca attenuata	Thomsen, 1979	species
-149954	Saepicula pulchra	Leadbeater, 1980	species
-149953	Polyoeca dichotoma	(Kent, 1881)	species
-147933	Polyfibula sphyrelata	(Thomsen) Manton in Manton & Bremer, 1981	species
-147930	Pleurasiga echinocostata	Espeland in Espeland & Throndsen, 1986	species
-147931	Pleurasiga minima	Throndsen, 1970	species
-147932	Pleurasiga reynoldsii	Throndsen, 1970	species
-147929	Platypleura infundibuliformis	(Leadbeater) Thomsen in Thomsen & Boonruang, 1983	species
-147927	Parvicorbicula quadricostata	Throndsen, 1970	species
-147928	Parvicorbicula socialis	(Meunier) Deflandre, 1960	species
-149951	Parvicorbicula circularis	Thomsen, 1976	species
-149952	Parvicorbicula superpositus	Booth, 1990	species
-149950	Nannoeca minuta	(Leadbeater) Thomsen, 1988	species
-149949	Monocosta fennica	Thomsen, 1979	species
-149948	Diplotheca costata	Valkanov, 1970	species
-147925	Diaphanoeca grandis	Ellis, 1930	species
-147926	Diaphanoeca sphaerica	Thomsen, 1982	species
-149946	Diaphanoeca pedicellata	Leadbeater, 1972	species
-149947	Diaphanoeca undulata	Thomsen, 1982	species
-147924	Crucispina cruciformis	Espeland in Espeland & Throndsen, 1986	species
-147923	Crinolina isefiordensis	Thomsen, 1976	species
-149945	Crinolina aperta	(Leadbeater) Thomsen	species
-149943	Cosmoeca norvegica	Thomsen in Thomsen & Boonruang, 1984	species
-149944	Cosmoeca ventricosa	Thomsen in Thomsen & Boonruang, 1984	species
-149942	Amoenoscapa caudata		species
-149940	Acanthoeca brevipoda	Ellis, 1930	species
-149941	Acanthoeca spectabilis	Ellis, 1930	species
-147920	Acanthocorbis asymmetrica	(Thomsen) Hara & Takahashi, 1984	species
-147921	Acanthocorbis campanula	(Espeland) Thomsen in Thomsen, Buck & Chavez, 1991	species
-147922	Acanthocorbis unguiculata	(Thomsen) Hara & Takahashi, 1984	species
-149938	Acanthocorbis apoda	(Leadbeater) Hara & Takahashi, 1984	species
-149939	Acanthocorbis haurakiana	Thomsen in Thomsen, Buck & Chavez, 1991	species
-118268	Stelexomonas		genus
-118270	Salpingoeca	H.J. Clark	genus
-118273	Aulomonas	Lackey	genus
-147603	Bicosta	B.Leadb.	genus
-147604	Calliacantha	B.Leadb.	genus
-147605	Pachysoeca		genus
-150385	Pachysoeca ruttneri	(Bourr.) Fott	species
-150386	Pachysoeca urnula	(Skuja) ?	species
-147948	Calliacantha natans	(Grøntved) Leadbeater, 1978	species
-150382	Calliacantha longicaudata	(Leadbeater) Leadbeater, 1978	species
-150383	Calliacantha multispina	Manton & Oates	species
-150384	Calliacantha simplex	Manton & Oates, 1979	species
+147944	Monosiga mikropelagica	Throndsen	species
+147945	Proterospongia dybsoeënsis	Grøntved	species
 147946	Bicosta minor	(Reynolds) Leadbeater, 1978	species
 147947	Bicosta spinifera	(Throndsen) Leadbeater, 1978	species
-150381	Bicosta antennigera	Moestrup, 1979	species
-118274	Aulomonas purdyi	Lackey	species
-118271	Salpingoeca frequentissima	(Zacharias) Lemmermann	species
+147948	Calliacantha natans	(Grøntved) Leadbeater, 1978	species
 149806	Salpingoeca aggregata	Valkanov	species
 149807	Salpingoeca amphoridium	James-Clark	species
 149808	Salpingoeca collaris	Stokes	species
@@ -129,174 +264,39 @@ dwc:taxonID	dwc:scientificName	dwc:scientificNameAuthorship	dwc:taxonRank
 149810	Salpingoeca inquillata	Kent	species
 149811	Salpingoeca marina	James-Clark	species
 149812	Salpingoeca minuta	Kent	species
-118269	Stelexomonas dichotoma	Lackey	species
-118263	Codosiga	H.J.Clark	genus
-118265	Desmarella	Kent	genus
-147601	Monosiga	Kent	genus
-147602	Proterospongia		genus
-151163	Sphaeroeca	Lauterborn	genus
-151257	Sphaeroeca volvox	Lauterborn	species
-147945	Proterospongia dybsoeënsis	Grøntved	species
-147944	Monosiga mikropelagica	Throndsen	species
+149938	Acanthocorbis apoda	(Leadbeater) Hara & Takahashi, 1984	species
+149939	Acanthocorbis haurakiana	Thomsen in Thomsen, Buck & Chavez, 1991	species
+149940	Acanthoeca brevipoda	Ellis, 1930	species
+149941	Acanthoeca spectabilis	Ellis, 1930	species
+149942	Amoenoscapa caudata		species
+149943	Cosmoeca norvegica	Thomsen in Thomsen & Boonruang, 1984	species
+149944	Cosmoeca ventricosa	Thomsen in Thomsen & Boonruang, 1984	species
+149945	Crinolina aperta	(Leadbeater) Thomsen	species
+149946	Diaphanoeca pedicellata	Leadbeater, 1972	species
+149947	Diaphanoeca undulata	Thomsen, 1982	species
+149948	Diplotheca costata	Valkanov, 1970	species
+149949	Monocosta fennica	Thomsen, 1979	species
+149950	Nannoeca minuta	(Leadbeater) Thomsen, 1988	species
+149951	Parvicorbicula circularis	Thomsen, 1976	species
+149952	Parvicorbicula superpositus	Booth, 1990	species
+149953	Polyoeca dichotoma	(Kent, 1881)	species
+149954	Saepicula pulchra	Leadbeater, 1980	species
+149955	Saroeca attenuata	Thomsen, 1979	species
+149956	Savillea micropora	(Norris) Leadbeater, 1975	species
+149957	Savillea parva	(Ellis) Loeblich III, 1967	species
+149958	Stephanoeca apheles	Thomsen, Buck & Chavez, 1991	species
+149959	Stephanoeca cupula	(Leadbeater) Thomsen, 1988	species
+149960	Stephanoeca norrisii	Thomsen, 1973	species
+149961	Stephanoeca urnula	Thomsen, 1973	species
 150379	Monosiga baltica	Willén	species
 150380	Monosiga ovata	Kent, 1880	species
+150381	Bicosta antennigera	Moestrup, 1979	species
+150382	Calliacantha longicaudata	(Leadbeater) Leadbeater, 1978	species
+150383	Calliacantha multispina	Manton & Oates	species
+150384	Calliacantha simplex	Manton & Oates, 1979	species
+150385	Pachysoeca ruttneri	(Bourr.) Fott	species
+150386	Pachysoeca urnula	(Skuja) ?	species
+151163	Sphaeroeca	Lauterborn	genus
 151239	Monosiga micropelagica	Throndsen	species
 151240	Monosiga marina	Grøntved	species
-118266	Desmarella moniliformis	Kent	species
-118264	Codosiga botrytis	(Ehrenberg) Kent	species
-1453	Not_assigned_6337		order
-1449	Amoebidiales		order
-1450	Eccrinales		order
-1451	Not_assigned_6339		order
-632	Eutardigrada	Richters, 1926	class
-635	Heterotardigrada	Marcus, 1927	class
-638	Mesotardigrada		class
-639	Thermozodia		order
-636	Arthrotardigrada	Marcus, 1927	order
-637	Echiniscoidea	Richters, 1926	order
-51909	Echiniscoididae	Kristensen & Hallas, 1980	family
-137920	Echiniscidae		family
-142628	Bryodelphax	Thulin, 1928	genus
-142631	Diploechiniscus	Vicente, Fontoura, Cesari, Rebecchi, Serrano & Bertolani, 2013	genus
-142633	Echiniscus	Schultze, 1840	genus
-142634	Emydium	Doyère, 1840	genus
-142638	Hypechiniscus	Thulin, 1928	genus
-142649	Proechiniscus	Kristensen, 1987	genus
-142650	Pseudechiniscus	Thulin, 1911	genus
-142655	Testechiniscus	Kristensen, 1987	genus
-142815	Testechiniscus spitsbergensis	(Scourfield, 1897)	species
-142705	Pseudechiniscus facettalis	Petersen, 1951	species
-142714	Pseudechiniscus hanneae	Petersen, 1951	species
-142813	Pseudechiniscus suillus	(Ehrenberg, 1853)	species
-142814	Pseudechiniscus victor	(Ehrenberg, 1853)	species
-142871	Pseudechiniscus islandicus	(Richters, 1904)	species
-142812	Proechiniscus hanneae	(Peterson, 1951)	species
-142708	Hypechiniscus gladiator	(Murray, 1905)	species
-142888	Hypechiniscus gladiator subsp. gladiator	(Murray, 1905)	subspecies
-142710	Emydium granulatum	Doyère, 1840	species
-142785	Emydium spinulosus	Doyère, 1840	species
-142795	Emydium testudo	Doyère, 1840	species
-142669	Echiniscus arctomys	Ehrenberg, 1853	species
-142682	Echiniscus blumi	Richters, 1903	species
-142683	Echiniscus capillatus	Ramazzotti, 1956	species
-142686	Echiniscus columinis	Murray, 1911	species
-142707	Echiniscus gladiator	Murray, 1905	species
-142724	Echiniscus islandicus	Richters, 1904	species
-142733	Echiniscus merokensis	Richters, 1903	species
-142735	Echiniscus militaris	Murray, 1911	species
-142746	Echiniscus oihonnae	Richters, 1903	species
-142757	Echiniscus phocae	Bois-Reymond Marcus, E. du, 1944.	species
-142765	Echiniscus quadrispinosus	Richters, 1902	species
-142767	Echiniscus reticulatus	Murray, 1905	species
-142779	Echiniscus sigismundi	Schultze, 1865	species
-142780	Echiniscus sinensis	Pilato, 1974	species
-142784	Echiniscus spiculifer	Schaudinn, 1901	species
-142786	Echiniscus spitsbergensis	Scourfield, 1897	species
-142792	Echiniscus suillus	Ehrenberg, 1853	species
-142797	Echiniscus trisetosus	Cuénot, 1932	species
-142800	Echiniscus victor	Ehrenberg, 1853	species
-142806	Echiniscus wendti	Richters, 1903	species
-142811	Echiniscus granulatus	(Doyère, 1840)	species
-142869	Echiniscus spinulosus	(Doyère, 1840)	species
-142870	Echiniscus testudo	(Doyère, 1840)	species
-142883	Echiniscus quadrispinosus subsp. quadrispinosus	Richters, 1902	subspecies
-142879	Echiniscus merokensis subsp. merokensis	Richters, 1903	subspecies
-142884	Echiniscus merokensis subsp. suecicus	Thulin, 1911	subspecies
-142872	Echiniscus blumi subsp. blumi	Richters, 1903	subspecies
-142810	Diploechiniscus oihonnae	(Richters, 1903)	species
-142754	Bryodelphax parvulus	Thulin, 1928	species
-142755	Bryodelphax parvuspolaris	'Kaczmarek, Zawierucha, Smykla, & Michalczyk, 2012	species
-142852	Bryodelphax sinensis	(Pilato, 1974)	species
-51910	Echiniscoides	Plate, 1888	genus
-51911	Echiniscoides sigismundi	(Schultze, 1865)	species
-142875	Echiniscoides sigismundi subsp. groenlandicus	Kristensen & Hallas, 1980	subspecies
-142887	Echiniscoides sigismundi subsp. sigismundi	(Schultze, 1865)	subspecies
-51906	Batillipedidae	Ramazzotti, 1962	family
-51907	Batillipes	Richters, 1909	genus
-51908	Batillipes mirus	Richters, 1909	species
-633	Apochela	Schuster, Nelson, Grigarick & Christenberry, 1980	order
-634	Parachela	Schuster, Nelson, Grigarick & Christenberry, 1980	order
-137922	Eohypsibioidea		superfamily
-137923	Hypsibioidea		superfamily
-137924	Isohypsibioidea		superfamily
-137925	Macrobiotoidea		superfamily
-142613	Macrobiotidae	Thulin, 1928	family
-142614	Murrayidae	Guidetti, Gandolfi, Rossi & Bertolani, 2005	family
-142630	Dactylobiotus	Schuster, R. O., Nelson D.R., Grigarick A.A., Christenberry D., 1980.	genus
-142646	Murrayon	Bertolani & Pilato, 1988	genus
-142848	Murrayon dianeae	(Kristensen, 1982)	species
-142849	Murrayon hastatus	(Murray, 1907)	species
-142850	Murrayon hibernicus	(Murray, 1911)	species
-142851	Murrayon pullari	(Murray, 1907)	species
-142743	Dactylobiotus octavi	Guidetti, Altiero & Hansen, 2006	species
-142845	Dactylobiotus ambiguus	(Murray, 1907)	species
-142846	Dactylobiotus ampullaceus	(Thulin, 1911)	species
-142847	Dactylobiotus dispar	(Murray, 1907)	species
-142855	Dactylobiotus macronyx	(Dujardin, 1851)	species
-142622	Adorybiotus	Maucci & Ramazzotti, 1981	genus
-142640	Macrobiotus	C.A.S. Schultze, 1834	genus
-142644	Minibiotus	Schuster, R. O., Nelson D.R., Grigarick A.A., Christenberry D., 1980.	genus
-142647	Paramacrobiotus	Guidetti, Schill, Bertolani, Dandekar & Wolf, 2009	genus
-142653	Richtersius	Pilato & Binda, 1989	genus
-142654	Tenuibiotus	Pilato & Lisi, 2011	genus
-142854	Tenuibiotus willardi	(Pilato, 1977)	species
-142868	Tenuibiotus voronkovi	(Tumanov, 2007)	species
-142844	Richtersius coronifer	(Richters, 1903)	species
-142842	Paramacrobiotus areolatus	(Murray, 1907)	species
-142843	Paramacrobiotus richtersi	(Murray, 1911)	species
-142716	Minibiotus harrylewisi	Meyer & Hinton, 2009	species
-142841	Minibiotus intermedius	(Plate, 1888)	species
-142867	Minibiotus crassidens	(Murray, 1907)	species
-142660	Macrobiotus ambiguus	Murray, 1907	species
-142661	Macrobiotus ampullaceus	Thulin, 1911	species
-142665	Macrobiotus annulatus	Murray, 1905	species
-142667	Macrobiotus antarcticus	Richters, 1904	species
-142668	Macrobiotus arcticus	Murray, 1907	species
-142672	Macrobiotus ariekammensis	Weglarska, 1965	species
-142674	Macrobiotus asperus	Murray, 1906	species
-142676	Macrobiotus augusti	Murray, 1907	species
-142688	Macrobiotus convergens	Urbanowicz, 1925	species
-142690	Macrobiotus coronifer	Richters, 1903	species
-142693	Macrobiotus crassidens	Murray, J., 1907. Some South African Tardigrada. J. R. Micr. Soc. London, 5: 515 - 524	species
-142694	Macrobiotus crenulatus	Richters, 1904	species
-142697	Macrobiotus dianeae	Kristensen, 1982	species
-142698	Macrobiotus dispar	Murray, 1907	species
-142699	Macrobiotus dujardin	Doyère, 1840	species
-142701	Macrobiotus echinogenitus	Richters, 1903	species
-142709	Macrobiotus grandis	Richters, 1911	species
-142711	Macrobiotus granulatus	Richters, 1903	species
-142715	Macrobiotus harmsworthi	Murray, 1907	species
-142717	Macrobiotus hastatus	Murray, 1907	species
-142718	Macrobiotus hibernicus	Murray, 1911	species
-142719	Macrobiotus hibiscus	de Barros, 1942	species
-142721	Macrobiotus hufelandi	C.A.S. Schultze, 1834	species
-142723	Macrobiotus intermedius	Plate, 1888	species
-142725	Macrobiotus islandicus	'Richters, 1904	species
-142728	Macrobiotus macrocalix	Bertolani & Rebecchi, 1993	species
-142730	Macrobiotus macronyx	Dujardin, 1851	species
-142736	Macrobiotus montanus	Murray, 1910	species
-142739	Macrobiotus norvegicus	Mihelcic, 1971/1972	species
-142741	Macrobiotus oberhaeuser	Doyère, 1840	species
-142742	Macrobiotus occidentalis	Murray, 1910	species
-142747	Macrobiotus orcadensis	Murray, 1907	species
-142749	Macrobiotus ornatus	Richters, 1900	species
-142753	Macrobiotus papillifer	Murray, 1905	species
-142756	Macrobiotus persimilis	Binda & Pilato, 1972	species
-142764	Macrobiotus pullari	Murray, 1907	species
-142769	Macrobiotus richtersi	Murray, 1911	species
-142773	Macrobiotus sattleri	Richters, 1902	species
-142776	Macrobiotus schaudinni	Richters, 1909	species
-142783	Macrobiotus spectabilis	Thulin, 1928	species
-142791	Macrobiotus stenostomus	Richters, 1908	species
-142799	Macrobiotus tuberculatus	Plate, 1888	species
-142803	Macrobiotus voronkovi	Tumanov, 2007	species
-142807	Macrobiotus willardi	Pilato, 1977	species
-142809	Macrobiotus zetlandicus	Murray, 1907	species
-142881	Macrobiotus occidentalis subsp. occidentalis	Murray, 1910	subspecies
-142878	Macrobiotus islandicus subsp. islandicus	Richters, 1904	subspecies
-142877	Macrobiotus hufelandi subsp. hufelandi	C.A.S. Schultze, 1834	subspecies
-142876	Macrobiotus harmsworthi subsp. harmsworthi	Murray, 1907	subspecies
-142880	Macrobiotus harmsworthi subsp. obscurus	Dastych, 1985	subspecies
-142886	Macrobiotus echinogenitus subsp. areolatus	Murray, 1907	subspecies
-142887	Macrobiotus echinogenitus var. areolatus	Murray, 1907	variety
-142888	Macrobiotus echinogenitus f. areolatus	Murray, 1907	form
+151257	Sphaeroeca volvox	Lauterborn	species

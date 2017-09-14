@@ -31,7 +31,6 @@ module GnCrossmap
 
     def write_empty_result(datum)
       @stats.stats[:matches][0] += 1
-      @stats.stats[:resolved_records] += 1
       res = compile_empty_result(datum)
       @writer.write(res)
     end
@@ -56,7 +55,6 @@ module GnCrossmap
     def collect_stats(datum)
       match_num = datum[:results].map { |d| d[:match_type] }.min
       @stats.stats[:matches][match_num] += 1
-      @stats.stats[:resolved_records] += 1
     end
 
     def compile_result(datum, result, match_size)

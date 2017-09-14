@@ -4,7 +4,8 @@ module GnCrossmap
   # Remote resolution for parallel jobs
   class ResolverJob
     def initialize(names, batch_data, resolver_url, ds_id)
-      @names = names
+      @names_size = names.size
+      @names = names.join("\n")
       @batch_data = batch_data
       @resolver_url = resolver_url
       @ds_id = ds_id
@@ -26,7 +27,7 @@ module GnCrossmap
     rescue RestClient::Exception
       single_remote_resolve(names)
     ensure
-      stats_add_batch_time(batch_start)
+      update_stats(batch_start)
     end
 
     def single_remote_resolve(names)
@@ -49,12 +50,12 @@ module GnCrossmap
 
     def process_resolver_error(err, name)
       @stats.stats[:matches][7] += 1
-      @stats.stats[:resolved_records] += 1
       GnCrossmap.logger.error("Resolver broke on '#{name}': #{err.message}")
     end
 
-    def stats_add_batch_time(batch_start)
+    def update_stats(batch_start)
       @stats.stats[:current_speed] = @batch_data.size / (Time.now - batch_start)
+      @stats.stats[:resolution][:completed_records] = @names_size
     end
   end
 end

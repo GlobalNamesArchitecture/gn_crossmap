@@ -83,16 +83,14 @@ describe GnCrossmap do
         subject.run(opts5) do |stats|
           states << stats[:status]
           expect(stats[:total_records]).to be 301
-          expect([0, 101, 201, 200, 301].include?(stats[:resolved_records])).
-            to be true
+          expect([0, 101, 201, 200, 301].
+                 include?(stats[:resolution][:completed_records])).to be true
           matches = stats[:matches].values.inject(:+)
-          expect(matches).to be stats[:resolved_records]
-          expect(stats.keys).
+          expect(matches).to be stats[:resolution][:completed_records]
+          expect(stats.keys.sort).
             to match_array %i[status total_records ingested_records
-                              resolved_records ingestion_span
-                              resolution_span ingestion_start
-                              resolution_start speed current_speed
-                              matches resolution_stop errors]
+                              ingestion_span ingestion_start
+                              resolution matches errors].sort
         end
         expect(states.uniq).to match_array %i[ingestion resolution finish]
       end
