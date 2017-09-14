@@ -49,7 +49,6 @@ module GnCrossmap
 
     def process_resolver_error(err, name)
       @stats.stats[:matches][7] += 1
-      @stats.stats[:resolved_records] += 1
       GnCrossmap.logger.error("Resolver broke on '#{name}': #{err.message}")
     end
 
