@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 4.0.1
+
+* @dimus - Clean up resolution stats
+
 ## 4.0.0
 
 * @dimus - Better estimation for time left for resolver and speed

@@ -14,7 +14,7 @@ module GnCrossmap
     end
 
     def penalty(threads)
-      pnlt = 0.95
+      pnlt = 0.97
       penalty_adj(threads.to_i, 1, pnlt)
     end
 

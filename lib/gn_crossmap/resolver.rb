@@ -125,10 +125,11 @@ module GnCrossmap
       s = @count + 1
       @count += @batch
       e = [@count, @stats.stats[:total_records]].min
-      msg = format("Resolve %s-%s/%s records %d rec/s; eta: %d", s, e,
+      eta = @stats.stats[:resolution][:eta].to_i + Time.now.to_i
+      msg = format("Resolve %s-%s/%s records %d rec/s; eta: %s", s, e,
                    @stats.stats[:total_records],
                    @stats.stats[:resolution][:speed],
-                   @stats.stats[:resolution][:eta].to_i + Time.now.to_i)
+                   Time.at(eta))
       GnCrossmap.log(msg)
     end
   end
