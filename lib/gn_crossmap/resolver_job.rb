@@ -54,7 +54,7 @@ module GnCrossmap
     end
 
     def update_stats(batch_start)
-      @stats.stats[:current_speed] = @batch_data.size / (Time.now - batch_start)
+      @stats.stats[:current_speed] = @names_size / (Time.now - batch_start)
       @stats.stats[:resolution][:completed_records] = @names_size
     end
   end

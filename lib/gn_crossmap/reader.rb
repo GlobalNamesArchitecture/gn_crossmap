@@ -75,7 +75,7 @@ module GnCrossmap
 
     def process_headers(row)
       @original_fields = headers(row)
-      row = produce_alt_headers(row) if @alt_headers && !@alt_headers.empty?
+      row = produce_alt_headers(row) unless @alt_headers&.empty?
       row
     end
 
@@ -104,7 +104,7 @@ module GnCrossmap
 
     def taxon_id_header(hdrs)
       hdrs.each do |h|
-        return [h] if h && h.match?(/taxonid\s*$/i)
+        return [h] if h&.match?(/taxonid\s*$/i)
       end
       []
     end
