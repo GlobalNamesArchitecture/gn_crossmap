@@ -119,6 +119,7 @@ module GnCrossmap
       s[:resolution][:completed_records] +=
         job_stats.stats[:resolution][:completed_records]
       @stats.update_eta(current_speed)
+      s[:resolution][:time_span] = Time.now - s[:resolution][:start_time]
       s[:matches][7] += job_stats.stats[:matches][7]
     end
 

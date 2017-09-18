@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 4.0.2
+
+* @dimus - Add resolution span_time to stats
+
 ## 4.0.1
 
 * @dimus - Clean up resolution stats
