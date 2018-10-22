@@ -1,5 +1,9 @@
 # ``gn_crossmap`` CHANGELOG
 
+## 4.0.3
+
+* @dimus - Update gems, remove deprecated gems
+
 ## 4.0.2
 
 * @dimus - Add resolution span_time to stats

@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require "trollop"
+require "optimist"
 require "gn_crossmap"
 
 puts "This program requires Ruby >= v. 2.4.1" if RUBY_VERSION < "2.4.1"
@@ -9,7 +9,7 @@ puts "This program requires Ruby >= v. 2.4.1" if RUBY_VERSION < "2.4.1"
 CATALOGUE_OF_LIFE = 1
 OUTPUT = "output.csv"
 THREADS = 1
-opts = Trollop.options do
+opts = Optimist.options do
   banner "Compares a list of scientific names to scientific names from a " \
     "data source from Global Names Resolver\n\n " \
     "Usage:\n  crossmap [options]\n\noptions:" \
@@ -26,9 +26,9 @@ opts = Trollop.options do
                             "matched names", type: :boolean)
 end
 
-Trollop.die :input, "must be set" if opts[:input].nil?
+Optimist.die :input, "must be set" if opts[:input].nil?
 unless File.exist?(opts[:input]) || opts[:input] == "-"
-  Trollop.die :input, "file must exist"
+  Optimist.die :input, "file must exist"
 end
 
 begin
